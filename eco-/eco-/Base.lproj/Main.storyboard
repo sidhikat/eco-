@@ -41,6 +41,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="taskNameLabel" destination="XaY-dA-2ZG" id="veT-uV-1yI"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
