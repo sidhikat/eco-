@@ -28,7 +28,7 @@ class DonationViewController: UIViewController {
     
     // Declaring header and subheader description
     let header: String = "Donation"
-    let subHeader: String = "Choose which organization will benefit from your productivity! For every hour you spent completing your task, we will donate $1 to your chosen organization!"
+    let subHeader: String = "Choose which organization will benefit from your productivity!For every hour you spent completing your task, we will donate $1 to your chosen organization!"
     
     
     override func viewDidLoad() {
