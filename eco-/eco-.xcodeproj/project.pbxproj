@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5FE4FBF422E666BA00F780B7 /* DonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE4FBF322E666BA00F780B7 /* DonationViewController.swift */; };
+		5FE4FBF722E6681300F780B7 /* OrgCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE4FBF622E6681300F780B7 /* OrgCategory.swift */; };
 		A2C5538022E283180023A29D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5537F22E283180023A29D /* AppDelegate.swift */; };
 		A2C5538522E283180023A29D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C5538322E283180023A29D /* Main.storyboard */; };
 		A2C5538722E283190023A29D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2C5538622E283190023A29D /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		5FE4FBF322E666BA00F780B7 /* DonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationViewController.swift; sourceTree = "<group>"; };
+		5FE4FBF622E6681300F780B7 /* OrgCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgCategory.swift; sourceTree = "<group>"; };
 		A2C5537C22E283180023A29D /* eco-.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eco-.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C5537F22E283180023A29D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2C5538422E283180023A29D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5FE4FBF522E667FA00F780B7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5FE4FBF622E6681300F780B7 /* OrgCategory.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A2C5537322E283180023A29D = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +87,7 @@
 		A2C5537E22E283180023A29D /* eco- */ = {
 			isa = PBXGroup;
 			children = (
+				5FE4FBF522E667FA00F780B7 /* Models */,
 				A2C5537F22E283180023A29D /* AppDelegate.swift */,
 				A2C5538322E283180023A29D /* Main.storyboard */,
 				A2C5538622E283190023A29D /* Assets.xcassets */,
@@ -199,6 +210,7 @@
 			files = (
 				5FE4FBF422E666BA00F780B7 /* DonationViewController.swift in Sources */,
 				A2C5538022E283180023A29D /* AppDelegate.swift in Sources */,
+				5FE4FBF722E6681300F780B7 /* OrgCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
