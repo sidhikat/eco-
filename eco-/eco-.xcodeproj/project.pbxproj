@@ -18,6 +18,7 @@
 		A2C5540722E7AB7F0023A29D /* DonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5540622E7AB6F0023A29D /* DonationViewController.swift */; };
 		A2C5540B22E7ABE40023A29D /* OrgCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5540A22E7ABE40023A29D /* OrgCategory.swift */; };
 		A2C5540D22E7B40C0023A29D /* NewTaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5540C22E7B40C0023A29D /* NewTaskListViewController.swift */; };
+		A2C5540F22E7B8F00023A29D /* SidhikaStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C5540E22E7B8F00023A29D /* SidhikaStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		A2C5540622E7AB6F0023A29D /* DonationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationViewController.swift; sourceTree = "<group>"; };
 		A2C5540A22E7ABE40023A29D /* OrgCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgCategory.swift; sourceTree = "<group>"; };
 		A2C5540C22E7B40C0023A29D /* NewTaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskListViewController.swift; sourceTree = "<group>"; };
+		A2C5540E22E7B8F00023A29D /* SidhikaStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SidhikaStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				A2C5538B22E283190023A29D /* Info.plist */,
 				A2C553A622E667420023A29D /* TaskTableViewCell.swift */,
 				A2C5540C22E7B40C0023A29D /* NewTaskListViewController.swift */,
+				A2C5540E22E7B8F00023A29D /* SidhikaStoryboard.storyboard */,
 			);
 			path = "eco-";
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2C5538A22E283190023A29D /* LaunchScreen.storyboard in Resources */,
+				A2C5540F22E7B8F00023A29D /* SidhikaStoryboard.storyboard in Resources */,
 				A2C5538722E283190023A29D /* Assets.xcassets in Resources */,
 				A2C5538522E283180023A29D /* Main.storyboard in Resources */,
 			);
