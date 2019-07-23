@@ -25,7 +25,7 @@ class loginPageViewController: UIViewController {
 
 //Add action to the buttons on the screen
     }
-    @IBAction func loginButton(_ sender: UIButton) {
+    @IBAction func loginButton(_ sender: Any) {
 //Requires the user to fill in the username and password text fields
 // Activity indicator and segue to homepage
         activityIndicator.center = self.view.center
@@ -34,7 +34,9 @@ class loginPageViewController: UIViewController {
         view.addSubview(activityIndicator)
         
         activityIndicator.startAnimating()
-
+        
+        
+        
     }
     
     @IBAction func googleLoginButton(_ sender: Any) {
@@ -43,6 +45,7 @@ class loginPageViewController: UIViewController {
         activityIndicator.style = UIActivityIndicatorView.Style.gray
         view.addSubview(activityIndicator)
         activityIndicator.startAnimating()
+        
         
 
     }
