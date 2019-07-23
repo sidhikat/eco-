@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		A2C5538022E283180023A29D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5537F22E283180023A29D /* AppDelegate.swift */; };
-		A2C5538222E283180023A29D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5538122E283180023A29D /* ViewController.swift */; };
+		A2C5538222E283180023A29D /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5538122E283180023A29D /* TaskListViewController.swift */; };
 		A2C5538522E283180023A29D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C5538322E283180023A29D /* Main.storyboard */; };
 		A2C5538722E283190023A29D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2C5538622E283190023A29D /* Assets.xcassets */; };
 		A2C5538A22E283190023A29D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C5538822E283190023A29D /* LaunchScreen.storyboard */; };
 		A2C5539522E283190023A29D /* eco_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5539422E283190023A29D /* eco_Tests.swift */; };
+		A2C553A722E667420023A29D /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C553A622E667420023A29D /* TaskTableViewCell.swift */; };
+		A2C553AA22E66A760023A29D /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C553A922E66A760023A29D /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +30,7 @@
 /* Begin PBXFileReference section */
 		A2C5537C22E283180023A29D /* eco-.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eco-.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C5537F22E283180023A29D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A2C5538122E283180023A29D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A2C5538122E283180023A29D /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
 		A2C5538422E283180023A29D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2C5538622E283190023A29D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2C5538922E283190023A29D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +38,8 @@
 		A2C5539022E283190023A29D /* eco-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "eco-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C5539422E283190023A29D /* eco_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eco_Tests.swift; sourceTree = "<group>"; };
 		A2C5539622E283190023A29D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2C553A622E667420023A29D /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		A2C553A922E66A760023A29D /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +81,14 @@
 		A2C5537E22E283180023A29D /* eco- */ = {
 			isa = PBXGroup;
 			children = (
+				A2C553A822E66A5D0023A29D /* Model */,
 				A2C5537F22E283180023A29D /* AppDelegate.swift */,
-				A2C5538122E283180023A29D /* ViewController.swift */,
+				A2C5538122E283180023A29D /* TaskListViewController.swift */,
 				A2C5538322E283180023A29D /* Main.storyboard */,
 				A2C5538622E283190023A29D /* Assets.xcassets */,
 				A2C5538822E283190023A29D /* LaunchScreen.storyboard */,
 				A2C5538B22E283190023A29D /* Info.plist */,
+				A2C553A622E667420023A29D /* TaskTableViewCell.swift */,
 			);
 			path = "eco-";
 			sourceTree = "<group>";
@@ -94,6 +100,14 @@
 				A2C5539622E283190023A29D /* Info.plist */,
 			);
 			path = "eco-Tests";
+			sourceTree = "<group>";
+		};
+		A2C553A822E66A5D0023A29D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A2C553A922E66A760023A29D /* Task.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +211,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2C5538222E283180023A29D /* ViewController.swift in Sources */,
+				A2C553AA22E66A760023A29D /* Task.swift in Sources */,
+				A2C5538222E283180023A29D /* TaskListViewController.swift in Sources */,
 				A2C5538022E283180023A29D /* AppDelegate.swift in Sources */,
+				A2C553A722E667420023A29D /* TaskTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
