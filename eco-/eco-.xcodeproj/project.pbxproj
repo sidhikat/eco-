@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5FE4FBF422E666BA00F780B7 /* DonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE4FBF322E666BA00F780B7 /* DonationViewController.swift */; };
-		5FE4FBF722E6681300F780B7 /* OrgCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE4FBF622E6681300F780B7 /* OrgCategory.swift */; };
 		A2C5538022E283180023A29D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5537F22E283180023A29D /* AppDelegate.swift */; };
+		A2C5538222E283180023A29D /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5538122E283180023A29D /* TaskListViewController.swift */; };
 		A2C5538522E283180023A29D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C5538322E283180023A29D /* Main.storyboard */; };
 		A2C5538722E283190023A29D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2C5538622E283190023A29D /* Assets.xcassets */; };
 		A2C5538A22E283190023A29D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C5538822E283190023A29D /* LaunchScreen.storyboard */; };
 		A2C5539522E283190023A29D /* eco_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5539422E283190023A29D /* eco_Tests.swift */; };
 		A2C553A722E667420023A29D /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C553A622E667420023A29D /* TaskTableViewCell.swift */; };
 		A2C553AA22E66A760023A29D /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C553A922E66A760023A29D /* Task.swift */; };
+		A2C5540722E7AB7F0023A29D /* DonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5540622E7AB6F0023A29D /* DonationViewController.swift */; };
+		A2C5540B22E7ABE40023A29D /* OrgCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5540A22E7ABE40023A29D /* OrgCategory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,10 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5FE4FBF322E666BA00F780B7 /* DonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationViewController.swift; sourceTree = "<group>"; };
-		5FE4FBF622E6681300F780B7 /* OrgCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgCategory.swift; sourceTree = "<group>"; };
 		A2C5537C22E283180023A29D /* eco-.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eco-.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C5537F22E283180023A29D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A2C5538122E283180023A29D /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
 		A2C5538422E283180023A29D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2C5538622E283190023A29D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2C5538922E283190023A29D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -42,6 +42,8 @@
 		A2C5539622E283190023A29D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2C553A622E667420023A29D /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		A2C553A922E66A760023A29D /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		A2C5540622E7AB6F0023A29D /* DonationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationViewController.swift; sourceTree = "<group>"; };
+		A2C5540A22E7ABE40023A29D /* OrgCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgCategory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,14 +64,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5FE4FBF522E667FA00F780B7 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				5FE4FBF622E6681300F780B7 /* OrgCategory.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		A2C5537322E283180023A29D = {
 			isa = PBXGroup;
 			children = (
@@ -91,17 +85,15 @@
 		A2C5537E22E283180023A29D /* eco- */ = {
 			isa = PBXGroup;
 			children = (
-
-				5FE4FBF522E667FA00F780B7 /* Models */,
+				A2C553A822E66A5D0023A29D /* Model */,
 				A2C5537F22E283180023A29D /* AppDelegate.swift */,
-
+				A2C5538122E283180023A29D /* TaskListViewController.swift */,
+				A2C5540622E7AB6F0023A29D /* DonationViewController.swift */,
 				A2C5538322E283180023A29D /* Main.storyboard */,
 				A2C5538622E283190023A29D /* Assets.xcassets */,
 				A2C5538822E283190023A29D /* LaunchScreen.storyboard */,
 				A2C5538B22E283190023A29D /* Info.plist */,
-
-				5FE4FBF322E666BA00F780B7 /* DonationViewController.swift */,
-
+				A2C553A622E667420023A29D /* TaskTableViewCell.swift */,
 			);
 			path = "eco-";
 			sourceTree = "<group>";
@@ -119,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				A2C553A922E66A760023A29D /* Task.swift */,
+				A2C5540A22E7ABE40023A29D /* OrgCategory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -224,10 +217,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FE4FBF422E666BA00F780B7 /* DonationViewController.swift in Sources */,
+				A2C553AA22E66A760023A29D /* Task.swift in Sources */,
+				A2C5538222E283180023A29D /* TaskListViewController.swift in Sources */,
+				A2C5540B22E7ABE40023A29D /* OrgCategory.swift in Sources */,
 				A2C5538022E283180023A29D /* AppDelegate.swift in Sources */,
-				5FE4FBF722E6681300F780B7 /* OrgCategory.swift in Sources */,
-
+				A2C5540722E7AB7F0023A29D /* DonationViewController.swift in Sources */,
+				A2C553A722E667420023A29D /* TaskTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
