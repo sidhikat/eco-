@@ -37,6 +37,10 @@ class DonationViewController: UIViewController {
         // Displaying the header, subheadr, and image
         headerLabel.text = header
         subheaderLabel.text = subHeader
+        BeeButton.layer.cornerRadius = 4
+        TreeButton.layer.cornerRadius = 4
+        SeaButton.layer.cornerRadius = 4
+
     }
     
     
