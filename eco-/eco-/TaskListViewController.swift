@@ -19,10 +19,12 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
         Task(taskName: "second task", taskStatus: true)
         ]
     
+    //returns the number of rows/elements in the tasks array
       func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tasks.count
     }
     
+    //return a cell and changes it's UI based on code
       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "taskCell", for: indexPath) as! TaskTableViewCell
         cell.taskNameLabel.text = tasks[indexPath.row].taskName
