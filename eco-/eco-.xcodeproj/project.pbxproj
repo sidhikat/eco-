@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F1328F922EA472F00A78BA6 /* DonationPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F1328F722EA472F00A78BA6 /* DonationPage.storyboard */; };
 		5FE4FBF422E666BA00F780B7 /* DonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE4FBF322E666BA00F780B7 /* DonationViewController.swift */; };
 		5FE4FBF722E6681300F780B7 /* OrgCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE4FBF622E6681300F780B7 /* OrgCategory.swift */; };
 		A2C5538022E283180023A29D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5537F22E283180023A29D /* AppDelegate.swift */; };
@@ -14,8 +15,6 @@
 		A2C5538722E283190023A29D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2C5538622E283190023A29D /* Assets.xcassets */; };
 		A2C5538A22E283190023A29D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C5538822E283190023A29D /* LaunchScreen.storyboard */; };
 		A2C5539522E283190023A29D /* eco_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5539422E283190023A29D /* eco_Tests.swift */; };
-		A2C553A722E667420023A29D /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C553A622E667420023A29D /* TaskTableViewCell.swift */; };
-		A2C553AA22E66A760023A29D /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C553A922E66A760023A29D /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F1328F822EA472F00A78BA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "eco-/Base.lproj/DonationPage.storyboard"; sourceTree = "<group>"; };
 		5FE4FBF322E666BA00F780B7 /* DonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationViewController.swift; sourceTree = "<group>"; };
 		5FE4FBF622E6681300F780B7 /* OrgCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgCategory.swift; sourceTree = "<group>"; };
 		A2C5537C22E283180023A29D /* eco-.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eco-.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,8 +40,6 @@
 		A2C5539022E283190023A29D /* eco-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "eco-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C5539422E283190023A29D /* eco_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eco_Tests.swift; sourceTree = "<group>"; };
 		A2C5539622E283190023A29D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2C553A622E667420023A29D /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
-		A2C553A922E66A760023A29D /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,17 +89,14 @@
 		A2C5537E22E283180023A29D /* eco- */ = {
 			isa = PBXGroup;
 			children = (
-
 				5FE4FBF522E667FA00F780B7 /* Models */,
 				A2C5537F22E283180023A29D /* AppDelegate.swift */,
-
+				5F1328F722EA472F00A78BA6 /* DonationPage.storyboard */,
 				A2C5538322E283180023A29D /* Main.storyboard */,
 				A2C5538622E283190023A29D /* Assets.xcassets */,
 				A2C5538822E283190023A29D /* LaunchScreen.storyboard */,
 				A2C5538B22E283190023A29D /* Info.plist */,
-
 				5FE4FBF322E666BA00F780B7 /* DonationViewController.swift */,
-
 			);
 			path = "eco-";
 			sourceTree = "<group>";
@@ -113,14 +108,6 @@
 				A2C5539622E283190023A29D /* Info.plist */,
 			);
 			path = "eco-Tests";
-			sourceTree = "<group>";
-		};
-		A2C553A822E66A5D0023A29D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				A2C553A922E66A760023A29D /* Task.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +194,7 @@
 				A2C5538A22E283190023A29D /* LaunchScreen.storyboard in Resources */,
 				A2C5538722E283190023A29D /* Assets.xcassets in Resources */,
 				A2C5538522E283180023A29D /* Main.storyboard in Resources */,
+				5F1328F922EA472F00A78BA6 /* DonationPage.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,7 +215,6 @@
 				5FE4FBF422E666BA00F780B7 /* DonationViewController.swift in Sources */,
 				A2C5538022E283180023A29D /* AppDelegate.swift in Sources */,
 				5FE4FBF722E6681300F780B7 /* OrgCategory.swift in Sources */,
-
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +237,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		5F1328F722EA472F00A78BA6 /* DonationPage.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F1328F822EA472F00A78BA6 /* Base */,
+			);
+			name = DonationPage.storyboard;
+			sourceTree = "<group>";
+		};
 		A2C5538322E283180023A29D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
