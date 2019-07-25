@@ -91,12 +91,12 @@
 				A2C5537F22E283180023A29D /* AppDelegate.swift */,
 				A2C5538122E283180023A29D /* TaskListViewController.swift */,
 				A2C5540622E7AB6F0023A29D /* DonationViewController.swift */,
-				A2C5538322E283180023A29D /* Main.storyboard */,
+				A2C5540E22E7B8F00023A29D /* SidhikaStoryboard.storyboard */,
 				A2C5538622E283190023A29D /* Assets.xcassets */,
 				A2C5538822E283190023A29D /* LaunchScreen.storyboard */,
 				A2C5538B22E283190023A29D /* Info.plist */,
 				A2C553A622E667420023A29D /* TaskTableViewCell.swift */,
-				A2C5540E22E7B8F00023A29D /* SidhikaStoryboard.storyboard */,
+				A2C5538322E283180023A29D /* Main.storyboard */,
 			);
 			path = "eco-";
 			sourceTree = "<group>";

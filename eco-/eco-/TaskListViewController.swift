@@ -15,8 +15,8 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
 
     
     var tasks = [
-        Task(taskName: "sample", taskStatus: false),
-        Task(taskName: "second task", taskStatus: true)
+        Task(taskName: "sample", hasSubtasks: false),
+        Task(taskName: "second task", hasSubtasks: true)
         ]
     
     //returns the number of rows/elements in the tasks array
