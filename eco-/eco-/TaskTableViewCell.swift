@@ -11,9 +11,8 @@ import UIKit
 //includes all elements part of the taskList table cell
 class TaskTableViewCell: UITableViewCell {
     @IBOutlet weak var taskNameLabel: UILabel!
-    @IBOutlet weak var expandButtonImageView: UIImageView!
-    @IBOutlet weak var checkBoxImageView: UIImageView!
-    
+    @IBOutlet weak var expandButton: UIButton!
+    @IBOutlet weak var checkBoxButton: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

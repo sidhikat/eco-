@@ -45,8 +45,11 @@
                                                             <rect key="frame" x="20" y="20" width="15" height="15"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <state key="normal" image="emptyCheckbox"/>
+                                                            <connections>
+                                                                <action selector="btnClicked:" destination="vmY-bR-YB0" eventType="touchUpInside" id="tAQ-HB-b4K"/>
+                                                            </connections>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uh0-fU-JCw">
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uh0-fU-JCw" userLabel="expandButton">
                                                             <rect key="frame" x="379" y="20" width="14" height="10"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <state key="normal" image="expandButton"/>
@@ -57,6 +60,8 @@
                                                     <accessibilityTraits key="traits" button="YES" image="YES" selected="YES"/>
                                                 </accessibility>
                                                 <connections>
+                                                    <outlet property="checkBoxButton" destination="EaF-lV-Swm" id="lPH-46-CN2"/>
+                                                    <outlet property="expandButton" destination="uh0-fU-JCw" id="vDU-8R-AlQ"/>
                                                     <outlet property="taskNameLabel" destination="QNc-sp-C5T" id="Dbb-bB-8DM"/>
                                                 </connections>
                                             </tableViewCell>

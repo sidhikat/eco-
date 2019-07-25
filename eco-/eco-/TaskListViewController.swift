@@ -35,11 +35,21 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
         let cell = tableView.dequeueReusableCell(withIdentifier: "taskCell", for: indexPath) as! TaskTableViewCell
         cell.taskNameLabel.text = tasks[indexPath.row].taskName
         
+        //set a unique tag for each button
+        //cell.checkBoxButton.tag = indexPath.row
+        
+        //listens to the button and goes to the function specified (btnclicked)
+        cell.checkBoxButton.addTarget(self,action:#selector(btnClicked), for:.touchUpInside)
+        
         return cell
     }
     
 
-  
+    @IBAction func btnClicked(_ sender: UIButton) {
+        //sets image of new button as completedCheckbox
+        sender.setImage(UIImage(named: "completedCheckbox"), for: .normal)
+    }
+
 
 
 }
