@@ -11,6 +11,8 @@ import UIKit
 //includes all elements part of the taskList table cell
 class TaskTableViewCell: UITableViewCell {
     @IBOutlet weak var taskNameLabel: UILabel!
+    @IBOutlet weak var expandButtonImageView: UIImageView!
+    @IBOutlet weak var checkBoxImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,5 +24,8 @@ class TaskTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    
+    
 
 }
