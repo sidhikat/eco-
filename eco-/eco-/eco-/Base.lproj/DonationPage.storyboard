@@ -24,7 +24,7 @@
                                     <constraint firstAttribute="height" constant="128" id="z0F-JC-Hty"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwE-lQ-7eL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwE-lQ-7eL">
                                 <rect key="frame" x="82" y="616" width="250" height="42"/>
                                 <color key="backgroundColor" red="0.3294117647" green="0.54117647059999996" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -81,6 +81,11 @@
                                 <rect key="frame" x="94" y="741" width="22" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="downArrow" translatesAutoresizingMaskIntoConstraints="NO" id="LC3-6g-2NX">
+                                <rect key="frame" x="306" y="632" width="11" height="11"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -122,6 +127,7 @@
     </scenes>
     <resources>
         <image name="bee" width="512" height="512"/>
+        <image name="downArrow" width="512" height="512"/>
         <image name="money" width="512" height="512"/>
         <image name="sea" width="512" height="512"/>
         <image name="tree" width="512" height="512"/>
