@@ -35,6 +35,7 @@ class signUpScreen: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBOutlet weak var confirmPasswordTextField: UITextField!
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -53,7 +54,9 @@ class signUpScreen: UIViewController {
         var userUsername = usernameTextField.text
         var userPassword = passwordTextField.text
         var userPasswordConfirmation = confirmPasswordTextField.text
-        //Make sure to take the user's input and store it
+        
+        
+        //User information storage
         if let temp = firstNameTextField.text{
             var userFirstName = temp
             let userInformation = NSEntityDescription.insertNewObject(forEntityName: "UserInformation", into: container.viewContext) as! UserInformation
@@ -84,6 +87,66 @@ class signUpScreen: UIViewController {
             userInformation.password = userPassword
             try! container.viewContext.save()
         }
+        if passwordTextField.text != confirmPasswordTextField.text{
+            let alert = UIAlertController(title: "Passwords don't match", message: "Please, try again", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                NSLog("The \"OK\" alert occured.")
+            }))
+            self.present(alert, animated: true, completion: nil)
+            
+        }
+        
+        
+        
+        
+        //Make sure the user is filling all the fields
+        if (emailAddressTextField.text == ""){
+            let alert = UIAlertController(title: "Please fill all the fields", message: "", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                NSLog("The \"OK\" alert occured.")
+            }))
+            self.present(alert, animated: true, completion: nil)
+            
+        }
+        if (firstNameTextField.text == ""){
+            let alert = UIAlertController(title: "Please fill all the fields", message: "", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                NSLog("The \"OK\" alert occured.")
+            }))
+            self.present(alert, animated: true, completion: nil)
+            
+        }
+        if (lastNameTextField.text == ""){
+            let alert = UIAlertController(title: "Please fill all the fields", message: "", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                NSLog("The \"OK\" alert occured.")
+            }))
+            self.present(alert, animated: true, completion: nil)
+            
+        }
+        if (usernameTextField.text == ""){
+            let alert = UIAlertController(title: "Please fill all the fields", message: "", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                NSLog("The \"OK\" alert occured.")
+            }))
+            self.present(alert, animated: true, completion: nil)
+        }
+        if (passwordTextField.text == ""){
+            let alert = UIAlertController(title: "Please fill all the fields", message: "", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                NSLog("The \"OK\" alert occured.")
+            }))
+            self.present(alert, animated: true, completion: nil)
+        }
+        if (confirmPasswordTextField.text == ""){
+            let alert = UIAlertController(title: "Please fill all the fields", message: "", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                NSLog("The \"OK\" alert occured.")
+            }))
+            self.present(alert, animated: true, completion: nil)
+            
+        }
         
     }
+
 }

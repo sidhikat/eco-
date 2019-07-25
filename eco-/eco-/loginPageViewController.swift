@@ -10,6 +10,10 @@ import UIKit
 import CoreData
 
 
+
+
+
+
 class loginPageViewController: UIViewController {
     var container: NSPersistentContainer!
     
@@ -22,6 +26,7 @@ class loginPageViewController: UIViewController {
     @IBOutlet weak var usernameTextField: UITextField!
     
     @IBOutlet weak var passwordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         guard container != nil else {
@@ -29,7 +34,6 @@ class loginPageViewController: UIViewController {
             // Do any additional setup after loading the view.
         }
         // Do any additional setup after loading the view.
-
 //Add action to the buttons on the screen
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -42,26 +46,45 @@ class loginPageViewController: UIViewController {
     
     @IBAction func loginButton(_ sender: Any) {
 //Requires the user to fill in the username and password text fields
-// Activity indicator and segue to homepage
-        activityIndicator.center = self.view.center
-        activityIndicator.hidesWhenStopped = true
-        activityIndicator.style = UIActivityIndicatorView.Style.gray
-        view.addSubview(activityIndicator)
-        activityIndicator.startAnimating()
+        if (usernameTextField.text != nil) && (passwordTextField.text != nil){
+            func isEnabled() -> Bool{
+                return true
+            }
+        }
         
         
-        
-    }
     
-    @IBAction func googleLoginButton(_ sender: Any) {
         
-        
-        
+    
+    
+  //  @IBAction func loginGoogleButton(_ sender: Any) {
 
-    }
-//Activity indicator and segue to homepage
-    @IBAction func facebookLoginButton(_ sender: Any) {
-        
-//Activity indicator and segue to homepage
-    }
+
+
+
+
+   // @IBAction func loginFacebookButton(_ sender: Any) {
+
+
+/*let userEmail = userEmailTextField.text
+let userPassword = userPasswordTextField.text
+
+let userEmailStored = NSUserDefaults.standardUserDefaults().stringForKey("userEmail")
+let userPasswordStored = NSUserDefaults.standardUserDefaults().stringForKey("userPassword")
+
+if (userEmailStored == userEmail && userPasswordStored == userPassword) {
+    NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isUserLoggedIn")
+    NSUserDefaults.standardUserDefaults().synchronize()
+    self.dismissViewControllerAnimated(true, completion: nil)
+}
+    
+else {
+    var failAlert = UIAlertController(title: "Alert", message: "Your username or password is incorrect.", preferredStyle: UIAlertControllerStyle.Alert)
+    let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+    failAlert.addAction(okAction)
+    self.presentViewController(failAlert, animated: true, completion: nil)
+    
+}*/
+
+}
 }
