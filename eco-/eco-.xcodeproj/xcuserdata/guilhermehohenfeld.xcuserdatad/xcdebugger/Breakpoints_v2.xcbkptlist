@@ -10,12 +10,136 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "eco-/loginPageViewController.swift"
-            timestampString = "585598588.682289"
+            timestampString = "585767278.045359"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "loginButton(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "eco-/signUpScreen.swift"
+            timestampString = "585767278.0454251"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "signUpScreen"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "eco_.signUpScreen.emailAddressLabel.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "eco-"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guilhermehohenfeld/Documents/32-Focused_Distractors/eco-/eco-/signUpScreen.swift"
+                  timestampString = "585709232.248369"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "eco_.signUpScreen.emailAddressLabel.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "eco-"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guilhermehohenfeld/Documents/32-Focused_Distractors/eco-/eco-/signUpScreen.swift"
+                  timestampString = "585709232.250412"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "eco_.signUpScreen.emailAddressLabel.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "eco-"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guilhermehohenfeld/Documents/32-Focused_Distractors/eco-/eco-/signUpScreen.swift"
+                  timestampString = "585709232.255816"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "69">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "eco_.signUpScreen.emailAddressLabel.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "eco-"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guilhermehohenfeld/Documents/32-Focused_Distractors/eco-/eco-/signUpScreen.swift"
+                  timestampString = "585709232.258463"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "eco_.signUpScreen.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; eco_.signUpScreen"
+                  moduleName = "eco-"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guilhermehohenfeld/Documents/32-Focused_Distractors/eco-/eco-/signUpScreen.swift"
+                  timestampString = "585709232.259936"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "302">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "eco_.signUpScreen.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;eco_.signUpScreen&gt;"
+                  moduleName = "eco-"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/guilhermehohenfeld/Documents/32-Focused_Distractors/eco-/eco-/signUpScreen.swift"
+                  timestampString = "585709232.2614321"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "222">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "eco-/signUpScreen.swift"
+            timestampString = "585767278.0454791"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
