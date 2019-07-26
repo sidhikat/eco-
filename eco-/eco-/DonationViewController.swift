@@ -20,6 +20,9 @@ class DonationViewController: UIViewController {
     @IBOutlet weak var TreeButton: UIButton!
     @IBOutlet weak var SeaButton: UIButton!
     
+    @IBOutlet weak var btnBee: UIButton!
+    @IBOutlet weak var beeLabelShow: UILabel!
+    
     // Organization Category
     let orgCategory = [
         OrgCategory(id: 0, category: "Bees", description: "Save the BEES!", image: "bee"),
@@ -45,12 +48,20 @@ class DonationViewController: UIViewController {
         BeeButton.setTitle(orgCategory[0].description,for: .normal)
         TreeButton.setTitle(orgCategory[1].description, for: .normal)
         SeaButton.setTitle(orgCategory[2].description, for: .normal)
-
-
-
     }
     
+    // testing for the drop down
+    var showDescription = false
     
+    @IBAction func onClickShow(_ sender: Any) {
+        showDescription = !showDescription
+        
+        self.btnBee.setTitle("Test", for: .normal)
+        UIView.animate(withDuration: 0.3){
+            self.beeLabelShow.isHidden = !self.showDescription
+            self.btnBee.setImage(UIImage(named: !self.showDescription ? "dropdown" : "dropup"), for: .normal)
+        }
     
+    }
     
 }
