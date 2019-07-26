@@ -81,7 +81,7 @@
                                                                         </subviews>
                                                                     </tableViewCellContentView>
                                                                     <connections>
-                                                                        <outlet property="subtaskLabel" destination="8XW-pZ-Gej" id="LUk-IO-Bss"/>
+                                                                        <outlet property="subtaskLabel" destination="8XW-pZ-Gej" id="poW-Ly-T1t"/>
                                                                     </connections>
                                                                 </tableViewCell>
                                                             </prototypes>

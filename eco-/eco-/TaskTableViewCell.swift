@@ -11,6 +11,7 @@ import UIKit
 //includes all elements part of the taskList table cell
 class TaskTableViewCell: UITableViewCell{
     
+    //@IBOutlet weak var subtaskLabel: UILabel!
     @IBOutlet weak var subtaskTableView: UITableView!
     @IBOutlet weak var taskNameLabel: UILabel!
     @IBOutlet weak var expandButton: UIButton!
