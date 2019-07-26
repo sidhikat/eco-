@@ -9,7 +9,7 @@
 import UIKit
 
 //includes all elements part of the taskList table cell
-class TaskTableViewCell: UITableViewCell {
+class TaskTableViewCell: UITableViewCell{
     
     @IBOutlet weak var subtaskTableView: UITableView!
     @IBOutlet weak var taskNameLabel: UILabel!
@@ -26,7 +26,13 @@ class TaskTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    
+    func setTableViewDataSourceDelegate
+        <D: UITableViewDelegate & UITableViewDataSource>(_ dataSourceDelegate: D, forRow row: Int){
+        subtaskTableView.delegate = dataSourceDelegate
+        subtaskTableView.dataSource = dataSourceDelegate
+        
+        subtaskTableView.reloadData()
+    }
     
 
 }

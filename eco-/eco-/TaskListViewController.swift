@@ -23,14 +23,21 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
         Task(taskName: "sample", hasSubtasks: false),
         Task(taskName: "second task", hasSubtasks: true)
         ]
+    var subtasks = ["subtask1", "subtask2"]
     
     //returns the number of rows/elements in the tasks array
       func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tasks.count
+        if(tableView.tag == 100){
+            return tasks.count
+        }else{
+            return subtasks.count
+        }
     }
     
     //return a cell and changes it's UI based on code
       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if(tableView.tag == 100){
         let cell = tableView.dequeueReusableCell(withIdentifier: "taskCell", for: indexPath) as! TaskTableViewCell
         cell.taskNameLabel.text = tasks[indexPath.row].taskName
         
@@ -41,6 +48,12 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
         cell.checkBoxButton.addTarget(self,action:#selector(btnClicked), for:.touchUpInside)
         
         return cell
+        }else{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "subtaskCell", for: indexPath) as! SubtaskTableViewCell
+            cell.subtaskLabel.text = subtasks[indexPath.row]
+            return cell
+        }
+        
     }
     
 
