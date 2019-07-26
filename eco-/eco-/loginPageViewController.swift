@@ -32,6 +32,8 @@ class loginPageViewController: UIViewController {
         guard container != nil else {
             fatalError("This view needs a persistent container.")
             // Do any additional setup after loading the view.
+            //let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            //let context = appDelegate.persistentContainer.viewContext
         }
         // Do any additional setup after loading the view.
 //Add action to the buttons on the screen
@@ -45,46 +47,33 @@ class loginPageViewController: UIViewController {
     }
     
     @IBAction func loginButton(_ sender: Any) {
-//Requires the user to fill in the username and password text fields
-        if (usernameTextField.text != nil) && (passwordTextField.text != nil){
-            func isEnabled() -> Bool{
-                return true
-            }
+        
+        let itemsFetchRequest = NSFetchRequest<NSFetchRequestResult> (entityName: "userInformation")
+        
+        let fetchedUser = try! container.viewContext.fetch(itemsFetchRequest) as! [UserInformation]
+        
+        for i in fetchedUser{
+            if usernameTextField.text == i.username {
+                if passwordTextField.text == i.password {
         }
-        
-        
+            else{
+                let alert = UIAlertController(title: "Please fill all the fields", message: "", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                    NSLog("The \"OK\" alert occured.")
+                }))
+                self.present(alert, animated: true, completion: nil)
+        }
+            }
+    //@IBAction func loginGoogleButton(_ sender: Any) {
+    }
+    //@IBAction func loginFacebookButton(_ sender: Any) {
+    }
     
         
+        
     
     
-  //  @IBAction func loginGoogleButton(_ sender: Any) {
-
-
-
-
-
-   // @IBAction func loginFacebookButton(_ sender: Any) {
-
-
-/*let userEmail = userEmailTextField.text
-let userPassword = userPasswordTextField.text
-
-let userEmailStored = NSUserDefaults.standardUserDefaults().stringForKey("userEmail")
-let userPasswordStored = NSUserDefaults.standardUserDefaults().stringForKey("userPassword")
-
-if (userEmailStored == userEmail && userPasswordStored == userPassword) {
-    NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isUserLoggedIn")
-    NSUserDefaults.standardUserDefaults().synchronize()
-    self.dismissViewControllerAnimated(true, completion: nil)
-}
-    
-else {
-    var failAlert = UIAlertController(title: "Alert", message: "Your username or password is incorrect.", preferredStyle: UIAlertControllerStyle.Alert)
-    let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
-    failAlert.addAction(okAction)
-    self.presentViewController(failAlert, animated: true, completion: nil)
-    
-}*/
 
 }
-}
+
+

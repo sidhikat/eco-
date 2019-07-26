@@ -296,10 +296,6 @@
                                 <rect key="frame" x="96" y="682" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Google"/>
-                                <connections>
-                                    <action selector="googleLoginButton:" destination="0R3-aK-yPe" eventType="touchUpInside" id="gJl-Xb-zxc"/>
-                                    <action selector="loginGoogleButton:" destination="0R3-aK-yPe" eventType="touchUpInside" id="xFG-AO-UnF"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3BR-Ve-z7k">
                                 <rect key="frame" x="65" y="788" width="251" height="30"/>
@@ -313,10 +309,6 @@
                                 <rect key="frame" x="236" y="682" width="67" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Facebook"/>
-                                <connections>
-                                    <action selector="facebookLoginButton:" destination="0R3-aK-yPe" eventType="touchUpInside" id="9vd-NY-YZH"/>
-                                    <action selector="loginFacebookButton:" destination="0R3-aK-yPe" eventType="touchUpInside" id="bGP-Hn-RYY"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
