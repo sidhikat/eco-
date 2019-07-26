@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		225017AA22EA4A3B006158A6 /* JoeySummary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225017A922EA4A3B006158A6 /* JoeySummary.storyboard */; };
+		22C04C6B22EA4C6200EE6906 /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C04C6A22EA4C6200EE6906 /* Inventory.swift */; };
+		22C04C6D22EA4C8D00EE6906 /* InventoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C04C6C22EA4C8D00EE6906 /* InventoryManager.swift */; };
+		22C04C6F22EA4D1B00EE6906 /* summaryScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C04C6E22EA4D1B00EE6906 /* summaryScreenViewController.swift */; };
+		22C04C7122EA5F3D00EE6906 /* sampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C04C7022EA5F3D00EE6906 /* sampleTableViewCell.swift */; };
 		A2C5538022E283180023A29D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5537F22E283180023A29D /* AppDelegate.swift */; };
-		A2C5538222E283180023A29D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5538122E283180023A29D /* ViewController.swift */; };
 		A2C5538522E283180023A29D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C5538322E283180023A29D /* Main.storyboard */; };
 		A2C5538722E283190023A29D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2C5538622E283190023A29D /* Assets.xcassets */; };
 		A2C5538A22E283190023A29D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C5538822E283190023A29D /* LaunchScreen.storyboard */; };
@@ -26,9 +30,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		225017A922EA4A3B006158A6 /* JoeySummary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JoeySummary.storyboard; sourceTree = "<group>"; };
+		22C04C6A22EA4C6200EE6906 /* Inventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
+		22C04C6C22EA4C8D00EE6906 /* InventoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryManager.swift; sourceTree = "<group>"; };
+		22C04C6E22EA4D1B00EE6906 /* summaryScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = summaryScreenViewController.swift; sourceTree = "<group>"; };
+		22C04C7022EA5F3D00EE6906 /* sampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleTableViewCell.swift; sourceTree = "<group>"; };
 		A2C5537C22E283180023A29D /* eco-.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eco-.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C5537F22E283180023A29D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A2C5538122E283180023A29D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A2C5538422E283180023A29D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2C5538622E283190023A29D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2C5538922E283190023A29D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,11 +86,15 @@
 			isa = PBXGroup;
 			children = (
 				A2C5537F22E283180023A29D /* AppDelegate.swift */,
-				A2C5538122E283180023A29D /* ViewController.swift */,
 				A2C5538322E283180023A29D /* Main.storyboard */,
 				A2C5538622E283190023A29D /* Assets.xcassets */,
 				A2C5538822E283190023A29D /* LaunchScreen.storyboard */,
 				A2C5538B22E283190023A29D /* Info.plist */,
+				225017A922EA4A3B006158A6 /* JoeySummary.storyboard */,
+				22C04C6A22EA4C6200EE6906 /* Inventory.swift */,
+				22C04C6C22EA4C8D00EE6906 /* InventoryManager.swift */,
+				22C04C6E22EA4D1B00EE6906 /* summaryScreenViewController.swift */,
+				22C04C7022EA5F3D00EE6906 /* sampleTableViewCell.swift */,
 			);
 			path = "eco-";
 			sourceTree = "<group>";
@@ -179,6 +191,7 @@
 			files = (
 				A2C5538A22E283190023A29D /* LaunchScreen.storyboard in Resources */,
 				A2C5538722E283190023A29D /* Assets.xcassets in Resources */,
+				225017AA22EA4A3B006158A6 /* JoeySummary.storyboard in Resources */,
 				A2C5538522E283180023A29D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,7 +210,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2C5538222E283180023A29D /* ViewController.swift in Sources */,
+				22C04C6B22EA4C6200EE6906 /* Inventory.swift in Sources */,
+				22C04C6D22EA4C8D00EE6906 /* InventoryManager.swift in Sources */,
+				22C04C7122EA5F3D00EE6906 /* sampleTableViewCell.swift in Sources */,
+				22C04C6F22EA4D1B00EE6906 /* summaryScreenViewController.swift in Sources */,
 				A2C5538022E283180023A29D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
