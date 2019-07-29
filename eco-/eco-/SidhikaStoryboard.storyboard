@@ -32,11 +32,11 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" tag="100" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="taskCell" rowHeight="114" id="9Ip-jf-zac" customClass="TaskTableViewCell" customModule="eco_" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="414" height="114"/>
+                                            <tableViewCell clipsSubviews="YES" tag="100" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="taskCell" rowHeight="59" id="9Ip-jf-zac" customClass="TaskTableViewCell" customModule="eco_" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="414" height="59"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9Ip-jf-zac" id="tAr-9Y-c5t" customClass="TaskTableViewCell" customModule="eco_" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="113.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="58.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Task Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNc-sp-C5T">
@@ -59,37 +59,6 @@
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <state key="normal" image="expandButton"/>
                                                         </button>
-                                                        <tableView clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OTy-YW-Mhd">
-                                                            <rect key="frame" x="0.0" y="38" width="414" height="75"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <prototypes>
-                                                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="subtaskCell" id="soQ-D1-Gjx" customClass="SubtaskTableViewCell" customModule="eco_" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                                                    <autoresizingMask key="autoresizingMask"/>
-                                                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="soQ-D1-Gjx" id="e1U-lB-aTg">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                                                        <autoresizingMask key="autoresizingMask"/>
-                                                                        <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subtask" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8XW-pZ-Gej">
-                                                                                <rect key="frame" x="46" y="11" width="63" height="21"/>
-                                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                                <nil key="textColor"/>
-                                                                                <nil key="highlightedColor"/>
-                                                                            </label>
-                                                                        </subviews>
-                                                                    </tableViewCellContentView>
-                                                                    <connections>
-                                                                        <outlet property="subtaskLabel" destination="8XW-pZ-Gej" id="poW-Ly-T1t"/>
-                                                                    </connections>
-                                                                </tableViewCell>
-                                                            </prototypes>
-                                                            <connections>
-                                                                <outlet property="dataSource" destination="vmY-bR-YB0" id="ghN-7Q-nUw"/>
-                                                                <outlet property="delegate" destination="vmY-bR-YB0" id="hFH-9b-7hn"/>
-                                                            </connections>
-                                                        </tableView>
                                                     </subviews>
                                                 </tableViewCellContentView>
                                                 <accessibility key="accessibilityConfiguration">
@@ -98,7 +67,6 @@
                                                 <connections>
                                                     <outlet property="checkBoxButton" destination="EaF-lV-Swm" id="lPH-46-CN2"/>
                                                     <outlet property="expandButton" destination="uh0-fU-JCw" id="vDU-8R-AlQ"/>
-                                                    <outlet property="subtaskTableView" destination="OTy-YW-Mhd" id="Rhs-EJ-J7d"/>
                                                     <outlet property="taskNameLabel" destination="QNc-sp-C5T" id="Dbb-bB-8DM"/>
                                                 </connections>
                                             </tableViewCell>

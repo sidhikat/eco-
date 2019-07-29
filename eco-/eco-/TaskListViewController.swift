@@ -15,10 +15,8 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         //expandButtonImageView.isUserInteractionEnabled = true
     }
-    
     var tasks = [
         Task(taskName: "sample", hasSubtasks: false),
         Task(taskName: "second task", hasSubtasks: true)
@@ -37,7 +35,7 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
     //return a cell and changes it's UI based on code
       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if(tableView.tag == 100){
+//        if(tableView.tag == 100){
         let cell = tableView.dequeueReusableCell(withIdentifier: "taskCell", for: indexPath) as! TaskTableViewCell
         cell.taskNameLabel.text = tasks[indexPath.row].taskName
         
@@ -48,14 +46,13 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
         cell.checkBoxButton.addTarget(self,action:#selector(btnClicked), for:.touchUpInside)
         
         return cell
-        }else{
-            let cell = tableView.dequeueReusableCell(withIdentifier: "subtaskCell", for: indexPath) as! SubtaskTableViewCell
-            cell.subtaskLabel.text = subtasks[indexPath.row]
-            return cell
-        }
+//        }else{
+//            let cell = tableView.dequeueReusableCell(withIdentifier: "subtaskCell", for: indexPath) as! SubtaskTableViewCell
+//            cell.subtaskLabel.text = subtasks[indexPath.row]
+//            return cell
+//        }
         
     }
-    
 
     @IBAction func btnClicked(_ sender: UIButton) {
         //sets image of new button as completedCheckbox

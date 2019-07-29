@@ -12,7 +12,6 @@ import UIKit
 class TaskTableViewCell: UITableViewCell{
     
     //@IBOutlet weak var subtaskLabel: UILabel!
-    @IBOutlet weak var subtaskTableView: UITableView!
     @IBOutlet weak var taskNameLabel: UILabel!
     @IBOutlet weak var expandButton: UIButton!
     @IBOutlet weak var checkBoxButton: UIButton!
@@ -27,13 +26,13 @@ class TaskTableViewCell: UITableViewCell{
         // Configure the view for the selected state
     }
     
-    func setTableViewDataSourceDelegate
-        <D: UITableViewDelegate & UITableViewDataSource>(_ dataSourceDelegate: D, forRow row: Int){
-        subtaskTableView.delegate = dataSourceDelegate
-        subtaskTableView.dataSource = dataSourceDelegate
-        
-        subtaskTableView.reloadData()
-    }
+//    func setTableViewDataSourceDelegate
+//        <D: UITableViewDelegate & UITableViewDataSource>(_ dataSourceDelegate: D, forRow row: Int){
+//        subtaskTableView.delegate = dataSourceDelegate
+//        subtaskTableView.dataSource = dataSourceDelegate
+//
+//        subtaskTableView.reloadData()
+//    }
     
 
 }
