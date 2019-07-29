@@ -15,5 +15,9 @@ struct OrgCategory {
     var category : String
     var description : String
     var image : String
-    
+}
+
+struct organization {
+    var orgName: String
+    var orgMission: String
 }

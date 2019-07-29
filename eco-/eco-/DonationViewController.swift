@@ -43,11 +43,13 @@ class DonationViewController: UIViewController {
         BeeButton.layer.cornerRadius = 4
         TreeButton.layer.cornerRadius = 4
         SeaButton.layer.cornerRadius = 4
+        btnBee.layer.cornerRadius = 4
         
         //BeeButton.setTitle("Button Title", forState: UIControl.State.Normal)
         BeeButton.setTitle(orgCategory[0].description,for: .normal)
         TreeButton.setTitle(orgCategory[1].description, for: .normal)
         SeaButton.setTitle(orgCategory[2].description, for: .normal)
+        btnBee.setTitle(orgCategory[0].description, for: .normal)
     }
     
     // testing for the drop down
