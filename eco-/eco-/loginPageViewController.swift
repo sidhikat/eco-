@@ -49,7 +49,25 @@ class loginPageViewController: UIViewController {
         let fetchedUser = try! container.viewContext.fetch(itemsFetchRequest) as! [UserInformation]
         
         for i in fetchedUser{
-            if usernameTextField.text == i.username {
+            print(usernameTextField.text)
+            print(i.username) 
+          
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+   /*         if usernameTextField.text == i.username {
                 if passwordTextField.text != i.password {
                     let alert = UIAlertController(title: "Username and password don't match", message: "Please, try again", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
@@ -74,7 +92,7 @@ class loginPageViewController: UIViewController {
                 self.present(alert, animated: true, completion: nil)
             }
 
-        }
+        }*/
     
 /*let alert = UIAlertController(title: "Login succesfull", message: "", preferredStyle: .alert)
 alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in

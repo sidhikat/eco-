@@ -36,6 +36,8 @@ class signUpScreen: UIViewController {
     
     @IBOutlet weak var confirmPasswordTextField: UITextField!
     
+    @IBOutlet weak var signUpButton: UIButton!
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -45,7 +47,10 @@ class signUpScreen: UIViewController {
     }
         
 }
+    
     @IBAction func signUpButtonPressed(_ sender: Any) {
+        
+        
         
         //var userFirstName = firstNameTextField.text
         //Assign variable to the text content of the text field
