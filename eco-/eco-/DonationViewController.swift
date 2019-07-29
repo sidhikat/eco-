@@ -30,6 +30,14 @@ class DonationViewController: UIViewController {
         OrgCategory(id: 2, category: "Seas", description: "Clean the SEAS!", image: "sea")
     ]
     
+    // Organization
+    let org = [
+        organization(orgName: "The Honeybee Conservancy", orgMission: "The Honeybee Conservancy & Anthophilous is a 501c3 non-profit established in 2009 in response to the bee crisis. They engage in education, outreach, support research and build bee habitats. They are a Project of Social and Environmental Entrepreneurs."),
+        organization(orgName: "One Tree Planted", orgMission: "One Tree Planted is an environmental charity, they are dedicated to making it easier for individuals and businesses to give back to the environment, fight climate change, protect biodiversity and help reforestation efforts around the world. All by planting trees!"),
+        organization(orgName: "Oceana", orgMission: "Oceana is the largest organization in the world solely devoted to marine conservation. It was established in 2001 by The Pew Charitable Trusts. Since its founding, Oceana has achieved hundreds of concrete policy victories for marine life and habitats.")
+    ]
+    
+    
     // Declaring header and subheader description
     let header: String = "Donation"
     let subHeader: String = "Choose which organization will benefit from your productivity! For every hour you spent completing your task, we will donate $1 to your chosen organization!"
