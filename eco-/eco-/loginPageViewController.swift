@@ -9,11 +9,6 @@
 import UIKit
 import CoreData
 
-
-
-
-
-
 class loginPageViewController: UIViewController {
     var container: NSPersistentContainer!
     
@@ -48,32 +43,59 @@ class loginPageViewController: UIViewController {
     
     @IBAction func loginButton(_ sender: Any) {
         
-        let itemsFetchRequest = NSFetchRequest<NSFetchRequestResult> (entityName: "userInformation")
-        
+        let itemsFetchRequest = NSFetchRequest<NSFetchRequestResult> (entityName: "UserInformation")
+        //let deleteRequest = NSBatchDeleteRequest(fetchRequest: itemsFetchRequest)
+        //try! container.persistentStoreCoordinator.execute(deleteRequest , with: container.viewContext)
         let fetchedUser = try! container.viewContext.fetch(itemsFetchRequest) as! [UserInformation]
         
         for i in fetchedUser{
             if usernameTextField.text == i.username {
-                if passwordTextField.text == i.password {
-        }
-            else{
-                let alert = UIAlertController(title: "Please fill all the fields", message: "", preferredStyle: .alert)
+                if passwordTextField.text != i.password {
+                    let alert = UIAlertController(title: "Username and password don't match", message: "Please, try again", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                        NSLog("The \"OK\" alert occured.")
+                    }))
+                    self.present(alert, animated: true, completion: nil)
+                    }
+                else {
+                    let alert = UIAlertController(title: "Login succesfull", message: "", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                        NSLog("The \"OK\" alert occured.")
+                    }))
+                    self.present(alert, animated: true, completion: nil)
+                }
+                
+                }
+            else {
+                let alert = UIAlertController(title: "Username and password don't match", message: "", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
                     NSLog("The \"OK\" alert occured.")
                 }))
                 self.present(alert, animated: true, completion: nil)
-        }
             }
+
+        }
+    
+/*let alert = UIAlertController(title: "Login succesfull", message: "", preferredStyle: .alert)
+alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+    NSLog("The \"OK\" alert occured.")
+}))
+self.present(alert, animated: true, completion: nil)*/
+
+        
+            
     //@IBAction func loginGoogleButton(_ sender: Any) {
-    }
+    
     //@IBAction func loginFacebookButton(_ sender: Any) {
+
+    
+        
+        
+    
+    
+
+
+
+
+        }
     }
-    
-        
-        
-    
-    
-
-}
-
-
