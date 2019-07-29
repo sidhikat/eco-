@@ -94,7 +94,7 @@
                                             <action selector="onClickShow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xB7-aM-JTB"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xoz-H7-xcI">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xoz-H7-xcI">
                                         <rect key="frame" x="0.0" y="38" width="347" height="20.5"/>
                                         <color key="backgroundColor" white="0.89668057933789946" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -102,6 +102,15 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="Xoz-H7-xcI" firstAttribute="leading" secondItem="cZp-dx-VDb" secondAttribute="leading" id="4zY-2B-n6m"/>
+                                    <constraint firstAttribute="bottom" secondItem="Xoz-H7-xcI" secondAttribute="bottom" id="DY4-oE-7A0"/>
+                                    <constraint firstItem="Xoz-H7-xcI" firstAttribute="top" secondItem="nhS-ub-J6n" secondAttribute="bottom" constant="8" id="HNb-9I-Dlz"/>
+                                    <constraint firstAttribute="bottom" secondItem="Xoz-H7-xcI" secondAttribute="bottom" id="UKw-qg-eCG"/>
+                                    <constraint firstItem="Xoz-H7-xcI" firstAttribute="leading" secondItem="cZp-dx-VDb" secondAttribute="leading" id="bT5-Xx-1il"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xoz-H7-xcI" secondAttribute="trailing" id="qFu-AV-jqa"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xoz-H7-xcI" secondAttribute="trailing" id="sD5-0H-JBF"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

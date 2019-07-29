@@ -45,6 +45,8 @@ class DonationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        beeLabelShow.isHidden = true;
+        
         // Displaying the header, subheadr, and image
         headerLabel.text = header
         subheaderLabel.text = subHeader
@@ -66,12 +68,15 @@ class DonationViewController: UIViewController {
     @IBAction func onClickShow(_ sender: Any) {
         showDescription = !showDescription
         
-        self.btnBee.setTitle("Test", for: .normal)
+        self.btnBee.setTitle(org[0].orgName, for: .normal)
         UIView.animate(withDuration: 0.3){
             self.beeLabelShow.isHidden = !self.showDescription
             self.btnBee.setImage(UIImage(named: !self.showDescription ? "dropdown" : "dropup"), for: .normal)
+            self.beeLabelShow.text = self.org[0].orgMission
         }
-    
+                
     }
+    
+
     
 }
