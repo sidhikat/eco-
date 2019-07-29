@@ -94,7 +94,7 @@
                                             <action selector="onClickShow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xB7-aM-JTB"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xoz-H7-xcI">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xoz-H7-xcI">
                                         <rect key="frame" x="0.0" y="38" width="347" height="20.5"/>
                                         <color key="backgroundColor" white="0.89668057933789946" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -102,6 +102,12 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="nhS-ub-J6n" firstAttribute="top" secondItem="cZp-dx-VDb" secondAttribute="top" id="cjB-Tg-lwZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="nhS-ub-J6n" secondAttribute="trailing" id="xca-tG-FBD"/>
+                                    <constraint firstItem="Xoz-H7-xcI" firstAttribute="top" secondItem="nhS-ub-J6n" secondAttribute="bottom" constant="8" id="zNK-p2-hyI"/>
+                                    <constraint firstItem="nhS-ub-J6n" firstAttribute="leading" secondItem="cZp-dx-VDb" secondAttribute="leading" id="zvQ-gL-GMw"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
