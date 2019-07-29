@@ -43,7 +43,7 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
         //cell.checkBoxButton.tag = indexPath.row
         
         //listens to the button and goes to the function specified (btnclicked)
-        cell.checkBoxButton.addTarget(self,action:#selector(btnClicked), for:.touchUpInside)
+        cell.checkBoxButton.addTarget(self, action:#selector(btnClicked), for:.touchUpInside)
         
         return cell
 //        }else{
