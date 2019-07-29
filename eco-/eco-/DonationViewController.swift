@@ -16,9 +16,11 @@ class DonationViewController: UIViewController {
     @IBOutlet weak var subheaderLabel: UILabel!
     @IBOutlet weak var LogoImage: UIImageView!
     
-    @IBOutlet weak var BeeButton: UIButton!
     @IBOutlet weak var TreeButton: UIButton!
+    @IBOutlet weak var treeLabelShow: UILabel!
+    
     @IBOutlet weak var SeaButton: UIButton!
+    @IBOutlet weak var seaLabelShow: UILabel!
     
     @IBOutlet weak var btnBee: UIButton!
     @IBOutlet weak var beeLabelShow: UILabel!
@@ -45,26 +47,26 @@ class DonationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        beeLabelShow.isHidden = true;
+        beeLabelShow.isHidden = true
+        treeLabelShow.isHidden = true
+        seaLabelShow.isHidden = true
         
         // Displaying the header, subheadr, and image
         headerLabel.text = header
         subheaderLabel.text = subHeader
-        BeeButton.layer.cornerRadius = 4
         TreeButton.layer.cornerRadius = 4
         SeaButton.layer.cornerRadius = 4
         btnBee.layer.cornerRadius = 4
         
         //BeeButton.setTitle("Button Title", forState: UIControl.State.Normal)
-        BeeButton.setTitle(orgCategory[0].description,for: .normal)
         TreeButton.setTitle(orgCategory[1].description, for: .normal)
         SeaButton.setTitle(orgCategory[2].description, for: .normal)
         btnBee.setTitle(orgCategory[0].description, for: .normal)
     }
     
-    // testing for the drop down
+    // drop down for bees button
     var showDescription = false
-    
+
     @IBAction func onClickShow(_ sender: Any) {
         showDescription = !showDescription
         
@@ -74,9 +76,35 @@ class DonationViewController: UIViewController {
             self.btnBee.setImage(UIImage(named: !self.showDescription ? "dropdown" : "dropup"), for: .normal)
             self.beeLabelShow.text = self.org[0].orgMission
         }
-                
     }
     
+    // drop down for tree button
+    var showDescriptionTree = false
+    
+    @IBAction func onClickTreeButton(_ sender: Any) {
+        showDescriptionTree = !showDescriptionTree
+        
+        self.TreeButton.setTitle(org[1].orgName, for: .normal)
+        UIView.animate(withDuration: 0.3){
+            self.treeLabelShow.isHidden = !self.showDescriptionTree
+            //self.TreeButton.setImage(UIImage(named: !self.showDescriptionTree ? "dropdown" : "dropup"), for: .normal)
+            self.treeLabelShow.text = self.org[1].orgMission
+        }
+    }
+    
+    // drop down for sea button
+    var showDescriptionSea = false
+    
+    @IBAction func onClickSeaButton(_ sender: Any) {
+        showDescriptionSea = !showDescriptionSea
+        
+        self.SeaButton.setTitle(org[2].orgName, for: .normal)
+        UIView.animate(withDuration: 0.3){
+            self.seaLabelShow.isHidden = !self.showDescriptionSea
+            //self.TreeButton.setImage(UIImage(named: !self.showDescriptionTree ? "dropdown" : "dropup"), for: .normal)
+            self.seaLabelShow.text = self.org[2].orgMission
+        }
+    }
 
     
 }
