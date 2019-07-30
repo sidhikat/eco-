@@ -8,18 +8,31 @@
 
 import UIKit
 
-class TaskTableViewCell: UITableViewCell {
-    @IBOutlet weak var taskNameLabel: UILabel!
+//includes all elements part of the taskList table cell
+class TaskTableViewCell: UITableViewCell{
     
-//    override func awakeFromNib() {
-//        super.awakeFromNib()
-//        // Initialization code
-//    }
+    //@IBOutlet weak var subtaskLabel: UILabel!
+    @IBOutlet weak var taskNameLabel: UILabel!
+    @IBOutlet weak var expandButton: UIButton!
+    @IBOutlet weak var checkBoxButton: UIButton!
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+    }
+    
+//    func setTableViewDataSourceDelegate
+//        <D: UITableViewDelegate & UITableViewDataSource>(_ dataSourceDelegate: D, forRow row: Int){
+//        subtaskTableView.delegate = dataSourceDelegate
+//        subtaskTableView.dataSource = dataSourceDelegate
 //
-//    override func setSelected(_ selected: Bool, animated: Bool) {
-//        super.setSelected(selected, animated: animated)
-//
-//        // Configure the view for the selected state
+//        subtaskTableView.reloadData()
 //    }
+    
 
 }
