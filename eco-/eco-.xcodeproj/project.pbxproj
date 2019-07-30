@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		726C3F7722F0F4F000597C3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726C3F7622F0F4F000597C3B /* Main.storyboard */; };
+		72744CD822EF8FB600B227D9 /* addTaskScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72744CD722EF8FB600B227D9 /* addTaskScreen.swift */; };
+		727B56B822E6B87B006B9627 /* loginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727B56B722E6B87B006B9627 /* loginPageViewController.swift */; };
+		727B573422E7BFC1006B9627 /* userInformation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 727B573222E7BFC1006B9627 /* userInformation.xcdatamodeld */; };
+		727B577922E8CDB6006B9627 /* signUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727B577822E8CDB6006B9627 /* signUpScreen.swift */; };
+		727B577C22E90689006B9627 /* hohenfeld.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 727B577A22E90689006B9627 /* hohenfeld.storyboard */; };
 		A2C5538022E283180023A29D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5537F22E283180023A29D /* AppDelegate.swift */; };
 		A2C5538222E283180023A29D /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5538122E283180023A29D /* TaskListViewController.swift */; };
-		A2C5538522E283180023A29D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C5538322E283180023A29D /* Main.storyboard */; };
 		A2C5538722E283190023A29D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2C5538622E283190023A29D /* Assets.xcassets */; };
 		A2C5538A22E283190023A29D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C5538822E283190023A29D /* LaunchScreen.storyboard */; };
 		A2C5539522E283190023A29D /* eco_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5539422E283190023A29D /* eco_Tests.swift */; };
@@ -30,10 +35,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		726C3F7622F0F4F000597C3B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		72744CD722EF8FB600B227D9 /* addTaskScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addTaskScreen.swift; sourceTree = "<group>"; };
+		727B56B722E6B87B006B9627 /* loginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPageViewController.swift; sourceTree = "<group>"; };
+		727B573322E7BFC1006B9627 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		727B577822E8CDB6006B9627 /* signUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpScreen.swift; sourceTree = "<group>"; };
+		727B577B22E90689006B9627 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "eco-/Base.lproj/hohenfeld.storyboard"; sourceTree = "<group>"; };
 		A2C5537C22E283180023A29D /* eco-.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eco-.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C5537F22E283180023A29D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2C5538122E283180023A29D /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
-		A2C5538422E283180023A29D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2C5538622E283190023A29D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2C5538922E283190023A29D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2C5538B22E283190023A29D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,6 +77,7 @@
 		A2C5537322E283180023A29D = {
 			isa = PBXGroup;
 			children = (
+				727B573222E7BFC1006B9627 /* userInformation.xcdatamodeld */,
 				A2C5537E22E283180023A29D /* eco- */,
 				A2C5539322E283190023A29D /* eco-Tests */,
 				A2C5537D22E283180023A29D /* Products */,
@@ -87,9 +98,13 @@
 			children = (
 				A2C553A822E66A5D0023A29D /* Model */,
 				A2C5537F22E283180023A29D /* AppDelegate.swift */,
-				A2C5538122E283180023A29D /* TaskListViewController.swift */,
 				A2C5540622E7AB6F0023A29D /* DonationViewController.swift */,
-				A2C5538322E283180023A29D /* Main.storyboard */,
+				72744CD722EF8FB600B227D9 /* addTaskScreen.swift */,
+				727B577822E8CDB6006B9627 /* signUpScreen.swift */,
+				727B56B722E6B87B006B9627 /* loginPageViewController.swift */,
+				A2C5538122E283180023A29D /* TaskListViewController.swift */,
+				726C3F7622F0F4F000597C3B /* Main.storyboard */,
+				727B577A22E90689006B9627 /* hohenfeld.storyboard */,
 				A2C5538622E283190023A29D /* Assets.xcassets */,
 				A2C5538822E283190023A29D /* LaunchScreen.storyboard */,
 				A2C5538B22E283190023A29D /* Info.plist */,
@@ -198,8 +213,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2C5538A22E283190023A29D /* LaunchScreen.storyboard in Resources */,
+				727B577C22E90689006B9627 /* hohenfeld.storyboard in Resources */,
 				A2C5538722E283190023A29D /* Assets.xcassets in Resources */,
-				A2C5538522E283180023A29D /* Main.storyboard in Resources */,
+				726C3F7722F0F4F000597C3B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +239,12 @@
 				A2C5538022E283180023A29D /* AppDelegate.swift in Sources */,
 				A2C5540722E7AB7F0023A29D /* DonationViewController.swift in Sources */,
 				A2C553A722E667420023A29D /* TaskTableViewCell.swift in Sources */,
+				727B56B822E6B87B006B9627 /* loginPageViewController.swift in Sources */,
+				A2C5538222E283180023A29D /* TaskListViewController.swift in Sources */,
+				72744CD822EF8FB600B227D9 /* addTaskScreen.swift in Sources */,
+				A2C5538022E283180023A29D /* AppDelegate.swift in Sources */,
+				727B573422E7BFC1006B9627 /* userInformation.xcdatamodeld in Sources */,
+				727B577922E8CDB6006B9627 /* signUpScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,12 +267,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A2C5538322E283180023A29D /* Main.storyboard */ = {
+		727B577A22E90689006B9627 /* hohenfeld.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A2C5538422E283180023A29D /* Base */,
+				727B577B22E90689006B9627 /* Base */,
 			);
-			name = Main.storyboard;
+			name = hohenfeld.storyboard;
 			sourceTree = "<group>";
 		};
 		A2C5538822E283190023A29D /* LaunchScreen.storyboard */ = {
@@ -485,6 +507,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		727B573222E7BFC1006B9627 /* userInformation.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				727B573322E7BFC1006B9627 /* Model.xcdatamodel */,
+			);
+			currentVersion = 727B573322E7BFC1006B9627 /* Model.xcdatamodel */;
+			path = userInformation.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A2C5537422E283180023A29D /* Project object */;
 }
