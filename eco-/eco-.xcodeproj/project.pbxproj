@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A27E3DE722EF9873006C49F6 /* CongratsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27E3DE622EF9873006C49F6 /* CongratsScreenViewController.swift */; };
 		A27E3DE922EF9AAA006C49F6 /* plantAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = A27E3DE822EF9AAA006C49F6 /* plantAnimation.json */; };
-		A27E3DF322F0B17C006C49F6 /* Congrats.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27E3DF222F0B17C006C49F6 /* Congrats.storyboard */; };
 		A2C5538022E283180023A29D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5537F22E283180023A29D /* AppDelegate.swift */; };
 		A2C5538222E283180023A29D /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5538122E283180023A29D /* TaskListViewController.swift */; };
 		A2C5538522E283180023A29D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C5538322E283180023A29D /* Main.storyboard */; };
@@ -36,7 +35,6 @@
 /* Begin PBXFileReference section */
 		A27E3DE622EF9873006C49F6 /* CongratsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsScreenViewController.swift; sourceTree = "<group>"; };
 		A27E3DE822EF9AAA006C49F6 /* plantAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = plantAnimation.json; sourceTree = "<group>"; };
-		A27E3DF222F0B17C006C49F6 /* Congrats.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Congrats.storyboard; sourceTree = "<group>"; };
 		A2C5537C22E283180023A29D /* eco-.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eco-.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C5537F22E283180023A29D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2C5538122E283180023A29D /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
@@ -99,7 +97,6 @@
 				A2C5540622E7AB6F0023A29D /* DonationViewController.swift */,
 				A27E3DE622EF9873006C49F6 /* CongratsScreenViewController.swift */,
 				A2C5540E22E7B8F00023A29D /* SidhikaStoryboard.storyboard */,
-				A27E3DF222F0B17C006C49F6 /* Congrats.storyboard */,
 				A27E3DE822EF9AAA006C49F6 /* plantAnimation.json */,
 				A2C5538622E283190023A29D /* Assets.xcassets */,
 				A2C5538822E283190023A29D /* LaunchScreen.storyboard */,
@@ -210,7 +207,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2C5538A22E283190023A29D /* LaunchScreen.storyboard in Resources */,
-				A27E3DF322F0B17C006C49F6 /* Congrats.storyboard in Resources */,
 				A2C5540F22E7B8F00023A29D /* SidhikaStoryboard.storyboard in Resources */,
 				A2C5538722E283190023A29D /* Assets.xcassets in Resources */,
 				A2C5538522E283180023A29D /* Main.storyboard in Resources */,
