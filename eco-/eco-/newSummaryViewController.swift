@@ -9,7 +9,6 @@
 import UIKit
 
 class newSummaryViewController: UIViewController {
-    @IBOutlet weak var graphView: UIView!
     @IBOutlet weak var firstLabelView: UIView!
     @IBOutlet weak var secondLabelView: UIView!
     @IBOutlet weak var thirdLabelView: UIView!
@@ -28,7 +27,6 @@ class newSummaryViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        sampleViews.append(graphView)
         sampleViews.append(firstLabelView)
         sampleViews.append(secondLabelView)
         sampleViews.append(thirdLabelView)
