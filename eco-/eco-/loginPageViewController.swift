@@ -41,6 +41,9 @@ class loginPageViewController: UIViewController {
         }
     }
     
+    
+    
+  
     @IBAction func loginButton(_ sender: Any) {
         
         let itemsFetchRequest = NSFetchRequest<NSFetchRequestResult> (entityName: "UserInformation")
@@ -48,10 +51,24 @@ class loginPageViewController: UIViewController {
         //try! container.persistentStoreCoordinator.execute(deleteRequest , with: container.viewContext)
         let fetchedUser = try! container.viewContext.fetch(itemsFetchRequest) as! [UserInformation]
         
-        for i in fetchedUser{
-            print(usernameTextField.text)
-            print(i.username) 
-          
+        for i in fetchedUser {
+            if (usernameTextField.text == i.username) && (passwordTextField.text == i.password) {
+                let alert = UIAlertController(title: "Login succesfull", message: "", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                    NSLog("The \"OK\" alert occured.")
+                }))
+                self.present(alert, animated: true, completion: nil)
+                
+            }
+        }
+        print (fetchedUser)
+        
+       /* let alert = UIAlertController(title: "Username and password don't match", message: "", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+            NSLog("The \"OK\" alert occured.")
+        }))
+        self.present(alert, animated: true, completion: nil)*/
+                
             
             
             
@@ -117,4 +134,4 @@ self.present(alert, animated: true, completion: nil)*/
 
         }
 }
-}
+

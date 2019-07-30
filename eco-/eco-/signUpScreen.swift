@@ -67,32 +67,34 @@ class signUpScreen: UIViewController {
             var userFirstName = temp
             let userInformation = NSEntityDescription.insertNewObject(forEntityName: "UserInformation", into: container.viewContext) as! UserInformation
             userInformation.firstName = userFirstName
-            try! container.viewContext.save()
+            //try! container.viewContext.save()
         }
         if let temp = lastNameTextField.text {
             var userLastName = temp
             let userInformation = NSEntityDescription.insertNewObject(forEntityName: "UserInformation", into: container.viewContext) as! UserInformation
             userInformation.lastName = userLastName
-            try! container.viewContext.save()
+            //try! container.viewContext.save()
         }
         if let  temp = emailAddressTextField.text{
             var userEmailAddress = temp
             let userInformation = NSEntityDescription.insertNewObject(forEntityName: "UserInformation", into: container.viewContext) as! UserInformation
             userInformation.emailAddress = userEmailAddress
-            try! container.viewContext.save()
+           // try! container.viewContext.save()
         }
         if let temp = usernameTextField.text{
             var userUsername = temp
             let userInformation = NSEntityDescription.insertNewObject(forEntityName: "UserInformation", into: container.viewContext) as! UserInformation
             userInformation.username = userUsername
-            try! container.viewContext.save()
+           // try! container.viewContext.save()
         }
         if let temp = passwordTextField.text {
             var userUsername = temp
             let userInformation = NSEntityDescription.insertNewObject(forEntityName: "UserInformation", into: container.viewContext) as! UserInformation
             userInformation.password = userPassword
-            try! container.viewContext.save()
+           // try! container.viewContext.save()
         }
+        
+        try! container.viewContext.save()
         
         //Make sure the user is filling all the fields
      
