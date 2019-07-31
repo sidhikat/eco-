@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 //import Lottie
 
 class WelcomePageViewController: UIViewController {
@@ -17,6 +18,8 @@ class WelcomePageViewController: UIViewController {
     @IBOutlet weak var btnTodo: UIButton!
     @IBOutlet weak var btnFocus: UIButton!
     @IBOutlet weak var btnSummary: UIButton!
+    var container:NSPersistentContainer!
+
     
     
     override func viewDidLoad() {
