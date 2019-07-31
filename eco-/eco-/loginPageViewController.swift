@@ -61,13 +61,12 @@ class loginPageViewController: UIViewController {
                 
             }
         }
-        print (fetchedUser)
         
-       /* let alert = UIAlertController(title: "Username and password don't match", message: "", preferredStyle: .alert)
+       let alert = UIAlertController(title: "Username and password don't match", message: "", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
             NSLog("The \"OK\" alert occured.")
         }))
-        self.present(alert, animated: true, completion: nil)*/
+        self.present(alert, animated: true, completion: nil)
                 
             
             

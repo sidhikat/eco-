@@ -52,7 +52,6 @@ class signUpScreen: UIViewController {
         
         
         
-        //var userFirstName = firstNameTextField.text
         //Assign variable to the text content of the text field
         var userLastName = lastNameTextField.text
         var userEmailAddress = emailAddressTextField.text
@@ -62,36 +61,28 @@ class signUpScreen: UIViewController {
         
         
         //User information storage
+        let userInformation = NSEntityDescription.insertNewObject(forEntityName: "UserInformation", into: container.viewContext) as! UserInformation
         
-        if let temp = firstNameTextField.text{
-            var userFirstName = temp
-            let userInformation = NSEntityDescription.insertNewObject(forEntityName: "UserInformation", into: container.viewContext) as! UserInformation
+        if let temp_FirstName = firstNameTextField.text{
+            var userFirstName = temp_FirstName
             userInformation.firstName = userFirstName
-            //try! container.viewContext.save()
         }
-        if let temp = lastNameTextField.text {
-            var userLastName = temp
-            let userInformation = NSEntityDescription.insertNewObject(forEntityName: "UserInformation", into: container.viewContext) as! UserInformation
+        if let temp_LastName = lastNameTextField.text {
+            var userLastName = temp_LastName
             userInformation.lastName = userLastName
-            //try! container.viewContext.save()
         }
-        if let  temp = emailAddressTextField.text{
-            var userEmailAddress = temp
-            let userInformation = NSEntityDescription.insertNewObject(forEntityName: "UserInformation", into: container.viewContext) as! UserInformation
+        if let  temp_emailAddress = emailAddressTextField.text{
+            var userEmailAddress = temp_emailAddress
             userInformation.emailAddress = userEmailAddress
-           // try! container.viewContext.save()
         }
-        if let temp = usernameTextField.text{
-            var userUsername = temp
-            let userInformation = NSEntityDescription.insertNewObject(forEntityName: "UserInformation", into: container.viewContext) as! UserInformation
+        if let temp_Username = usernameTextField.text{
+            var userUsername = temp_Username
             userInformation.username = userUsername
-           // try! container.viewContext.save()
         }
-        if let temp = passwordTextField.text {
-            var userUsername = temp
-            let userInformation = NSEntityDescription.insertNewObject(forEntityName: "UserInformation", into: container.viewContext) as! UserInformation
+        if let temp_Password = passwordTextField.text {
+            var userPassword = temp_Password
             userInformation.password = userPassword
-           // try! container.viewContext.save()
+           
         }
         
         try! container.viewContext.save()
