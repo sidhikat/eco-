@@ -44,7 +44,7 @@ class WelcomePageViewController: UIViewController {
         // check what timeOfDay is
         if (timeOfDay == "PM"){
             // print good afternoon is PM
-            greetingLabel.text = "Good afternoon, Sidhika" + " 🌙"
+            greetingLabel.text = "Good afternoon, Sidhika" + " 🌤"
             
             //let str : String = "Smiley \u{1F603}"
         }else{
@@ -61,7 +61,6 @@ class WelcomePageViewController: UIViewController {
         
         // put the time/date into string
         let str = formatter.string(from: Date())
-        print(str)
         
         let time = str.components(separatedBy: " ")
         
