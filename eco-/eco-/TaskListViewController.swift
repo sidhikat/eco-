@@ -7,10 +7,11 @@
 //
 
 import UIKit
-
+import CoreData
 
 class TaskListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+     var container:NSPersistentContainer!
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()

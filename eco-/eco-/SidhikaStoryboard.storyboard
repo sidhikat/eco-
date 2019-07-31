@@ -161,12 +161,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cje-HH-JHw">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cje-HH-JHw" userLabel="summaryButton">
                                 <rect key="frame" x="83" y="715" width="261" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Go_to_summary_button">
                                     <attributedString key="attributedTitle"/>
                                 </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dw-R4-DGe" userLabel="Exit">
+                                <rect key="frame" x="361" y="56" width="19" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="exitButton"/>
+                                <connections>
+                                    <segue destination="vmY-bR-YB0" kind="show" animates="NO" id="xe4-ou-uaB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -174,18 +182,24 @@
                     </view>
                     <connections>
                         <outlet property="congratsLabel" destination="ssK-8Q-dum" id="Z4n-i3-cPB"/>
+                        <outlet property="exitButton" destination="3dw-R4-DGe" id="eXM-ge-zxY"/>
+                        <outlet property="summaryButton" destination="cje-HH-JHw" id="WY3-OE-7fL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJF-dQ-D2q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1361" y="1056"/>
+            <point key="canvasLocation" x="1360.8695652173915" y="1055.3571428571429"/>
         </scene>
     </scenes>
     <resources>
         <image name="Go_to_summary_button" width="468" height="136"/>
         <image name="congrats_bee" width="466" height="484"/>
         <image name="emptyCheckbox" width="46" height="46"/>
+        <image name="exitButton" width="48" height="52"/>
         <image name="expandButton" width="37" height="23"/>
         <image name="focusButton" width="378" height="352"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="xe4-ou-uaB"/>
+    </inferredMetricsTieBreakers>
 </document>
