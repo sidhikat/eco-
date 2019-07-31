@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5FD5B75A22F0BE730007C1D4 /* WelcomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FD5B75922F0BE730007C1D4 /* WelcomePage.storyboard */; };
 		5FD5B75C22F0BECD0007C1D4 /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD5B75B22F0BECD0007C1D4 /* WelcomePageViewController.swift */; };
+		5FD79B9922F21723000DF77A /* confetti.json in Resources */ = {isa = PBXBuildFile; fileRef = 5FD79B9822F21723000DF77A /* confetti.json */; };
 		A2C5538022E283180023A29D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5537F22E283180023A29D /* AppDelegate.swift */; };
 		A2C5538222E283180023A29D /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5538122E283180023A29D /* TaskListViewController.swift */; };
 		A2C5538522E283180023A29D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C5538322E283180023A29D /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		5FD5B75922F0BE730007C1D4 /* WelcomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WelcomePage.storyboard; sourceTree = "<group>"; };
 		5FD5B75B22F0BECD0007C1D4 /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
+		5FD79B9822F21723000DF77A /* confetti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = confetti.json; path = ../../../../Downloads/confetti.json; sourceTree = "<group>"; };
 		A2C5537C22E283180023A29D /* eco-.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eco-.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C5537F22E283180023A29D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2C5538122E283180023A29D /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 		A2C5537E22E283180023A29D /* eco- */ = {
 			isa = PBXGroup;
 			children = (
+				5FD79B9822F21723000DF77A /* confetti.json */,
 				A2C553A822E66A5D0023A29D /* Model */,
 				A2C5537F22E283180023A29D /* AppDelegate.swift */,
 				A2C5538122E283180023A29D /* TaskListViewController.swift */,
@@ -204,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2C5538A22E283190023A29D /* LaunchScreen.storyboard in Resources */,
+				5FD79B9922F21723000DF77A /* confetti.json in Resources */,
 				A2C5538722E283190023A29D /* Assets.xcassets in Resources */,
 				5FD5B75A22F0BE730007C1D4 /* WelcomePage.storyboard in Resources */,
 				A2C5538522E283180023A29D /* Main.storyboard in Resources */,

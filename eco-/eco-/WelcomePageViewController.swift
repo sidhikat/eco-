@@ -7,6 +7,7 @@
 //
 
 import UIKit
+//import Lottie
 
 class WelcomePageViewController: UIViewController {
 
@@ -24,9 +25,9 @@ class WelcomePageViewController: UIViewController {
         displayGreeting()
         
         // rounding the button edges
-        btnTodo.layer.cornerRadius = 4
-        btnFocus.layer.cornerRadius = 4
-        btnSummary.layer.cornerRadius = 4
+        btnTodo.layer.cornerRadius = 5
+        btnFocus.layer.cornerRadius = 5
+        btnSummary.layer.cornerRadius = 5
         
         // assigning the button name
         btnTodo.setTitle("To-do list", for: .normal)
@@ -40,10 +41,12 @@ class WelcomePageViewController: UIViewController {
         // check what timeOfDay is
         if (timeOfDay == "PM"){
             // print good afternoon is PM
-            greetingLabel.text = "Good afternoon, Sidhika"
+            greetingLabel.text = "Good afternoon, Sidhika" + " 🌙"
+            
+            //let str : String = "Smiley \u{1F603}"
         }else{
             // print good morning if not
-            greetingLabel.text = "Good morning, Sidhika"
+            greetingLabel.text = "Good morning, Sidhika" + " ☀️"
         }
     }
     
