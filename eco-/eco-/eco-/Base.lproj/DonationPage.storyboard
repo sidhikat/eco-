@@ -47,7 +47,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhS-ub-J6n">
                                         <rect key="frame" x="0.0" y="0.0" width="347" height="30"/>
-                                        <color key="backgroundColor" red="0.3294117647" green="0.54117647059999996" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.4544920301" green="0.6735876435" blue="0.45666391769999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -69,7 +69,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSE-Fb-5k0">
                                         <rect key="frame" x="0.0" y="0.0" width="347" height="30"/>
-                                        <color key="backgroundColor" red="0.3294117647" green="0.54117647059999996" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.4544920301" green="0.6735876435" blue="0.45666391769999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="szv-Lh-WWG"/>
                                         </constraints>
@@ -95,7 +95,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FgI-3i-TkQ">
                                         <rect key="frame" x="0.0" y="0.0" width="347" height="30"/>
-                                        <color key="backgroundColor" red="0.3294117647" green="0.54117647059999996" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.4544920301" green="0.6735876435" blue="0.45666391769999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="n9r-Qs-35K"/>
                                             <constraint firstAttribute="width" constant="347" id="zJP-o2-LCP"/>
