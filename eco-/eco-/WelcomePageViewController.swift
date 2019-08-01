@@ -39,6 +39,12 @@ class WelcomePageViewController: UIViewController {
     }
     
     func displayGreeting() {
+        
+        let itemsFetchRequest = NSFetchRequest<NSFetchRequestResult> (entityName: "UserInformation")
+        print(itemsFetchRequest)
+        
+        
+        // grabing the user's time informaition
         let timeOfDay = getCurrentDateTime()
         
         // check what timeOfDay is
