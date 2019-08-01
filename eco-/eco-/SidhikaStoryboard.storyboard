@@ -98,7 +98,6 @@
                     <navigationItem key="navigationItem" title="Tasks" largeTitleDisplayMode="always" id="xgF-0r-YKB"/>
                     <connections>
                         <outlet property="popMeButton" destination="JMm-PT-gpT" id="NsY-Bb-suN"/>
-                        <outlet property="subtasksTableView" destination="Wnh-RK-bPA" id="GgS-IZ-xZ7"/>
                         <outlet property="subtasksView" destination="Uch-qi-qB4" id="zsI-Ss-dX4"/>
                         <outlet property="tableView" destination="AmL-cy-zv3" id="X7v-Tg-HRG"/>
                     </connections>
@@ -108,33 +107,6 @@
                     <rect key="frame" x="0.0" y="0.0" width="225" height="400"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wnh-RK-bPA">
-                            <rect key="frame" x="0.0" y="59" width="225" height="313"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.68951535220000004" green="0.79939025640000005" blue="0.58428043129999996" alpha="0.35420334510000001" colorSpace="custom" customColorSpace="displayP3"/>
-                            <prototypes>
-                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="subtaskCell" id="M3K-dH-7gk" customClass="SubtasksTableViewCell" customModule="eco_" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="28" width="225" height="44"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="M3K-dH-7gk" id="pLY-MJ-zKy">
-                                        <rect key="frame" x="0.0" y="0.0" width="225" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subtask Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V77-sl-yE1">
-                                                <rect key="frame" x="29" y="12" width="112" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </tableViewCellContentView>
-                                    <connections>
-                                        <outlet property="subtaskLabel" destination="V77-sl-yE1" id="6fr-mx-Mp5"/>
-                                    </connections>
-                                </tableViewCell>
-                            </prototypes>
-                        </tableView>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVp-zh-ZJD" userLabel="Exit">
                             <rect key="frame" x="189" y="16" width="14" height="15"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -262,8 +234,39 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d2S-tm-LdF" userLabel="topView">
                                 <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                                 <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wnh-RK-bPA">
+                                        <rect key="frame" x="0.0" y="52" width="300" height="261"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.68951535220000004" green="0.79939025640000005" blue="0.58428043129999996" alpha="0.35420334510000001" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="subtaskCell" id="M3K-dH-7gk" customClass="SubtasksTableViewCell" customModule="eco_" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="300" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="M3K-dH-7gk" id="pLY-MJ-zKy">
+                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subtask Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V77-sl-yE1">
+                                                            <rect key="frame" x="29" y="12" width="112" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="subtaskLabel" destination="V77-sl-yE1" id="6fr-mx-Mp5"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="4XK-SS-2qp" id="Vla-Ju-Iir"/>
+                                            <outlet property="delegate" destination="4XK-SS-2qp" id="nXK-3Z-Wgy"/>
+                                        </connections>
+                                    </tableView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TEST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMJ-hX-6J9">
-                                        <rect key="frame" x="129" y="52" width="41" height="21"/>
+                                        <rect key="frame" x="8" y="23" width="41" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -285,6 +288,7 @@
                     <value key="contentSizeForViewInPopover" type="size" width="300" height="300"/>
                     <size key="freeformSize" width="300" height="300"/>
                     <connections>
+                        <outlet property="subtasksTableView" destination="Wnh-RK-bPA" id="zrX-Et-tsu"/>
                         <outlet property="topView" destination="d2S-tm-LdF" id="gb0-bg-8tM"/>
                     </connections>
                 </viewController>

@@ -11,31 +11,24 @@ import CoreData
 
 class TaskListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIPopoverPresentationControllerDelegate {
     
-    @IBOutlet weak var subtasksTableView: UITableView!
-    @IBOutlet var subtasksView: UIView!
     var container:NSPersistentContainer!
     @IBOutlet weak var tableView: UITableView!
-    
     @IBOutlet weak var popMeButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.subtasksView.layer.cornerRadius = 10 //gives popover rounded edges
+       // self.subtasksView.layer.cornerRadius = 10 //gives popover rounded edges
         //expandButtonImageView.isUserInteractionEnabled = true
     }
     var tasks = [
         Task(taskName: "sample", hasSubtasks: false),
         Task(taskName: "second task", hasSubtasks: true)
         ]
-    var subtasks = ["subtask1", "subtask2"]
+ 
     
     //returns the number of rows/elements in the tasks array
       func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if(tableView.tag == 100){
             return tasks.count
-        }else{
-            return subtasks.count
-        }
     }
     
     //return a cell and changes it's UI based on code
