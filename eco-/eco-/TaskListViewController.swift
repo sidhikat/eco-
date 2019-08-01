@@ -13,7 +13,7 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
     
     var container:NSPersistentContainer!
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var popMeButton: UIButton!
+    @IBOutlet weak var addButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -55,31 +55,21 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
 //        self.view.addSubview(subtasksView)
 //        subtasksView.center = self.view.center
         let cell = tableView.cellForRow(at: indexPath)
-        tableView.deselectRow(at: indexPath, animated: true)
-        
+        //tableView.deselectRow(at: indexPath, animated: true)
+
         performSegue(withIdentifier: "toPopUp", sender: cell)
         
-
     }
-    //adds a footer with an add button
-//    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-////        let footerView = UIView()
-////        footerView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height:
-////            100)
-////
-////        let button = UIButton()
-////        button.frame = CGRect(x: 20, y: 10, width: 300, height: 50)
-////        button.setTitle("CustomButton", for: .normal)
-////        button.setTitleColor(#colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1), for: .normal)
-////        button.backgroundColor = #colorLiteral(red: 0.5725490451, green: 0, blue: 0.2313725501, alpha: 1)
-////        footerView.addSubview(button)
-////        return footerView
-//    }
     
     @IBAction func btnClicked(_ sender: UIButton) {
         //sets image of new button as completedCheckbox
         sender.setImage(UIImage(named: "completedCheckbox"), for: .normal)
     }
+    
+    @IBAction func addButton(_ sender: Any) {
+        //TODO: perform segue to add task screen
+    }
+    
 //prepares the popover segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toPopUp" {

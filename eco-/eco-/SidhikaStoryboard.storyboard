@@ -30,10 +30,13 @@
                                             <rect key="frame" x="0.0" y="87" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bi8-ov-SM3">
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bi8-ov-SM3" userLabel="Add button">
                                                     <rect key="frame" x="18" y="16" width="20" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" image="add_image"/>
+                                                    <connections>
+                                                        <action selector="addButton:" destination="vmY-bR-YB0" eventType="touchUpInside" id="Mxs-bK-r0f"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </view>
@@ -103,6 +106,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Tasks" largeTitleDisplayMode="always" id="xgF-0r-YKB"/>
                     <connections>
+                        <outlet property="addButton" destination="Bi8-ov-SM3" id="6Ib-hj-aNg"/>
                         <outlet property="tableView" destination="AmL-cy-zv3" id="X7v-Tg-HRG"/>
                     </connections>
                 </viewController>
@@ -252,15 +256,24 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subtask Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V77-sl-yE1">
-                                                            <rect key="frame" x="29" y="12" width="112" height="21"/>
+                                                            <rect key="frame" x="36" y="11" width="112" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZfP-Wc-GNk" userLabel="checkBoxButton">
+                                                            <rect key="frame" x="13" y="14" width="15" height="15"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <state key="normal" image="emptyCheckbox"/>
+                                                            <connections>
+                                                                <action selector="checkBoxBtnClicked:" destination="4XK-SS-2qp" eventType="touchUpInside" id="qN4-PN-Izw"/>
+                                                            </connections>
+                                                        </button>
                                                     </subviews>
                                                 </tableViewCellContentView>
                                                 <connections>
+                                                    <outlet property="checkBoxButton" destination="ZfP-Wc-GNk" id="3cY-dr-7zl"/>
                                                     <outlet property="subtaskLabel" destination="V77-sl-yE1" id="6fr-mx-Mp5"/>
                                                 </connections>
                                             </tableViewCell>
@@ -270,6 +283,11 @@
                                             <outlet property="delegate" destination="4XK-SS-2qp" id="nXK-3Z-Wgy"/>
                                         </connections>
                                     </tableView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUj-mh-f2X">
+                                        <rect key="frame" x="254" y="9" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Edit"/>
+                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subtasks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMJ-hX-6J9">
                                         <rect key="frame" x="0.0" y="9" width="124" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -286,6 +304,7 @@
                     <value key="contentSizeForViewInPopover" type="size" width="300" height="300"/>
                     <size key="freeformSize" width="300" height="300"/>
                     <connections>
+                        <outlet property="editButton" destination="qUj-mh-f2X" id="0gt-oP-fez"/>
                         <outlet property="subtasksTableView" destination="Wnh-RK-bPA" id="zrX-Et-tsu"/>
                         <outlet property="topView" destination="d2S-tm-LdF" id="gb0-bg-8tM"/>
                     </connections>
