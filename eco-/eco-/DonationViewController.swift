@@ -75,7 +75,7 @@ class DonationViewController: UIViewController {
         btnBee.setTitle(orgCategory[0].description, for: .normal)
     }
     
-    // drop down for bees button
+    // drop down for bees org show
     var showDescription = false
 
     @IBAction func onClickShow(_ sender: Any) {
@@ -88,6 +88,7 @@ class DonationViewController: UIViewController {
             self.btnBee.setImage(UIImage(named: !self.showDescription ? "dropdown" : "dropup"), for: .normal)
             self.beeLabelShow.text = self.org[0].orgMission
         }
+        
     }
     
     // drop down for tree button
@@ -103,6 +104,7 @@ class DonationViewController: UIViewController {
             //self.TreeButton.setImage(UIImage(named: !self.showDescriptionTree ? "dropdown" : "dropup"), for: .normal)
             self.treeLabelShow.text = self.org[1].orgMission
         }
+        
     }
     
     // drop down for sea button
