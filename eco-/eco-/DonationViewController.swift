@@ -25,6 +25,12 @@ class DonationViewController: UIViewController {
     @IBOutlet weak var btnBee: UIButton!
     @IBOutlet weak var beeLabelShow: UILabel!
     
+    @IBOutlet weak var checkBee: UIImageView!
+    @IBOutlet weak var checkTree: UIImageView!
+    @IBOutlet weak var checkSea: UIImageView!
+    
+    
+    
     // Organization Category that includes images of each category
     let orgCategory = [
         OrgCategory(id: 0, category: "Bees", description: "Save the BEES!", image: "bee"),
@@ -50,6 +56,10 @@ class DonationViewController: UIViewController {
         treeLabelShow.isHidden = true
         seaLabelShow.isHidden = true
         
+        checkBee.isHidden = true
+        checkTree.isHidden = true
+        checkSea.isHidden = true
+        
         // Displaying the header, subheadr, and image
         headerLabel.text = header
         subheaderLabel.text = subHeader
@@ -74,6 +84,7 @@ class DonationViewController: UIViewController {
         self.btnBee.setTitle(org[0].orgName, for: .normal)
         UIView.animate(withDuration: 0.3){
             self.beeLabelShow.isHidden = !self.showDescription
+            self.checkBee.isHidden = !self.showDescription
             self.btnBee.setImage(UIImage(named: !self.showDescription ? "dropdown" : "dropup"), for: .normal)
             self.beeLabelShow.text = self.org[0].orgMission
         }
@@ -88,6 +99,7 @@ class DonationViewController: UIViewController {
         self.TreeButton.setTitle(org[1].orgName, for: .normal)
         UIView.animate(withDuration: 0.3){
             self.treeLabelShow.isHidden = !self.showDescriptionTree
+            self.checkTree.isHidden = !self.showDescriptionTree
             //self.TreeButton.setImage(UIImage(named: !self.showDescriptionTree ? "dropdown" : "dropup"), for: .normal)
             self.treeLabelShow.text = self.org[1].orgMission
         }
@@ -102,6 +114,7 @@ class DonationViewController: UIViewController {
         self.SeaButton.setTitle(org[2].orgName, for: .normal)
         UIView.animate(withDuration: 0.3){
             self.seaLabelShow.isHidden = !self.showDescriptionSea
+            self.checkSea.isHidden = !self.showDescriptionSea
             //self.TreeButton.setImage(UIImage(named: !self.showDescriptionTree ? "dropdown" : "dropup"), for: .normal)
             self.seaLabelShow.text = self.org[2].orgMission
         }
