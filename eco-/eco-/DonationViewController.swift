@@ -29,6 +29,7 @@ class DonationViewController: UIViewController {
     @IBOutlet weak var checkTree: UIImageView!
     @IBOutlet weak var checkSea: UIImageView!
     
+    @IBOutlet weak var nextButton: UIButton!
     
     
     // Organization Category that includes images of each category
@@ -60,6 +61,8 @@ class DonationViewController: UIViewController {
         checkTree.isHidden = true
         checkSea.isHidden = true
         
+        nextButton.isHidden = true
+        
         // Displaying the header, subheadr, and image
         headerLabel.text = header
         subheaderLabel.text = subHeader
@@ -81,6 +84,12 @@ class DonationViewController: UIViewController {
     @IBAction func onClickShow(_ sender: Any) {
         showDescription = !showDescription
         
+        // when the button is click other label is hidden
+        treeLabelShow.isHidden = true
+        seaLabelShow.isHidden = true
+        checkSea.isHidden = true
+        checkTree.isHidden = true
+        
         self.btnBee.setTitle(org[0].orgName, for: .normal)
         UIView.animate(withDuration: 0.3){
             self.beeLabelShow.isHidden = !self.showDescription
@@ -89,6 +98,7 @@ class DonationViewController: UIViewController {
             self.beeLabelShow.text = self.org[0].orgMission
         }
         
+        nextButton.isHidden = false
     }
     
     // drop down for tree button
@@ -96,6 +106,12 @@ class DonationViewController: UIViewController {
     
     @IBAction func onClickTreeButton(_ sender: Any) {
         showDescriptionTree = !showDescriptionTree
+        
+        // when the button is click other label is hidden
+        beeLabelShow.isHidden = true
+        seaLabelShow.isHidden = true
+        checkSea.isHidden = true
+        checkBee.isHidden = true
         
         self.TreeButton.setTitle(org[1].orgName, for: .normal)
         UIView.animate(withDuration: 0.3){
@@ -105,6 +121,8 @@ class DonationViewController: UIViewController {
             self.treeLabelShow.text = self.org[1].orgMission
         }
         
+        nextButton.isHidden = false
+        
     }
     
     // drop down for sea button
@@ -113,6 +131,12 @@ class DonationViewController: UIViewController {
     @IBAction func onClickSeaButton(_ sender: Any) {
         showDescriptionSea = !showDescriptionSea
         
+        // when the button is click other label is hidden
+        beeLabelShow.isHidden = true
+        treeLabelShow.isHidden = true
+        checkTree.isHidden = true
+        checkBee.isHidden = true
+        
         self.SeaButton.setTitle(org[2].orgName, for: .normal)
         UIView.animate(withDuration: 0.3){
             self.seaLabelShow.isHidden = !self.showDescriptionSea
@@ -120,6 +144,9 @@ class DonationViewController: UIViewController {
             //self.TreeButton.setImage(UIImage(named: !self.showDescriptionTree ? "dropdown" : "dropup"), for: .normal)
             self.seaLabelShow.text = self.org[2].orgMission
         }
+        
+        nextButton.isHidden = false
+
     }
 
     
