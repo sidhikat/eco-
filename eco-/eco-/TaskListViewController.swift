@@ -64,15 +64,28 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
     
     //TODO: create strikethrough when clicked on button
     @IBAction func btnClicked(_ sender: UIButton) {
-        //sets image of new button as completedCheckbox
-        sender.setImage(UIImage(named: "completedCheckbox"), for: .normal)
+        //get sender's parent cells and cast it as a subtasktableviewcell
+        let cell = sender.superview
+        let cell2 = cell?.superview as! TaskTableViewCell
         
-       //trying to create a cell and take label and strikethrough it
-//        let cell = tableView.cellForRow(at: IndexPath.init(index: sender.tag)) as! TaskTableViewCell
-//        let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: cell.taskNameLabel.text!)
-//        attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 2, range: NSMakeRange(0, attributeString.length))
-//        
-//        cell.taskNameLabel.attributedText = attributeString
+        //create the subtaskLabel's text as attributed string so it can be mutated
+        let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: cell2.taskNameLabel.text!)
+        
+        //changes attributes depending on current state
+        if(sender.imageView?.image == UIImage(named: "emptyCheckbox")){
+            //change image to completedCheckbox
+            sender.setImage(UIImage(named: "completedCheckbox"), for: .normal)
+            //add strikethrough attribute to string
+            attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 2, range: NSMakeRange(0, attributeString.length))
+            cell2.taskNameLabel.attributedText = attributeString
+        }else{
+            //change image to empty if clicked again
+            sender.setImage(UIImage(named: "emptyCheckbox"), for: .normal)
+            //remove strikethrough attributes
+            attributeString.removeAttribute(.strikethroughStyle, range: NSMakeRange(0, attributeString.length))
+            cell2.taskNameLabel.attributedText = attributeString
+        }
+        
         
     }
     
