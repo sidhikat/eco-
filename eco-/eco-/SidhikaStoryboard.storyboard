@@ -79,6 +79,16 @@
                                             <segue destination="C9C-oY-CVO" kind="presentation" id="uGh-zG-QXL"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMm-PT-gpT">
+                                        <rect key="frame" x="332" y="799" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <segue destination="4XK-SS-2qp" kind="popoverPresentation" identifier="toPopUp" popoverAnchorView="JMm-PT-gpT" id="7Td-vV-Mbi">
+                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                            </segue>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <viewLayoutGuide key="safeArea" id="GF5-S2-vCf"/>
@@ -89,10 +99,63 @@
                     </view>
                     <navigationItem key="navigationItem" title="Tasks" largeTitleDisplayMode="always" id="xgF-0r-YKB"/>
                     <connections>
+                        <outlet property="popMeButton" destination="JMm-PT-gpT" id="NsY-Bb-suN"/>
+                        <outlet property="subtasksTableView" destination="Wnh-RK-bPA" id="GgS-IZ-xZ7"/>
+                        <outlet property="subtasksView" destination="Uch-qi-qB4" id="zsI-Ss-dX4"/>
                         <outlet property="tableView" destination="AmL-cy-zv3" id="X7v-Tg-HRG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3QA-ZM-Q1t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="Uch-qi-qB4" customClass="VIewController">
+                    <rect key="frame" x="0.0" y="0.0" width="225" height="400"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wnh-RK-bPA">
+                            <rect key="frame" x="0.0" y="59" width="225" height="313"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.68951535220000004" green="0.79939025640000005" blue="0.58428043129999996" alpha="0.35420334510000001" colorSpace="custom" customColorSpace="displayP3"/>
+                            <prototypes>
+                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="subtaskCell" id="M3K-dH-7gk" customClass="SubtasksTableViewCell" customModule="eco_" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="28" width="225" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="M3K-dH-7gk" id="pLY-MJ-zKy">
+                                        <rect key="frame" x="0.0" y="0.0" width="225" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subtask Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V77-sl-yE1">
+                                                <rect key="frame" x="29" y="12" width="112" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </tableViewCellContentView>
+                                    <connections>
+                                        <outlet property="subtaskLabel" destination="V77-sl-yE1" id="6fr-mx-Mp5"/>
+                                    </connections>
+                                </tableViewCell>
+                            </prototypes>
+                        </tableView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVp-zh-ZJD" userLabel="Exit">
+                            <rect key="frame" x="189" y="16" width="14" height="15"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="exitButton"/>
+                            <connections>
+                                <segue destination="vmY-bR-YB0" kind="show" animates="NO" id="1ED-nP-b3Y"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subtasks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agz-B4-qoi">
+                            <rect key="frame" x="16" y="21" width="124" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="30"/>
+                            <color key="textColor" red="0.12279092520475388" green="0.21925210952758789" blue="0.23529767990112305" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.68951535224914551" green="0.79939025640487671" blue="0.58428043127059937" alpha="0.35420334507042256" colorSpace="custom" customColorSpace="displayP3"/>
+                    <viewLayoutGuide key="safeArea" id="Nsf-HJ-DWZ"/>
+                </view>
             </objects>
             <point key="canvasLocation" x="418.84057971014494" y="1056.0267857142858"/>
         </scene>
@@ -188,7 +251,48 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJF-dQ-D2q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1360.8695652173915" y="1055.3571428571429"/>
+            <point key="canvasLocation" x="2100" y="864"/>
+        </scene>
+        <!--Pop Up View Controller-->
+        <scene sceneID="5Bv-MY-go7">
+            <objects>
+                <viewController id="4XK-SS-2qp" customClass="PopUpViewController" customModule="eco_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q4X-qN-Rye" userLabel="backgroundView">
+                        <rect key="frame" x="0.0" y="0.0" width="193" height="201"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d2S-tm-LdF" userLabel="topView">
+                                <rect key="frame" x="2" y="2" width="196" height="194"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TEST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMJ-hX-6J9">
+                                        <rect key="frame" x="78" y="50" width="41" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.92522257566452026" green="0.96211093664169312" blue="0.88626492023468018" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="d2S-tm-LdF" firstAttribute="trailing" secondItem="PQB-Un-xF1" secondAttribute="trailing" constant="5" id="E6y-pR-nfc"/>
+                            <constraint firstItem="d2S-tm-LdF" firstAttribute="top" secondItem="Q4X-qN-Rye" secondAttribute="top" constant="2" id="QIK-e5-d5M"/>
+                            <constraint firstAttribute="bottom" secondItem="d2S-tm-LdF" secondAttribute="bottom" constant="5" id="axd-Ci-no7"/>
+                            <constraint firstItem="d2S-tm-LdF" firstAttribute="leading" secondItem="PQB-Un-xF1" secondAttribute="leading" constant="2" id="sCs-ls-UR4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PQB-Un-xF1"/>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="200" height="100"/>
+                    <size key="freeformSize" width="193" height="201"/>
+                    <connections>
+                        <outlet property="topView" destination="d2S-tm-LdF" id="gb0-bg-8tM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d9h-ty-sKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1323.913043478261" y="1455.46875"/>
         </scene>
     </scenes>
     <resources>
@@ -200,6 +304,7 @@
         <image name="focusButton" width="378" height="352"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="uGh-zG-QXL"/>
         <segue reference="xe4-ou-uaB"/>
     </inferredMetricsTieBreakers>
 </document>
