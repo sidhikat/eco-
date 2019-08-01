@@ -63,6 +63,9 @@
                                                     <outlet property="checkBoxButton" destination="EaF-lV-Swm" id="lPH-46-CN2"/>
                                                     <outlet property="expandButton" destination="uh0-fU-JCw" id="vDU-8R-AlQ"/>
                                                     <outlet property="taskNameLabel" destination="QNc-sp-C5T" id="Dbb-bB-8DM"/>
+                                                    <segue destination="4XK-SS-2qp" kind="popoverPresentation" identifier="toPopUp" popoverAnchorView="06C-gY-rx0" id="uWt-Zj-FUB">
+                                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                                    </segue>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -83,11 +86,6 @@
                                         <rect key="frame" x="332" y="799" width="46" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
-                                        <connections>
-                                            <segue destination="4XK-SS-2qp" kind="popoverPresentation" identifier="toPopUp" popoverAnchorView="JMm-PT-gpT" id="7Td-vV-Mbi">
-                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                            </segue>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -258,14 +256,14 @@
             <objects>
                 <viewController id="4XK-SS-2qp" customClass="PopUpViewController" customModule="eco_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q4X-qN-Rye" userLabel="backgroundView">
-                        <rect key="frame" x="0.0" y="0.0" width="193" height="201"/>
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d2S-tm-LdF" userLabel="topView">
-                                <rect key="frame" x="2" y="2" width="196" height="194"/>
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TEST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMJ-hX-6J9">
-                                        <rect key="frame" x="78" y="50" width="41" height="21"/>
+                                        <rect key="frame" x="129" y="52" width="41" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -275,24 +273,24 @@
                                 <color key="backgroundColor" red="0.92522257566452026" green="0.96211093664169312" blue="0.88626492023468018" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="d2S-tm-LdF" firstAttribute="trailing" secondItem="PQB-Un-xF1" secondAttribute="trailing" constant="5" id="E6y-pR-nfc"/>
-                            <constraint firstItem="d2S-tm-LdF" firstAttribute="top" secondItem="Q4X-qN-Rye" secondAttribute="top" constant="2" id="QIK-e5-d5M"/>
-                            <constraint firstAttribute="bottom" secondItem="d2S-tm-LdF" secondAttribute="bottom" constant="5" id="axd-Ci-no7"/>
-                            <constraint firstItem="d2S-tm-LdF" firstAttribute="leading" secondItem="PQB-Un-xF1" secondAttribute="leading" constant="2" id="sCs-ls-UR4"/>
+                            <constraint firstItem="d2S-tm-LdF" firstAttribute="leading" secondItem="PQB-Un-xF1" secondAttribute="leading" id="VUF-pB-m5f"/>
+                            <constraint firstItem="d2S-tm-LdF" firstAttribute="bottom" secondItem="PQB-Un-xF1" secondAttribute="bottom" constant="34" id="Zhu-q3-K3z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="d2S-tm-LdF" secondAttribute="trailing" constant="-16" id="kqG-8T-qr2"/>
+                            <constraint firstItem="d2S-tm-LdF" firstAttribute="top" secondItem="PQB-Un-xF1" secondAttribute="top" constant="-44" id="m3O-R0-6A1"/>
+                            <constraint firstItem="PQB-Un-xF1" firstAttribute="trailing" secondItem="d2S-tm-LdF" secondAttribute="trailing" id="quu-fd-wCw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQB-Un-xF1"/>
                     </view>
-                    <value key="contentSizeForViewInPopover" type="size" width="200" height="100"/>
-                    <size key="freeformSize" width="193" height="201"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="300" height="300"/>
+                    <size key="freeformSize" width="300" height="300"/>
                     <connections>
                         <outlet property="topView" destination="d2S-tm-LdF" id="gb0-bg-8tM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d9h-ty-sKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1323.913043478261" y="1455.46875"/>
+            <point key="canvasLocation" x="1394.2028985507247" y="1167.8571428571429"/>
         </scene>
     </scenes>
     <resources>

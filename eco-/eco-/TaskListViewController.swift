@@ -41,7 +41,6 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
     //return a cell and changes it's UI based on code
       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-       if(tableView.tag == 100){
         let cell = tableView.dequeueReusableCell(withIdentifier: "taskCell", for: indexPath) as! TaskTableViewCell
         cell.taskNameLabel.text = tasks[indexPath.row].taskName
         
@@ -52,11 +51,6 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
         cell.checkBoxButton.addTarget(self, action:#selector(btnClicked), for:.touchUpInside)
         
         return cell
-        }else{
-            let cell = subtasksTableView.dequeueReusableCell(withIdentifier: "subtaskCell", for: indexPath) as! SubtasksTableViewCell
-            cell.subtaskLabel.text = subtasks[indexPath.row]
-            return cell
-        }
         
     }
     
@@ -65,8 +59,13 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
 //        var alertView = UIAlertController(title: "Subtasks", message: "You clicked cell \n at index : \(indexPath.row)", preferredStyle: UIAlertController.Style.alert)
 //        alertView.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
 //        self.present(alertView, animated: true, completion: nil)
-        self.view.addSubview(subtasksView)
-        subtasksView.center = self.view.center
+//        self.view.addSubview(subtasksView)
+//        subtasksView.center = self.view.center
+        let cell = tableView.cellForRow(at: indexPath)
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        performSegue(withIdentifier: "toPopUp", sender: cell)
+        
 
     }
 
@@ -78,14 +77,16 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toPopUp" {
             let pvc: PopUpViewController = segue.destination as! PopUpViewController
+            
             pvc.popoverPresentationController?.backgroundColor = UIColor.darkGray
             pvc.popoverPresentationController!.delegate = self
     
             let presentationViewController = pvc.popoverPresentationController
-            presentationViewController?.permittedArrowDirections = .any
+            presentationViewController?.permittedArrowDirections = UIPopoverArrowDirection(rawValue: 0)
             presentationViewController?.delegate = self
-            presentationViewController?.sourceView = popMeButton
-            presentationViewController?.sourceRect = popMeButton.bounds
+            presentationViewController?.sourceView = self.view
+            //anchors the popup in center of screen
+            presentationViewController?.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
         }
     }
     
