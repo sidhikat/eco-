@@ -12,8 +12,8 @@ import UIKit
 class TaskTableViewCell: UITableViewCell{
     
 
+    @IBOutlet weak var focusButton: UIButton!
     @IBOutlet weak var taskNameLabel: UILabel!
-    @IBOutlet weak var expandButton: UIButton!
     @IBOutlet weak var checkBoxButton: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()

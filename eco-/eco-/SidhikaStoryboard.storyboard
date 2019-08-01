@@ -63,10 +63,15 @@
                                                                 <action selector="btnClicked:" destination="vmY-bR-YB0" eventType="touchUpInside" id="tAQ-HB-b4K"/>
                                                             </connections>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uh0-fU-JCw" userLabel="expandButton">
-                                                            <rect key="frame" x="379" y="20" width="14" height="10"/>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uh0-fU-JCw">
+                                                            <rect key="frame" x="333" y="17" width="61" height="25"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <state key="normal" image="expandButton"/>
+                                                            <state key="normal" image="go_to_focus_button"/>
+                                                            <string key="userLabel">goToFocusButton
+utton</string>
+                                                            <connections>
+                                                                <segue destination="C9C-oY-CVO" kind="presentation" id="Vlg-SD-IEC"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                 </tableViewCellContentView>
@@ -75,7 +80,7 @@
                                                 </accessibility>
                                                 <connections>
                                                     <outlet property="checkBoxButton" destination="EaF-lV-Swm" id="lPH-46-CN2"/>
-                                                    <outlet property="expandButton" destination="uh0-fU-JCw" id="vDU-8R-AlQ"/>
+                                                    <outlet property="focusButton" destination="uh0-fU-JCw" id="ICX-PN-LnI"/>
                                                     <outlet property="taskNameLabel" destination="QNc-sp-C5T" id="Dbb-bB-8DM"/>
                                                     <segue destination="4XK-SS-2qp" kind="popoverPresentation" identifier="toPopUp" popoverAnchorView="06C-gY-rx0" id="uWt-Zj-FUB">
                                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
@@ -320,8 +325,8 @@
         <image name="congrats_bee" width="466" height="484"/>
         <image name="emptyCheckbox" width="46" height="46"/>
         <image name="exitButton" width="48" height="52"/>
-        <image name="expandButton" width="37" height="23"/>
         <image name="focusButton" width="378" height="352"/>
+        <image name="go_to_focus_button" width="500" height="166"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="uGh-zG-QXL"/>

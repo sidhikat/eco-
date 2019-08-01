@@ -13,6 +13,7 @@ class SubtasksTableViewCell: UITableViewCell {
     
     @IBOutlet weak var subtaskLabel: UILabel!
     @IBOutlet weak var checkBoxButton: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

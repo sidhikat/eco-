@@ -43,10 +43,30 @@ class PopUpViewController: UIViewController, UITableViewDataSource, UITableViewD
         
     }
     
-    
+    //changes atrributes of tablecell if button clicked
     @IBAction func checkBoxBtnClicked(_ sender: UIButton) {
-        //sets image of new button as completedCheckbox
+        
+        //get sender's parent cells and cast it as a subtasktableviewcell
+        let cell = sender.superview
+        let cell2 = cell?.superview as! SubtasksTableViewCell
+        
+        //create the subtaskLabel's text as attributed string so it can be mutated
+        let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: cell2.subtaskLabel.text!)
+        
+        //changes attributes depending on current state
+        if(sender.imageView?.image == UIImage(named: "emptyCheckbox")){
+            //change image to completedCheckbox
         sender.setImage(UIImage(named: "completedCheckbox"), for: .normal)
+            //add strikethrough attribute to string
+        attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 2, range: NSMakeRange(0, attributeString.length))
+        cell2.subtaskLabel.attributedText = attributeString
+        }else{
+            //change image to empty if clicked again
+            sender.setImage(UIImage(named: "emptyCheckbox"), for: .normal)
+            //remove strikethrough attributes
+            attributeString.removeAttribute(.strikethroughStyle, range: NSMakeRange(0, attributeString.length))
+            cell2.subtaskLabel.attributedText = attributeString
+        }
     }
     
     func tableView(_ subtasksTableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -57,9 +77,12 @@ class PopUpViewController: UIViewController, UITableViewDataSource, UITableViewD
     //        self.view.addSubview(subtasksView)
     //        subtasksView.center = self.view.center
 
-    let cell = subtasksTableView.cellForRow(at: indexPath)
+    let cell = subtasksTableView.cellForRow(at: indexPath) as! SubtasksTableViewCell
         //deselects the row after it's clicked
     subtasksTableView.deselectRow(at: indexPath, animated: true)
+        //let cell = tableView.cellForRow(at: IndexPath.init(index: sender.tag)) as! TaskTableViewCell
+        
+        
     }
     
 }

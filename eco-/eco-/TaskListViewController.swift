@@ -38,10 +38,11 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
         cell.taskNameLabel.text = tasks[indexPath.row].taskName
         
         //set a unique tag for each button
-        //cell.checkBoxButton.tag = indexPath.row
+        cell.checkBoxButton.tag = indexPath.row
         
         //listens to the button and goes to the function specified (btnclicked)
         cell.checkBoxButton.addTarget(self, action:#selector(btnClicked), for:.touchUpInside)
+        
         
         return cell
         
@@ -61,9 +62,18 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
         
     }
     
+    //TODO: create strikethrough when clicked on button
     @IBAction func btnClicked(_ sender: UIButton) {
         //sets image of new button as completedCheckbox
         sender.setImage(UIImage(named: "completedCheckbox"), for: .normal)
+        
+       //trying to create a cell and take label and strikethrough it
+//        let cell = tableView.cellForRow(at: IndexPath.init(index: sender.tag)) as! TaskTableViewCell
+//        let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: cell.taskNameLabel.text!)
+//        attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 2, range: NSMakeRange(0, attributeString.length))
+//        
+//        cell.taskNameLabel.attributedText = attributeString
+        
     }
     
     @IBAction func addButton(_ sender: Any) {
