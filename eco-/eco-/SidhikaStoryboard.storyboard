@@ -98,7 +98,6 @@
                     <navigationItem key="navigationItem" title="Tasks" largeTitleDisplayMode="always" id="xgF-0r-YKB"/>
                     <connections>
                         <outlet property="popMeButton" destination="JMm-PT-gpT" id="NsY-Bb-suN"/>
-                        <outlet property="subtasksView" destination="Uch-qi-qB4" id="zsI-Ss-dX4"/>
                         <outlet property="tableView" destination="AmL-cy-zv3" id="X7v-Tg-HRG"/>
                     </connections>
                 </viewController>
