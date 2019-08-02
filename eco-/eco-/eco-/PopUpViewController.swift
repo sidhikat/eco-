@@ -13,7 +13,8 @@ class PopUpViewController: UIViewController, UITableViewDataSource, UITableViewD
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var subtasksTableView: UITableView!
     @IBOutlet weak var editButton: UIButton!
-
+    @IBOutlet weak var durationLabel: UILabel!
+    
     var subtasks = ["subtask1", "subtask2"]
     
     override func viewDidLoad() {

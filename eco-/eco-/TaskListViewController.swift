@@ -35,6 +35,9 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
 //            return 14
 //        }
     }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
+    }
     
     //return a cell and changes it's UI based on code
       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
