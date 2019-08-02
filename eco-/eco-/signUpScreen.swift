@@ -47,6 +47,13 @@ class signUpScreen: UIViewController {
     }
         
 }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // get a reference to the SECOND view controller
+        if  let secondViewController = segue.destination as? addTaskScreen {
+            // set a variable in the SECOND view controller with the String to pass
+            secondViewController.container = self.container
+        }
+    }
     
     @IBAction func signUpButtonPressed(_ sender: Any) {
         

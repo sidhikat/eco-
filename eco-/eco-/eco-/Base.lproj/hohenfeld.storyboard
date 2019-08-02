@@ -305,52 +305,106 @@
                                     <action selector="addTaskButtonPressed:" destination="054-EG-6GV" eventType="touchUpInside" id="r0D-Sd-kRo"/>
                                 </connections>
                             </button>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="iFs-j6-VxH">
-                                <rect key="frame" x="97" y="418" width="243" height="61"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Task Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bkL-KI-AMv">
+                                <rect key="frame" x="20" y="583" width="374" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="61" id="geH-Nr-kRG"/>
-                                    <constraint firstAttribute="width" constant="243" id="ncj-Zj-spc"/>
+                                    <constraint firstAttribute="width" constant="374" id="2nz-Ys-bTn"/>
+                                    <constraint firstAttribute="height" constant="30" id="Tgo-LH-MaE"/>
                                 </constraints>
-                                <date key="date" timeIntervalSinceReferenceDate="586126003.10111499">
-                                    <!--2019-07-29 20:46:43 +0000-->
-                                </date>
-                            </datePicker>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="X1L-dr-vDG" customClass="subTaskViewController">
-                                <rect key="frame" x="20" y="600" width="374" height="176"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="A8E-my-PLm">
-                                        <rect key="frame" x="0.0" y="28" width="374" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A8E-my-PLm" id="XVx-bP-UYm">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Subtask1 Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H8y-Am-zay">
+                                <rect key="frame" x="140" y="621" width="254" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Lad-hb-3uk"/>
+                                    <constraint firstAttribute="width" constant="254" id="Nsq-Ig-Qvu"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Subtask2 Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iuZ-Kj-vgu">
+                                <rect key="frame" x="140" y="659" width="254" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="254" id="gDh-a1-9r9"/>
+                                    <constraint firstAttribute="height" constant="30" id="ggs-i4-6Pu"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Subtask3 Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1t9-tE-KDL">
+                                <rect key="frame" x="140" y="697" width="254" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5en-3l-Xbc"/>
+                                    <constraint firstAttribute="width" constant="254" id="p7V-mB-02z"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Subtask4 Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jsm-41-rQz">
+                                <rect key="frame" x="140" y="735" width="254" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="254" id="bxt-dJ-z0L"/>
+                                    <constraint firstAttribute="height" constant="30" id="pBQ-9t-rjA"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zlw-K0-9fe">
+                                <rect key="frame" x="97" y="423" width="243" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="243" id="QDT-rO-Qra"/>
+                                    <constraint firstAttribute="height" constant="50" id="tHq-rb-ePO"/>
+                                </constraints>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="GGS-Em-xAA" firstAttribute="trailing" secondItem="H8y-Am-zay" secondAttribute="trailing" constant="20" id="0fR-4i-g0q"/>
+                            <constraint firstItem="bkL-KI-AMv" firstAttribute="centerX" secondItem="GGS-Em-xAA" secondAttribute="centerX" id="3CX-Oa-pp4"/>
+                            <constraint firstItem="iuZ-Kj-vgu" firstAttribute="leading" secondItem="GGS-Em-xAA" secondAttribute="leading" constant="140" id="4Ib-g1-BJI"/>
+                            <constraint firstItem="GGS-Em-xAA" firstAttribute="bottom" secondItem="zlw-K0-9fe" secondAttribute="bottom" constant="389" id="5QE-cv-Q5O"/>
                             <constraint firstItem="GGS-Em-xAA" firstAttribute="bottom" secondItem="HmP-kX-J6S" secondAttribute="bottom" constant="16" id="6Ck-Qf-FP5"/>
-                            <constraint firstItem="iFs-j6-VxH" firstAttribute="top" secondItem="GGS-Em-xAA" secondAttribute="top" constant="374" id="7ki-3Q-JUq"/>
-                            <constraint firstItem="iFs-j6-VxH" firstAttribute="leading" secondItem="GGS-Em-xAA" secondAttribute="leading" constant="97" id="AEd-X3-wS2"/>
+                            <constraint firstItem="GGS-Em-xAA" firstAttribute="trailing" secondItem="bkL-KI-AMv" secondAttribute="trailing" constant="20" id="6Rh-Ff-jh3"/>
+                            <constraint firstItem="bkL-KI-AMv" firstAttribute="centerY" secondItem="GGS-Em-xAA" secondAttribute="centerY" id="9oB-qu-X9g"/>
+                            <constraint firstItem="1t9-tE-KDL" firstAttribute="top" secondItem="GGS-Em-xAA" secondAttribute="top" constant="653" id="CBp-Mg-oaU"/>
+                            <constraint firstItem="GGS-Em-xAA" firstAttribute="bottom" secondItem="iuZ-Kj-vgu" secondAttribute="bottom" constant="173" id="D3A-3l-IlI"/>
                             <constraint firstItem="7Qk-A6-up7" firstAttribute="leading" secondItem="GGS-Em-xAA" secondAttribute="leading" constant="20" id="EL4-lG-m3K"/>
+                            <constraint firstItem="zlw-K0-9fe" firstAttribute="top" secondItem="GGS-Em-xAA" secondAttribute="top" constant="379" id="Gcw-rZ-N2T"/>
+                            <constraint firstItem="GGS-Em-xAA" firstAttribute="bottom" secondItem="Jsm-41-rQz" secondAttribute="bottom" constant="97" id="Hvh-8R-ZQc"/>
                             <constraint firstItem="TaS-kY-q3p" firstAttribute="leading" secondItem="GGS-Em-xAA" secondAttribute="leading" constant="20" id="IX7-KR-ojt"/>
+                            <constraint firstItem="H8y-Am-zay" firstAttribute="top" secondItem="GGS-Em-xAA" secondAttribute="top" constant="577" id="LcC-E5-fsj"/>
                             <constraint firstItem="7Qk-A6-up7" firstAttribute="top" secondItem="GGS-Em-xAA" secondAttribute="top" constant="159" id="NPU-2L-xg1"/>
+                            <constraint firstItem="GGS-Em-xAA" firstAttribute="bottom" secondItem="1t9-tE-KDL" secondAttribute="bottom" constant="135" id="NSG-oy-774"/>
                             <constraint firstItem="GGS-Em-xAA" firstAttribute="bottom" secondItem="J8U-ME-zSu" secondAttribute="bottom" constant="480" id="OMD-ob-J1W"/>
+                            <constraint firstItem="GGS-Em-xAA" firstAttribute="bottom" secondItem="H8y-Am-zay" secondAttribute="bottom" constant="211" id="RqJ-4m-BdI"/>
+                            <constraint firstItem="bkL-KI-AMv" firstAttribute="leading" secondItem="GGS-Em-xAA" secondAttribute="leading" constant="20" id="SHN-6q-O5Y"/>
                             <constraint firstItem="GGS-Em-xAA" firstAttribute="trailing" secondItem="7Qk-A6-up7" secondAttribute="trailing" constant="227" id="TBQ-th-sko"/>
+                            <constraint firstItem="GGS-Em-xAA" firstAttribute="bottom" secondItem="bkL-KI-AMv" secondAttribute="bottom" constant="249" id="UAa-Wi-jdA"/>
                             <constraint firstItem="GGS-Em-xAA" firstAttribute="bottom" secondItem="7Qk-A6-up7" secondAttribute="bottom" constant="614" id="Wfa-4c-Ya2"/>
+                            <constraint firstItem="Jsm-41-rQz" firstAttribute="leading" secondItem="GGS-Em-xAA" secondAttribute="leading" constant="140" id="YMz-h2-Clp"/>
+                            <constraint firstItem="H8y-Am-zay" firstAttribute="leading" secondItem="GGS-Em-xAA" secondAttribute="leading" constant="140" id="YY6-N1-8OM"/>
+                            <constraint firstItem="bkL-KI-AMv" firstAttribute="top" secondItem="GGS-Em-xAA" secondAttribute="top" constant="539" id="a0e-78-FCF"/>
+                            <constraint firstItem="zlw-K0-9fe" firstAttribute="leading" secondItem="GGS-Em-xAA" secondAttribute="leading" constant="97" id="aJT-7F-FPm"/>
+                            <constraint firstItem="Jsm-41-rQz" firstAttribute="top" secondItem="GGS-Em-xAA" secondAttribute="top" constant="691" id="ahx-AM-Ngl"/>
                             <constraint firstItem="GGS-Em-xAA" firstAttribute="trailing" secondItem="HmP-kX-J6S" secondAttribute="trailing" constant="156" id="aik-bV-ZEt"/>
+                            <constraint firstItem="1t9-tE-KDL" firstAttribute="leading" secondItem="GGS-Em-xAA" secondAttribute="leading" constant="140" id="d9w-d2-oLn"/>
                             <constraint firstItem="TaS-kY-q3p" firstAttribute="top" secondItem="GGS-Em-xAA" secondAttribute="top" constant="63" id="hSo-6e-NTh"/>
+                            <constraint firstItem="GGS-Em-xAA" firstAttribute="trailing" secondItem="Jsm-41-rQz" secondAttribute="trailing" constant="20" id="ikR-LS-T07"/>
+                            <constraint firstItem="iuZ-Kj-vgu" firstAttribute="top" secondItem="GGS-Em-xAA" secondAttribute="top" constant="615" id="irU-wI-fql"/>
                             <constraint firstItem="J8U-ME-zSu" firstAttribute="top" secondItem="GGS-Em-xAA" secondAttribute="top" constant="277" id="kJO-VE-RAj"/>
                             <constraint firstItem="HmP-kX-J6S" firstAttribute="top" secondItem="GGS-Em-xAA" secondAttribute="top" constant="762" id="lWU-A1-l7d"/>
                             <constraint firstItem="GGS-Em-xAA" firstAttribute="trailing" secondItem="TaS-kY-q3p" secondAttribute="trailing" constant="236" id="na9-yG-2jP"/>
-                            <constraint firstItem="GGS-Em-xAA" firstAttribute="trailing" secondItem="iFs-j6-VxH" secondAttribute="trailing" constant="74" id="okP-7H-I6e"/>
+                            <constraint firstItem="GGS-Em-xAA" firstAttribute="trailing" secondItem="iuZ-Kj-vgu" secondAttribute="trailing" constant="20" id="noZ-Xy-fOs"/>
                             <constraint firstItem="GGS-Em-xAA" firstAttribute="trailing" secondItem="J8U-ME-zSu" secondAttribute="trailing" constant="74" id="phM-5g-3Rt"/>
-                            <constraint firstItem="GGS-Em-xAA" firstAttribute="bottom" secondItem="iFs-j6-VxH" secondAttribute="bottom" constant="383" id="t2h-k3-D6r"/>
+                            <constraint firstItem="GGS-Em-xAA" firstAttribute="trailing" secondItem="1t9-tE-KDL" secondAttribute="trailing" constant="20" id="sny-JY-dJn"/>
                             <constraint firstItem="GGS-Em-xAA" firstAttribute="bottom" secondItem="TaS-kY-q3p" secondAttribute="bottom" constant="710" id="tGp-rz-KDX"/>
+                            <constraint firstItem="GGS-Em-xAA" firstAttribute="trailing" secondItem="zlw-K0-9fe" secondAttribute="trailing" constant="74" id="tR9-lS-Qcu"/>
                             <constraint firstItem="HmP-kX-J6S" firstAttribute="leading" secondItem="GGS-Em-xAA" secondAttribute="leading" constant="157" id="wRy-l7-Npd"/>
                             <constraint firstItem="J8U-ME-zSu" firstAttribute="leading" secondItem="GGS-Em-xAA" secondAttribute="leading" constant="97" id="zWf-G1-ntV"/>
                         </constraints>
@@ -361,8 +415,12 @@
                         <outlet property="dueDateImageView" destination="gsL-sZ-ZTa" id="JDo-Wt-0rD"/>
                         <outlet property="dueDatePicker" destination="J8U-ME-zSu" id="rRX-tb-zfw"/>
                         <outlet property="durationImageView" destination="wBL-kD-igb" id="jRp-jY-86i"/>
-                        <outlet property="durationTimePicker" destination="iFs-j6-VxH" id="IcB-pZ-oHU"/>
+                        <outlet property="subTask1TextField" destination="H8y-Am-zay" id="IAV-hF-XTh"/>
+                        <outlet property="subTask2TextField" destination="iuZ-Kj-vgu" id="6BV-bR-9I1"/>
+                        <outlet property="subTask3NameTextField" destination="1t9-tE-KDL" id="smF-Ej-2wp"/>
+                        <outlet property="subTask4TextField" destination="Jsm-41-rQz" id="zVb-5O-zic"/>
                         <outlet property="taskLabel" destination="JfR-lM-Ja8" id="qMt-gN-kuw"/>
+                        <outlet property="taskNameTextField" destination="bkL-KI-AMv" id="UPW-Lv-znr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="re3-oD-tP3" userLabel="First Responder" sceneMemberID="firstResponder"/>
