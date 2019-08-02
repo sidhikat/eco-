@@ -50,6 +50,12 @@ class focusedSessionViewController: UIViewController {
         timerLabel.text = timeString(time: timeCount)
         
         taskLabel.text = "Task(s) to be completed during your focus session:"
+        
+        
+        // strike through
+        let attributeString: NSMutableAttributedString = NSMutableAttributedString(string:taskLabel.text!)
+        attributeString.addAttribute(.strikethroughStyle, value: 2, range: NSMakeRange(0, attributeString.length))
+        taskLabel.attributedText = attributeString
     }
     
     // count down and display messages
@@ -84,7 +90,7 @@ class focusedSessionViewController: UIViewController {
     
     
     @IBAction func giveUpPressed(_ sender: Any) {
-        let warning = UIAlertController(title: "Alert", message: "Are you sure you want to give up?", preferredStyle: .alert)
+        let warning = UIAlertController(title: "Warning", message: "Are you sure you want to give up?", preferredStyle: .alert)
         
         let yesGiveUp = UIAlertAction(title: "Yes", style: UIAlertAction.Style.default, handler: nil)
         let noGiveUp = UIAlertAction(title: "No", style: UIAlertAction.Style.default, handler: nil)
