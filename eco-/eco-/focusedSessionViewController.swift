@@ -8,12 +8,18 @@
 
 import UIKit
 import CoreData
+import Lottie
 
 class focusedSessionViewController: UIViewController {
     
     var container:NSPersistentContainer!
     var seconds = 30
-    var timer = Timer()
+    var timer = Timer() // same as NSTimer()
+    let timeInterval:TimeInterval = 0.5
+    let timeEnd:TimeInterval = 0.0
+    var timeCount:TimeInterval = 2700.00 // = 45 minutes
+    
+    
     var messages: [String] = [
         "you are on your way to greatness!🏆",
         "you can do this!",
@@ -32,16 +38,40 @@ class focusedSessionViewController: UIViewController {
         // Do any additional setup after loading the view.
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(focusedSessionViewController.counter), userInfo: nil, repeats: true)
         
-        motivationMessage.text = "you can do this!"
+        // rounding the corners
+        giveUpBtn.layer.cornerRadius = 5
+        
+       // motivationMessage.text = "you can do this!"
+        timerLabel.text = timeString(time: timeCount)
     }
     
     @objc func counter() {
-        seconds -= 1
-        timerLabel.text = String(seconds)
+        timeCount -= 1
+        timerLabel.text = timeString(time: timeCount)
         
-        if (seconds == 0){
+        
+        if (timeCount <= 2700){
+            motivationMessage.text = messages[0]
+        }else if (timeCount <= 2200){
+            motivationMessage.text = messages[1]
+        }else if (timeCount <= 1600){
+            motivationMessage.text = messages[2]
+        }
+
+        // if the timeCount reaches 0
+        if (timeCount == 0){
+            // stop the timer
             timer.invalidate()
         }
+    }
+    
+    // TimeString function
+    func timeString(time:TimeInterval) -> String {
+       // calculating var to be in secons
+        let hours = Int(time) / 3600
+        let minutes = Int(time) / 60 % 60
+        let seconds = Int(time) % 60
+        return String(format: "%02i:%02i:%02i", hours, minutes, seconds)
     }
 
     /*
