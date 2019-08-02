@@ -2,20 +2,39 @@
 //  AppDelegate.swift
 //  eco-
 //
-//  Created by Sidhika Tripathee on 7/19/19.
-//  Copyright © 2019 Sidhika Tripathee. All rights reserved.
+//  Created by Sidhika Tripathee, Akoly Vongdala, Guilherme Hohenfeld, Joey Duodu on 7/19/19.
+//  Copyright © 2019 Sidhika Tripathee, Akoly Vongdala, Guilherme Hohenfeld, Joey Duodu. All rights reserved.
 //
 
 import UIKit
+import CoreData
 
 @UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    lazy var persistentContainer: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "userInformation")
+        container.loadPersistentStores { description, error in
+            if let error = error {
+                fatalError("Unable to load persistent stores: \(error)")
+                
+            }
+            
+        }
+        return container
+        
+    }()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if let rootVC = window?.rootViewController as? newSummaryViewController {
+            rootVC.container = persistentContainer
+            
+        }
         return true
     }
 
