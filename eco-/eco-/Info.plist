@@ -23,7 +23,19 @@
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
+<<<<<<< HEAD
 	<string>DonationPage</string>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+	<string>newSummaryScreenStoryboard</string>
+=======
+	<string>SidhikaStoryboard</string>
+>>>>>>> sidhika_without_conflict
+=======
+	<string>WelcomePage</string>
+>>>>>>> welcomePage_Akoly
+>>>>>>> development
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
