@@ -23,10 +23,10 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="AmL-cy-zv3">
-                                        <rect key="frame" x="0.0" y="52" width="414" height="717"/>
+                                        <rect key="frame" x="0.0" y="52" width="414" height="221"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <view key="tableFooterView" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="iCl-h5-oTM" userLabel="Footer View">
+                                        <view key="tableFooterView" clearsContextBeforeDrawing="NO" contentMode="bottom" id="iCl-h5-oTM" userLabel="Footer View">
                                             <rect key="frame" x="0.0" y="87" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
@@ -101,6 +101,10 @@ utton</string>
                                             <segue destination="C9C-oY-CVO" kind="presentation" id="uGh-zG-QXL"/>
                                         </connections>
                                     </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tasklines_image" translatesAutoresizingMaskIntoConstraints="NO" id="Ema-9d-G4e">
+                                        <rect key="frame" x="4" y="272" width="406" height="497"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <viewLayoutGuide key="safeArea" id="GF5-S2-vCf"/>
@@ -327,6 +331,7 @@ utton</string>
         <image name="exitButton" width="48" height="52"/>
         <image name="focusButton" width="378" height="352"/>
         <image name="go_to_focus_button" width="500" height="166"/>
+        <image name="tasklines_image" width="786" height="888"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="uGh-zG-QXL"/>

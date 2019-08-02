@@ -21,28 +21,38 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
         //expandButtonImageView.isUserInteractionEnabled = true
     }
     var tasks = [
-        Task(taskName: "sample", hasSubtasks: false),
-        Task(taskName: "second task", hasSubtasks: true)
+        Task(taskName: "Get almond milk", hasSubtasks: false),
+        Task(taskName: "Psych HW", hasSubtasks: true),
+        Task(taskName: "Finish Xcode project", hasSubtasks: true)
         ]
  
     
     //returns the number of rows/elements in the tasks array
       func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return tasks.count
+        //if(tasks.count > 14){
+        return tasks.count
+//        }else{
+//            return 14
+//        }
     }
     
     //return a cell and changes it's UI based on code
       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+       
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "taskCell", for: indexPath) as! TaskTableViewCell
+//        cell.focusButton.isHidden = true
+//        cell.checkBoxButton.isHidden = true
+//        if(indexPath.row < tasks.count){
         cell.taskNameLabel.text = tasks[indexPath.row].taskName
-        
+//            cell.focusButton.isHidden = false
+//            cell.checkBoxButton.isHidden = false
         //set a unique tag for each button
         cell.checkBoxButton.tag = indexPath.row
         
         //listens to the button and goes to the function specified (btnclicked)
         cell.checkBoxButton.addTarget(self, action:#selector(btnClicked), for:.touchUpInside)
-        
+        //}
         
         return cell
         
