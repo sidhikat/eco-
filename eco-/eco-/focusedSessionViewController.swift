@@ -52,9 +52,9 @@ class focusedSessionViewController: UIViewController {
         
         
         // strike through
-        let attributeString: NSMutableAttributedString = NSMutableAttributedString(string:taskLabel.text!)
-        attributeString.addAttribute(.strikethroughStyle, value: 2, range: NSMakeRange(0, attributeString.length))
-        taskLabel.attributedText = attributeString
+//        let attributeString: NSMutableAttributedString = NSMutableAttributedString(string:taskLabel.text!)
+//        attributeString.addAttribute(.strikethroughStyle, value: 2, range: NSMakeRange(0, attributeString.length))
+//        taskLabel.attributedText = attributeString
     }
     
     // count down and display messages
