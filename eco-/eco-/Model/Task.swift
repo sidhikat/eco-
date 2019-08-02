@@ -11,5 +11,5 @@ import UIKit
 
 struct Task{
     var taskName:String
-    var taskStatus: Bool
+    var hasSubtasks: Bool
 }
