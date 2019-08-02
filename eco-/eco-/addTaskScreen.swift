@@ -57,7 +57,6 @@ class addTaskScreen: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
         override func viewDidLoad() {
         super.viewDidLoad()
             var appDelegate = UIApplication.shared.delegate as! AppDelegate
-            
             container = appDelegate.persistentContainer
         }
     
@@ -115,11 +114,7 @@ class addTaskScreen: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
         try! container.viewContext.save()
         
         print (taskInformation)
-        
-        
-        
-        
-        
+       
         
     }
     
