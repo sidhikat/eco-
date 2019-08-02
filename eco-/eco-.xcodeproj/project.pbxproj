@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F81250922F49CF500C0CB1C /* focusedSession.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F81250822F49CF500C0CB1C /* focusedSession.storyboard */; };
+		5F81250B22F49D9F00C0CB1C /* focusedSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F81250A22F49D9F00C0CB1C /* focusedSessionViewController.swift */; };
 		726C3F7722F0F4F000597C3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726C3F7622F0F4F000597C3B /* Main.storyboard */; };
 		72744CD822EF8FB600B227D9 /* addTaskScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72744CD722EF8FB600B227D9 /* addTaskScreen.swift */; };
 		727B56B822E6B87B006B9627 /* loginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727B56B722E6B87B006B9627 /* loginPageViewController.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F81250822F49CF500C0CB1C /* focusedSession.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = focusedSession.storyboard; sourceTree = "<group>"; };
+		5F81250A22F49D9F00C0CB1C /* focusedSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = focusedSessionViewController.swift; sourceTree = "<group>"; };
 		726C3F7622F0F4F000597C3B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		72744CD722EF8FB600B227D9 /* addTaskScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addTaskScreen.swift; sourceTree = "<group>"; };
 		727B56B722E6B87B006B9627 /* loginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPageViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 				A2C5538822E283190023A29D /* LaunchScreen.storyboard */,
 				A2C5538B22E283190023A29D /* Info.plist */,
 				A2C553A622E667420023A29D /* TaskTableViewCell.swift */,
+				5F81250822F49CF500C0CB1C /* focusedSession.storyboard */,
+				5F81250A22F49D9F00C0CB1C /* focusedSessionViewController.swift */,
 			);
 			path = "eco-";
 			sourceTree = "<group>";
@@ -215,6 +221,7 @@
 				A2C5538A22E283190023A29D /* LaunchScreen.storyboard in Resources */,
 				727B577C22E90689006B9627 /* hohenfeld.storyboard in Resources */,
 				A2C5538722E283190023A29D /* Assets.xcassets in Resources */,
+				5F81250922F49CF500C0CB1C /* focusedSession.storyboard in Resources */,
 				726C3F7722F0F4F000597C3B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2C553AA22E66A760023A29D /* Task.swift in Sources */,
+				5F81250B22F49D9F00C0CB1C /* focusedSessionViewController.swift in Sources */,
 				A2C5538222E283180023A29D /* TaskListViewController.swift in Sources */,
 				A2C5540B22E7ABE40023A29D /* OrgCategory.swift in Sources */,
 				A2C5538022E283180023A29D /* AppDelegate.swift in Sources */,
