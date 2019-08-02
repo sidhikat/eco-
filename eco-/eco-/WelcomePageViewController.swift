@@ -19,6 +19,7 @@ class WelcomePageViewController: UIViewController {
     @IBOutlet weak var btnFocus: UIButton!
     @IBOutlet weak var btnSummary: UIButton!
     var container:NSPersistentContainer!
+    var userName: String = ""
 
     
     
@@ -41,7 +42,12 @@ class WelcomePageViewController: UIViewController {
     func displayGreeting() {
         
         let itemsFetchRequest = NSFetchRequest<NSFetchRequestResult> (entityName: "UserInformation")
-        print(itemsFetchRequest)
+        
+        let fetchedUser = try! container.viewContext.fetch(itemsFetchRequest) as! [UserInformation]
+        
+        for i in fetchedUser {
+            userName = i.firstName!
+        }
         
         
         // grabing the user's time informaition
@@ -50,12 +56,12 @@ class WelcomePageViewController: UIViewController {
         // check what timeOfDay is
         if (timeOfDay == "PM"){
             // print good afternoon is PM
-            greetingLabel.text = "Good afternoon, Sidhika" + " 🌤"
+            greetingLabel.text = "Good afternoon, " + userName + " 🌤"
             
             //let str : String = "Smiley \u{1F603}"
         }else{
             // print good morning if not
-            greetingLabel.text = "Good morning, Sidhika" + " ☀️"
+            greetingLabel.text = "Good morning, " + userName + " ☀️"
         }
     }
     
