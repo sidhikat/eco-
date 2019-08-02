@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5F1328F922EA472F00A78BA6 /* DonationPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F1328F722EA472F00A78BA6 /* DonationPage.storyboard */; };
-		5FD79B9B22F2417F000DF77A /* coinfall.json in Resources */ = {isa = PBXBuildFile; fileRef = 5FD79B9A22F2417F000DF77A /* coinfall.json */; };
 		5FE4FBF422E666BA00F780B7 /* DonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE4FBF322E666BA00F780B7 /* DonationViewController.swift */; };
 		5FE4FBF722E6681300F780B7 /* OrgCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE4FBF622E6681300F780B7 /* OrgCategory.swift */; };
 		A2C5538022E283180023A29D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5537F22E283180023A29D /* AppDelegate.swift */; };
@@ -30,7 +29,6 @@
 
 /* Begin PBXFileReference section */
 		5F1328F822EA472F00A78BA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "eco-/Base.lproj/DonationPage.storyboard"; sourceTree = "<group>"; };
-		5FD79B9A22F2417F000DF77A /* coinfall.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = coinfall.json; path = ../../../../Downloads/coinfall.json; sourceTree = "<group>"; };
 		5FE4FBF322E666BA00F780B7 /* DonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationViewController.swift; sourceTree = "<group>"; };
 		5FE4FBF622E6681300F780B7 /* OrgCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgCategory.swift; sourceTree = "<group>"; };
 		A2C5537C22E283180023A29D /* eco-.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eco-.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,7 +89,6 @@
 		A2C5537E22E283180023A29D /* eco- */ = {
 			isa = PBXGroup;
 			children = (
-				5FD79B9A22F2417F000DF77A /* coinfall.json */,
 				5FE4FBF522E667FA00F780B7 /* Models */,
 				A2C5537F22E283180023A29D /* AppDelegate.swift */,
 				5F1328F722EA472F00A78BA6 /* DonationPage.storyboard */,
@@ -197,7 +194,6 @@
 				A2C5538A22E283190023A29D /* LaunchScreen.storyboard in Resources */,
 				A2C5538722E283190023A29D /* Assets.xcassets in Resources */,
 				A2C5538522E283180023A29D /* Main.storyboard in Resources */,
-				5FD79B9B22F2417F000DF77A /* coinfall.json in Resources */,
 				5F1328F922EA472F00A78BA6 /* DonationPage.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
