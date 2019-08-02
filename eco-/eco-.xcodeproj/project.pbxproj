@@ -135,7 +135,7 @@
 				A2C5538822E283190023A29D /* LaunchScreen.storyboard */,
 				A2C5538B22E283190023A29D /* Info.plist */,
 				A2C553A622E667420023A29D /* TaskTableViewCell.swift */,
-<<<<<<< HEAD
+
 				A2C5538622E283190023A29D /* Assets.xcassets */,
 				A2C5538822E283190023A29D /* LaunchScreen.storyboard */,
 				A2C5538B22E283190023A29D /* Info.plist */,
@@ -144,10 +144,8 @@
 				22C04CBF22F0A04200EE6906 /* TaskManager.swift */,
 				22C04CC122F0A08000EE6906 /* summaryTableViewCell.swift */,
 
-=======
 				5FD5B75922F0BE730007C1D4 /* WelcomePage.storyboard */,
 				5FD5B75B22F0BECD0007C1D4 /* WelcomePageViewController.swift */,
->>>>>>> welcomePage_Akoly
 			);
 			path = "eco-";
 			sourceTree = "<group>";
@@ -280,11 +278,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2C553AA22E66A760023A29D /* Task.swift in Sources */,
-<<<<<<< HEAD
 				A27E3DE722EF9873006C49F6 /* CongratsScreenViewController.swift in Sources */,
-=======
+
 				5FD5B75C22F0BECD0007C1D4 /* WelcomePageViewController.swift in Sources */,
->>>>>>> welcomePage_Akoly
 				A2C5538222E283180023A29D /* TaskListViewController.swift in Sources */,
 				A2C5540B22E7ABE40023A29D /* OrgCategory.swift in Sources */,
 				A2C5538022E283180023A29D /* AppDelegate.swift in Sources */,
