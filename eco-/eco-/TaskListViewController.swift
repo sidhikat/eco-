@@ -12,13 +12,19 @@ import CoreData
 class TaskListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIPopoverPresentationControllerDelegate {
     
     var container:NSPersistentContainer!
+    var fetchedTasks : [TaskInformation] = []
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var addButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        var appDelegate = UIApplication.shared.delegate as! AppDelegate
         
-       // self.subtasksView.layer.cornerRadius = 10 //gives popover rounded edges
-        //expandButtonImageView.isUserInteractionEnabled = true
+        container = appDelegate.persistentContainer
+        let itemsFetchRequest = NSFetchRequest<NSFetchRequestResult> (entityName: "TaskInformation")
+        //
+         self.fetchedTasks = try! container.viewContext.fetch(itemsFetchRequest) as! [TaskInformation]
+        
     }
     var tasks = [
         Task(taskName: "Get almond milk", hasSubtasks: false),
@@ -30,7 +36,7 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
     //returns the number of rows/elements in the tasks array
       func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //if(tasks.count > 14){
-        return tasks.count
+        return fetchedTasks.count
 //        }else{
 //            return 14
 //        }
@@ -44,19 +50,17 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
        
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "taskCell", for: indexPath) as! TaskTableViewCell
-//        cell.focusButton.isHidden = true
-//        cell.checkBoxButton.isHidden = true
-//        if(indexPath.row < tasks.count){
-        cell.taskNameLabel.text = tasks[indexPath.row].taskName
-//            cell.focusButton.isHidden = false
-//            cell.checkBoxButton.isHidden = false
+
+       
+        
+        cell.taskNameLabel.text = fetchedTasks[indexPath.row].taskName
+
         //set a unique tag for each button
         cell.checkBoxButton.tag = indexPath.row
         
         //listens to the button and goes to the function specified (btnclicked)
         cell.checkBoxButton.addTarget(self, action:#selector(btnClicked), for:.touchUpInside)
-        //}
-        
+    
         return cell
         
     }
