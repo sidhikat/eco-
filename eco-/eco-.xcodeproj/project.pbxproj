@@ -11,6 +11,10 @@
 		22C04C7E22EE74D600EE6906 /* newSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C04C7D22EE74D600EE6906 /* newSummaryViewController.swift */; };
 		22C04CC022F0A04200EE6906 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C04CBF22F0A04200EE6906 /* TaskManager.swift */; };
 		22C04CC222F0A08000EE6906 /* summaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C04CC122F0A08000EE6906 /* summaryTableViewCell.swift */; };
+<<<<<<< HEAD
+=======
+		22C04CC622F4A5A400EE6906 /* anotherSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C04CC522F4A5A400EE6906 /* anotherSummaryViewController.swift */; };
+>>>>>>> 2cfc7ea68c1a6d06100ce2dcb71ff4f06d46493e
 		726C3F7722F0F4F000597C3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726C3F7622F0F4F000597C3B /* Main.storyboard */; };
 		72744CD822EF8FB600B227D9 /* addTaskScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72744CD722EF8FB600B227D9 /* addTaskScreen.swift */; };
 		727B56B822E6B87B006B9627 /* loginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727B56B722E6B87B006B9627 /* loginPageViewController.swift */; };
@@ -48,6 +52,10 @@
 		22C04C7D22EE74D600EE6906 /* newSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newSummaryViewController.swift; sourceTree = "<group>"; };
 		22C04CBF22F0A04200EE6906 /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
 		22C04CC122F0A08000EE6906 /* summaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = summaryTableViewCell.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+		22C04CC522F4A5A400EE6906 /* anotherSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anotherSummaryViewController.swift; sourceTree = "<group>"; };
+>>>>>>> 2cfc7ea68c1a6d06100ce2dcb71ff4f06d46493e
 		726C3F7622F0F4F000597C3B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		72744CD722EF8FB600B227D9 /* addTaskScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addTaskScreen.swift; sourceTree = "<group>"; };
 		727B56B722E6B87B006B9627 /* loginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPageViewController.swift; sourceTree = "<group>"; };
@@ -127,13 +135,18 @@
 				A2CE8FBD22F2476A000B8D3E /* PopUpViewController.swift */,
 				726C3F7622F0F4F000597C3B /* Main.storyboard */,
 				727B577A22E90689006B9627 /* hohenfeld.storyboard */,
+<<<<<<< HEAD
 				A27E3DE622EF9873006C49F6 /* CongratsScreenViewController.swift */,
 				A27E3DE822EF9AAA006C49F6 /* plantAnimation.json */,
+=======
+				A2C553A622E667420023A29D /* TaskTableViewCell.swift */,
+>>>>>>> 2cfc7ea68c1a6d06100ce2dcb71ff4f06d46493e
 				A2C5538622E283190023A29D /* Assets.xcassets */,
 				A2C5538822E283190023A29D /* LaunchScreen.storyboard */,
 				A2C5538B22E283190023A29D /* Info.plist */,
 				22C04C7B22EE744000EE6906 /* newSummaryScreenStoryboard.storyboard */,
 				22C04C7D22EE74D600EE6906 /* newSummaryViewController.swift */,
+				22C04CC522F4A5A400EE6906 /* anotherSummaryViewController.swift */,
 				22C04CBF22F0A04200EE6906 /* TaskManager.swift */,
 				22C04CC122F0A08000EE6906 /* summaryTableViewCell.swift */,
 			);
@@ -273,6 +286,7 @@
 				A2C5540722E7AB7F0023A29D /* DonationViewController.swift in Sources */,
 				A2C553A722E667420023A29D /* TaskTableViewCell.swift in Sources */,
 				727B56B822E6B87B006B9627 /* loginPageViewController.swift in Sources */,
+				22C04CC622F4A5A400EE6906 /* anotherSummaryViewController.swift in Sources */,
 				A2C5538222E283180023A29D /* TaskListViewController.swift in Sources */,
 				72744CD822EF8FB600B227D9 /* addTaskScreen.swift in Sources */,
 				22C04CC022F0A04200EE6906 /* TaskManager.swift in Sources */,
