@@ -89,7 +89,6 @@ class signUpScreen: UIViewController {
         if let temp_Password = passwordTextField.text {
             var userPassword = temp_Password
             userInformation.password = userPassword
-           
         }
         
         try! container.viewContext.save()
