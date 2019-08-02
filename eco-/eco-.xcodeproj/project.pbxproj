@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7261705722F2120500C201E3 /* subTaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7261705622F2120500C201E3 /* subTaskTableViewController.swift */; };
 		72744CD822EF8FB600B227D9 /* addTaskScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72744CD722EF8FB600B227D9 /* addTaskScreen.swift */; };
 		727B56B822E6B87B006B9627 /* loginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727B56B722E6B87B006B9627 /* loginPageViewController.swift */; };
 		727B573422E7BFC1006B9627 /* userInformation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 727B573222E7BFC1006B9627 /* userInformation.xcdatamodeld */; };
@@ -32,7 +31,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7261705622F2120500C201E3 /* subTaskTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subTaskTableViewController.swift; sourceTree = "<group>"; };
 		72744CD722EF8FB600B227D9 /* addTaskScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addTaskScreen.swift; sourceTree = "<group>"; };
 		727B56B722E6B87B006B9627 /* loginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPageViewController.swift; sourceTree = "<group>"; };
 		727B573322E7BFC1006B9627 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
@@ -91,7 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				A2C5537F22E283180023A29D /* AppDelegate.swift */,
-				7261705622F2120500C201E3 /* subTaskTableViewController.swift */,
 				72744CD722EF8FB600B227D9 /* addTaskScreen.swift */,
 				727B577822E8CDB6006B9627 /* signUpScreen.swift */,
 				727B56B722E6B87B006B9627 /* loginPageViewController.swift */,
@@ -216,7 +213,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7261705722F2120500C201E3 /* subTaskTableViewController.swift in Sources */,
 				727B56B822E6B87B006B9627 /* loginPageViewController.swift in Sources */,
 				A2C5538222E283180023A29D /* ViewController.swift in Sources */,
 				72744CD822EF8FB600B227D9 /* addTaskScreen.swift in Sources */,

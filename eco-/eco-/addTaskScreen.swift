@@ -10,8 +10,26 @@ import UIKit
 import CoreData
 
 
-class addTaskScreen: UIViewController {
-    var container:NSPersistentContainer!
+class addTaskScreen: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    var duration = [["0", "1","2", "3", "4", "5", "6", "7", "8", "9", "10", "11","12","13","14","15","16","17", "18", "19", "20", "21","22", "23"],
+                    ["0", "1","2", "3", "4", "5", "6", "7", "8", "9", "10", "11","12","13","14","15","16","17", "18", "19", "20", "21","22", "23","24","25","26","27","28", "59"]
+    ]
+    
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return duration.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return duration[component].count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return duration[component][row]
+    }
+    
+    var container: NSPersistentContainer!
     
     @IBOutlet weak var addTaskLabel: UILabel!
     
@@ -46,6 +64,7 @@ class addTaskScreen: UIViewController {
         var subTask2Name = subTask2TextField.text
         var subTask3Name = subTask3NameTextField.text
         var subTask4Name = subTask4TextField.text
+        var taskDueDate = dueDatePicker.date
         
         let taskInformation = NSEntityDescription.insertNewObject(forEntityName: "TaskInformation", into: container.viewContext) as! TaskInformation
         
@@ -74,6 +93,13 @@ class addTaskScreen: UIViewController {
             var subTask4Name = temp_subTask4Name
             taskInformation.subTask4Name = subTask4Name
         }
+        
+        if let temp_dueDate = dueDatePicker?.date {
+            var taskDueDate = temp_dueDate
+            taskInformation.dueDate = taskDueDate
+        }
+        
+        
         
         try! container.viewContext.save()
         

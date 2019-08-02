@@ -361,6 +361,10 @@
                                     <constraint firstAttribute="width" constant="243" id="QDT-rO-Qra"/>
                                     <constraint firstAttribute="height" constant="50" id="tHq-rb-ePO"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="054-EG-6GV" id="zru-KD-gCe"/>
+                                    <outlet property="delegate" destination="054-EG-6GV" id="JvV-8D-uwU"/>
+                                </connections>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
