@@ -10,7 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "eco-/signUpScreen.swift"
+<<<<<<< HEAD
             timestampString = "586456896.920969"
+=======
+            timestampString = "586133275.868693"
+>>>>>>> sidhika_without_conflict
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
@@ -118,7 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "eco-/signUpScreen.swift"
+<<<<<<< HEAD
             timestampString = "586456896.921023"
+=======
+            timestampString = "586133275.869049"
+>>>>>>> sidhika_without_conflict
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"
@@ -134,11 +142,19 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "eco-/loginPageViewController.swift"
+<<<<<<< HEAD
             timestampString = "586456896.921082"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "89"
             endingLineNumber = "89"
+=======
+            timestampString = "586133275.869392"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+>>>>>>> sidhika_without_conflict
             landmarkName = "loginButton(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -150,11 +166,19 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "eco-/loginPageViewController.swift"
+<<<<<<< HEAD
             timestampString = "586456896.921119"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "73"
             endingLineNumber = "73"
+=======
+            timestampString = "586133275.869447"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+>>>>>>> sidhika_without_conflict
             landmarkName = "loginButton(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -166,11 +190,19 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "eco-/loginPageViewController.swift"
+<<<<<<< HEAD
             timestampString = "586456896.9211529"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "80"
             endingLineNumber = "80"
+=======
+            timestampString = "586133275.869513"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+>>>>>>> sidhika_without_conflict
             landmarkName = "loginButton(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -182,11 +214,31 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "eco-/loginPageViewController.swift"
+<<<<<<< HEAD
             timestampString = "586456896.921185"
+=======
+            timestampString = "586133346.87576"
+>>>>>>> sidhika_without_conflict
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "loginButton(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "eco-/loginPageViewController.swift"
+            timestampString = "586133348.447486"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "loginButton(_:)"
             landmarkType = "7">
          </BreakpointContent>

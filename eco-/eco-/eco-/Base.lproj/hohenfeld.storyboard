@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -253,7 +252,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Qk-A6-up7">
+
                                 <rect key="frame" x="20" y="203" width="167" height="45"/>
+
                                 <constraints>
                                     <constraint firstAttribute="width" constant="167" id="2Ut-b4-obD"/>
                                     <constraint firstAttribute="height" constant="45" id="cVO-uB-k4y"/>
@@ -263,17 +264,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gsL-sZ-ZTa">
+
                                 <rect key="frame" x="20" y="326" width="56" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="XOG-BD-5Sh"/>
                                     <constraint firstAttribute="width" constant="56" id="w03-qu-dML"/>
                                 </constraints>
+
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wBL-kD-igb">
                                 <rect key="frame" x="20" y="423" width="56" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="J8U-ME-zSu">
+
                                 <rect key="frame" x="97" y="321" width="243" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="ZEq-j4-fYE"/>
@@ -369,6 +373,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+<<<<<<< HEAD
                             <constraint firstItem="GGS-Em-xAA" firstAttribute="trailing" secondItem="H8y-Am-zay" secondAttribute="trailing" constant="20" id="0fR-4i-g0q"/>
                             <constraint firstItem="bkL-KI-AMv" firstAttribute="centerX" secondItem="GGS-Em-xAA" secondAttribute="centerX" id="3CX-Oa-pp4"/>
                             <constraint firstItem="iuZ-Kj-vgu" firstAttribute="leading" secondItem="GGS-Em-xAA" secondAttribute="leading" constant="140" id="4Ib-g1-BJI"/>
@@ -512,15 +517,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="KrN-FE-LiY" firstAttribute="centerX" secondItem="m9X-eA-xoa" secondAttribute="centerX" id="0YW-h1-0RU"/>
-                            <constraint firstItem="87A-ui-gRc" firstAttribute="leading" secondItem="m9X-eA-xoa" secondAttribute="leading" constant="98" id="A4X-sv-aMl"/>
                             <constraint firstItem="m9X-eA-xoa" firstAttribute="bottom" secondItem="KrN-FE-LiY" secondAttribute="bottom" constant="204" id="HYg-cM-a28"/>
                             <constraint firstItem="m9X-eA-xoa" firstAttribute="bottom" secondItem="lKS-4d-N2a" secondAttribute="bottom" constant="346" id="Q1F-cl-KhK"/>
                             <constraint firstItem="2VG-yK-OqP" firstAttribute="centerX" secondItem="m9X-eA-xoa" secondAttribute="centerX" id="ack-lG-8Jj"/>
-                            <constraint firstItem="m9X-eA-xoa" firstAttribute="trailing" secondItem="87A-ui-gRc" secondAttribute="trailing" constant="89" id="bDs-ni-dW8"/>
                             <constraint firstItem="m9X-eA-xoa" firstAttribute="bottom" secondItem="2VG-yK-OqP" secondAttribute="bottom" constant="289" id="h5Q-yd-EOS"/>
-                            <constraint firstItem="87A-ui-gRc" firstAttribute="centerX" secondItem="m9X-eA-xoa" secondAttribute="centerX" id="m4a-KK-O8T"/>
                             <constraint firstItem="m9X-eA-xoa" firstAttribute="bottom" secondItem="87A-ui-gRc" secondAttribute="bottom" constant="742" id="pOh-Ro-N9K"/>
                             <constraint firstItem="lKS-4d-N2a" firstAttribute="centerX" secondItem="m9X-eA-xoa" secondAttribute="centerX" id="u4T-i3-qiB"/>
+                            <constraint firstItem="87A-ui-gRc" firstAttribute="leading" secondItem="m9X-eA-xoa" secondAttribute="leading" constant="98" id="wmh-yd-Pcg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="m9X-eA-xoa"/>
                     </view>

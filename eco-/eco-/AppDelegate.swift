@@ -31,7 +31,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        if let rootVC = window?.rootViewController as? addTaskScreen {
+
+        if let rootVC = window?.rootViewController as? TaskListViewController {
+
             rootVC.container = persistentContainer
             
         }
