@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FD5B75A22F0BE730007C1D4 /* WelcomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FD5B75922F0BE730007C1D4 /* WelcomePage.storyboard */; };
+		5FD5B75C22F0BECD0007C1D4 /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD5B75B22F0BECD0007C1D4 /* WelcomePageViewController.swift */; };
+		5FD79B9922F21723000DF77A /* confetti.json in Resources */ = {isa = PBXBuildFile; fileRef = 5FD79B9822F21723000DF77A /* confetti.json */; };
 		726C3F7722F0F4F000597C3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726C3F7622F0F4F000597C3B /* Main.storyboard */; };
 		72744CD822EF8FB600B227D9 /* addTaskScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72744CD722EF8FB600B227D9 /* addTaskScreen.swift */; };
 		727B56B822E6B87B006B9627 /* loginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727B56B722E6B87B006B9627 /* loginPageViewController.swift */; };
@@ -43,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5FD5B75922F0BE730007C1D4 /* WelcomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WelcomePage.storyboard; sourceTree = "<group>"; };
+		5FD5B75B22F0BECD0007C1D4 /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
+		5FD79B9822F21723000DF77A /* confetti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = confetti.json; path = ../../../../Downloads/confetti.json; sourceTree = "<group>"; };
 		726C3F7622F0F4F000597C3B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		72744CD722EF8FB600B227D9 /* addTaskScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addTaskScreen.swift; sourceTree = "<group>"; };
 		727B56B722E6B87B006B9627 /* loginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPageViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +118,7 @@
 		A2C5537E22E283180023A29D /* eco- */ = {
 			isa = PBXGroup;
 			children = (
+				5FD79B9822F21723000DF77A /* confetti.json */,
 				A2C553A822E66A5D0023A29D /* Model */,
 				A2C5537F22E283180023A29D /* AppDelegate.swift */,
 				A2C5540622E7AB6F0023A29D /* DonationViewController.swift */,
@@ -128,6 +135,7 @@
 				A2C5538822E283190023A29D /* LaunchScreen.storyboard */,
 				A2C5538B22E283190023A29D /* Info.plist */,
 				A2C553A622E667420023A29D /* TaskTableViewCell.swift */,
+<<<<<<< HEAD
 				A2C5538622E283190023A29D /* Assets.xcassets */,
 				A2C5538822E283190023A29D /* LaunchScreen.storyboard */,
 				A2C5538B22E283190023A29D /* Info.plist */,
@@ -136,6 +144,10 @@
 				22C04CBF22F0A04200EE6906 /* TaskManager.swift */,
 				22C04CC122F0A08000EE6906 /* summaryTableViewCell.swift */,
 
+=======
+				5FD5B75922F0BE730007C1D4 /* WelcomePage.storyboard */,
+				5FD5B75B22F0BECD0007C1D4 /* WelcomePageViewController.swift */,
+>>>>>>> welcomePage_Akoly
 			);
 			path = "eco-";
 			sourceTree = "<group>";
@@ -240,6 +252,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2C5538A22E283190023A29D /* LaunchScreen.storyboard in Resources */,
+				5FD79B9922F21723000DF77A /* confetti.json in Resources */,
+				A2C5538722E283190023A29D /* Assets.xcassets in Resources */,
+				5FD5B75A22F0BE730007C1D4 /* WelcomePage.storyboard in Resources */,
 				727B577C22E90689006B9627 /* hohenfeld.storyboard in Resources */,
 				22C04C7C22EE744000EE6906 /* newSummaryScreenStoryboard.storyboard in Resources */,
 				A2C5538722E283190023A29D /* Assets.xcassets in Resources */,
@@ -265,7 +280,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2C553AA22E66A760023A29D /* Task.swift in Sources */,
+<<<<<<< HEAD
 				A27E3DE722EF9873006C49F6 /* CongratsScreenViewController.swift in Sources */,
+=======
+				5FD5B75C22F0BECD0007C1D4 /* WelcomePageViewController.swift in Sources */,
+>>>>>>> welcomePage_Akoly
 				A2C5538222E283180023A29D /* TaskListViewController.swift in Sources */,
 				A2C5540B22E7ABE40023A29D /* OrgCategory.swift in Sources */,
 				A2C5538022E283180023A29D /* AppDelegate.swift in Sources */,
