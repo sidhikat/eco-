@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="t8V-CA-1Co">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ojN-gh-fyh">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -84,7 +84,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.85428398849999998" green="0.7601782981197801" blue="0.31419712338892025" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Statistics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7J5-VN-5Ie">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7J5-VN-5Ie">
                                 <rect key="frame" x="20" y="111" width="374" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
@@ -141,6 +141,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c4l-te-uXY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="968.11594202898561" y="138.61607142857142"/>
+        </scene>
+        <!--Another Summary View Controller-->
+        <scene sceneID="4k8-My-Jbi">
+            <objects>
+                <viewController id="ojN-gh-fyh" customClass="anotherSummaryViewController" customModule="eco_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0iC-dN-hmh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kVk-2R-Nzt">
+                                <rect key="frame" x="87" y="384" width="240" height="128"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="s7a-cI-JO4">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="138"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="s7a-cI-JO4" firstAttribute="leading" secondItem="kVk-2R-Nzt" secondAttribute="leading" id="NKI-kf-iwY"/>
+                                    <constraint firstItem="s7a-cI-JO4" firstAttribute="top" secondItem="kVk-2R-Nzt" secondAttribute="top" id="n43-VB-Vr1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kVk-2R-Nzt" firstAttribute="centerX" secondItem="0iC-dN-hmh" secondAttribute="centerX" id="D03-Jt-vav"/>
+                            <constraint firstItem="s7a-cI-JO4" firstAttribute="centerX" secondItem="CZQ-SY-DgI" secondAttribute="centerX" id="Jo0-MI-oNW"/>
+                            <constraint firstItem="kVk-2R-Nzt" firstAttribute="centerY" secondItem="0iC-dN-hmh" secondAttribute="centerY" id="a8d-95-m1x"/>
+                            <constraint firstItem="kVk-2R-Nzt" firstAttribute="leading" secondItem="CZQ-SY-DgI" secondAttribute="leading" constant="87" id="dcA-sP-JG8"/>
+                            <constraint firstItem="kVk-2R-Nzt" firstAttribute="top" secondItem="CZQ-SY-DgI" secondAttribute="top" constant="340" id="oKR-uY-5hh"/>
+                            <constraint firstItem="s7a-cI-JO4" firstAttribute="centerY" secondItem="CZQ-SY-DgI" secondAttribute="centerY" id="rvW-Tw-6uU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CZQ-SY-DgI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="et1-yA-Pet" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2430.434782608696" y="132.58928571428572"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="JLY-9J-obj">
