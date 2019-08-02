@@ -76,6 +76,9 @@ class DonationViewController: UIViewController {
         TreeButton.setTitle(orgCategory[1].description, for: .normal)
         SeaButton.setTitle(orgCategory[2].description, for: .normal)
         btnBee.setTitle(orgCategory[0].description, for: .normal)
+        
+        // making sure the drop down description is hidden
+        beeLabelShow.isHidden = true
     }
     
     // drop down for bees org show
