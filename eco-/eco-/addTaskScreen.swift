@@ -13,7 +13,7 @@ import CoreData
 class addTaskScreen: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     var duration = [["0", "1","2", "3", "4", "5", "6", "7", "8", "9", "10", "11","12","13","14","15","16","17", "18", "19", "20", "21","22", "23"],
-                    ["0", "1","2", "3", "4", "5", "6", "7", "8", "9", "10", "11","12","13","14","15","16","17", "18", "19", "20", "21","22", "23","24","25","26","27","28", "59"]
+                    ["0", "1","2", "3", "4", "5", "6", "7", "8", "9", "10", "11","12","13","14","15","16","17", "18", "19", "20", "21","22", "23","24","25","26","27","28", "29","30", "31","32", "33", "34", "35", "36", "37", "38", "39", "40", "41","42", "43", "44", "45", "46", "47", "48", "49", "50", "51","52", "53", "54", "55", "56", "57", "58" , "59"]
     ]
     
     
@@ -39,7 +39,10 @@ class addTaskScreen: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
     
     @IBOutlet weak var dueDatePicker: UIDatePicker!
     
+    @IBOutlet weak var taskDurationPicker: UIPickerView!
+    
     @IBOutlet weak var taskLabel: UILabel!
+    
     
     
     //TextField
@@ -59,13 +62,16 @@ class addTaskScreen: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
         }
     
     @IBAction func addTaskButtonPressed(_ sender: Any) {
-        //var taskName = taskNameTextField.text
+        var taskName = taskNameTextField.text
         var subTask1Name = subTask1TextField.text
         var subTask2Name = subTask2TextField.text
         var subTask3Name = subTask3NameTextField.text
         var subTask4Name = subTask4TextField.text
         var taskDueDate = dueDatePicker.date
-        
+        var taskHour = duration[1][taskDurationPicker.selectedRow(inComponent: 1)]
+        //print("HOURS SELECTED: \(taskHour)")
+        var taskMin = duration[0][taskDurationPicker.selectedRow(inComponent: 0)]
+        print ("Duration of task: \(taskHour) Hours and \(taskMin) min")
         let taskInformation = NSEntityDescription.insertNewObject(forEntityName: "TaskInformation", into: container.viewContext) as! TaskInformation
         
         
@@ -99,6 +105,11 @@ class addTaskScreen: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
             taskInformation.dueDate = taskDueDate
         }
         
+        var taskHourInt = Int16(taskHour)
+        var taskMinInt = Int16(taskMin)
+        
+        taskInformation.durationMin = taskHourInt!
+        taskInformation.durationHour = taskMinInt!
         
         
         try! container.viewContext.save()
