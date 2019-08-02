@@ -35,6 +35,7 @@
                                                     <state key="normal" image="add_image"/>
                                                     <connections>
                                                         <action selector="addButton:" destination="vmY-bR-YB0" eventType="touchUpInside" id="Mxs-bK-r0f"/>
+                                                        <segue destination="2sN-pq-Nak" kind="show" id="34D-sG-vaM"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -65,10 +66,10 @@ utton</string>
                                                                 <segue destination="C9C-oY-CVO" kind="presentation" id="Vlg-SD-IEC"/>
                                                             </connections>
                                                         </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Due:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FtG-E9-eSS">
-                                                            <rect key="frame" x="44" y="40" width="36" height="21"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Due:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FtG-E9-eSS">
+                                                            <rect key="frame" x="44" y="40" width="281" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                                             <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -247,6 +248,14 @@ utton</string>
             </objects>
             <point key="canvasLocation" x="2100" y="864"/>
         </scene>
+        <!--addTaskScreen-->
+        <scene sceneID="fT2-xC-2Rx">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="addTaskScreen" storyboardName="hohenfeld" referencedIdentifier="addTaskScreen" id="2sN-pq-Nak" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OJF-57-uzK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1185" y="750"/>
+        </scene>
         <!--Pop Up View Controller-->
         <scene sceneID="5Bv-MY-go7">
             <objects>
@@ -272,7 +281,7 @@ utton</string>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subtask Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V77-sl-yE1">
-                                                            <rect key="frame" x="36" y="11" width="112" height="21"/>
+                                                            <rect key="frame" x="36" y="11" width="248" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.95421367879999996" green="0.75803178550000005" blue="0.38029634950000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -350,6 +359,6 @@ utton</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="uGh-zG-QXL"/>
-        <segue reference="xe4-ou-uaB"/>
+        <segue reference="DUI-0V-UBW"/>
     </inferredMetricsTieBreakers>
 </document>

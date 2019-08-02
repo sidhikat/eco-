@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class PopUpViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
 
@@ -15,24 +16,69 @@ class PopUpViewController: UIViewController, UITableViewDataSource, UITableViewD
     @IBOutlet weak var editButton: UIButton!
     @IBOutlet weak var durationLabel: UILabel!
     
-    var subtasks = ["subtask1", "subtask2"]
+    var container:NSPersistentContainer!
+    var fetchedTasks : [TaskInformation] = []
+    var emptyDict: [TaskInformation: [String]] = [:]
+    var taskRowId : IndexPath = IndexPath(row: 0, section: 0)
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         topView.layer.cornerRadius = 10
+        //create a reference to the appDelegate to be able to get all of its variables
+        var appDelegate = UIApplication.shared.delegate as! AppDelegate
+        //create a container for CoreData
+        container = appDelegate.persistentContainer
+        let itemsFetchRequest = NSFetchRequest<NSFetchRequestResult> (entityName: "TaskInformation")
+        //create an array of TaskInformation Entity for all tasks added
+        self.fetchedTasks = try! container.viewContext.fetch(itemsFetchRequest) as! [TaskInformation]
+        
+//        for task in fetchedTasks{
+//            emptyDict = [task:[task.subTask1Name,
+//                               task.subTask2Name,
+//                               task.subTask3Name,
+//                               task.subTask4Name
+//                                ]
+//                ] as! [TaskInformation : [String]]
+//        }
+        
     }
     
     func tableView(_ subtasksTableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return subtasks.count
+        return 4
     }
     
     //return a cell and changes it's UI based on code
     func tableView(_ subtasksTableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = subtasksTableView.dequeueReusableCell(withIdentifier: "subtaskCell", for: indexPath) as! SubtasksTableViewCell
-        cell.subtaskLabel.text = subtasks[indexPath.row]
+        
+        //sets cell's subtask labels based on the appropriate task from fetchedTasks array
+        if(indexPath.row == 0){
+           cell.subtaskLabel.text = fetchedTasks[taskRowId.row].subTask1Name
+            if(cell.subtaskLabel.text == ""){
+                cell.checkBoxButton.isHidden = true
+            }
+            
+        }else if(indexPath.row == 1){
+           cell.subtaskLabel.text = fetchedTasks[taskRowId.row].subTask2Name
+            if(cell.subtaskLabel.text == ""){
+                cell.checkBoxButton.isHidden = true
+            }
+    }else if(indexPath.row == 2){
+            cell.subtaskLabel.text = fetchedTasks[taskRowId.row].subTask3Name
+            if(cell.subtaskLabel.text == ""){
+                cell.checkBoxButton.isHidden = true
+            }
+        }else{
+            cell.subtaskLabel.text = fetchedTasks[taskRowId.row].subTask4Name
+            if(cell.subtaskLabel.text == ""){
+                cell.checkBoxButton.isHidden = true
+            }
+        }
+        
+
         
         //set a unique tag for each button
         //cell.checkBoxButton.tag = indexPath.row

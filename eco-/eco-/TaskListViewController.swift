@@ -18,13 +18,15 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
     @IBOutlet weak var addButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        //create a reference to the appDelegate to be able to get all of its variables
         var appDelegate = UIApplication.shared.delegate as! AppDelegate
-        
+        //create a container for CoreData
         container = appDelegate.persistentContainer
         let itemsFetchRequest = NSFetchRequest<NSFetchRequestResult> (entityName: "TaskInformation")
-        //
+        //create an array of TaskInformation Entity for all tasks added
          self.fetchedTasks = try! container.viewContext.fetch(itemsFetchRequest) as! [TaskInformation]
-        
+//        let deleteRequest = NSBatchDeleteRequest(fetchRequest: itemsFetchRequest)
+//        try! container.persistentStoreCoordinator.execute(deleteRequest, with: container.viewContext)
     }
     var tasks = [
         Task(taskName: "Get almond milk", hasSubtasks: false),
@@ -35,11 +37,8 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
     
     //returns the number of rows/elements in the tasks array
       func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //if(tasks.count > 14){
         return fetchedTasks.count
-//        }else{
-//            return 14
-//        }
+
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
@@ -47,12 +46,13 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
     
     //return a cell and changes it's UI based on code
       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       
+        //fetch the coreData info everytime you render the cell
+        let itemsFetchRequest = NSFetchRequest<NSFetchRequestResult> (entityName: "TaskInformation")
+       self.fetchedTasks = try! container.viewContext.fetch(itemsFetchRequest) as! [TaskInformation]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "taskCell", for: indexPath) as! TaskTableViewCell
-
-       
-        
+        //sets cell's label based on the appropriate task in fetchedTasks array
+        if(fetchedTasks[indexPath.row].taskName != nil){
         cell.taskNameLabel.text = fetchedTasks[indexPath.row].taskName
 
         //set a unique tag for each button
@@ -60,7 +60,12 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
         
         //listens to the button and goes to the function specified (btnclicked)
         cell.checkBoxButton.addTarget(self, action:#selector(btnClicked), for:.touchUpInside)
-    
+            
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM dd" //yyyy
+        
+            cell.dueDateLabel.text = "Due: " + formatter.string(from:fetchedTasks[indexPath.row].dueDate!)
+        }
         return cell
         
     }
@@ -115,6 +120,8 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
         if segue.identifier == "toPopUp" {
             let pvc: PopUpViewController = segue.destination as! PopUpViewController
             
+            
+            
             pvc.popoverPresentationController?.backgroundColor = UIColor.darkGray
             pvc.popoverPresentationController!.delegate = self
     
@@ -124,6 +131,8 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
             presentationViewController?.sourceView = self.view
             //anchors the popup in center of screen
             presentationViewController?.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
+            var cell = sender as! UITableViewCell
+            pvc.taskRowId = self.tableView.indexPath(for:cell)!
         }
     }
     

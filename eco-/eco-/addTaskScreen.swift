@@ -115,11 +115,8 @@ class addTaskScreen: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
         try! container.viewContext.save()
         
         print (taskInformation)
-        
-
-        
-        
-        
+        self.performSegue(withIdentifier: "addTaskSeg", sender: sender
+        )
         
     }
     
