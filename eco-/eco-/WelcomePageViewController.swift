@@ -19,7 +19,7 @@ class WelcomePageViewController: UIViewController {
     @IBOutlet weak var btnFocus: UIButton!
     @IBOutlet weak var btnSummary: UIButton!
     var container:NSPersistentContainer!
-    var userName: String = ""
+    var userName: String = "Akoly"
 
     
     
@@ -41,13 +41,13 @@ class WelcomePageViewController: UIViewController {
     
     func displayGreeting() {
         
-        let itemsFetchRequest = NSFetchRequest<NSFetchRequestResult> (entityName: "UserInformation")
-        
-        let fetchedUser = try! container.viewContext.fetch(itemsFetchRequest) as! [UserInformation]
-        
-        for i in fetchedUser {
-            userName = i.firstName!
-        }
+//        let itemsFetchRequest = NSFetchRequest<NSFetchRequestResult> (entityName: "UserInformation")
+//
+//        let fetchedUser = try! container.viewContext.fetch(itemsFetchRequest) as! [UserInformation]
+//
+//        for i in fetchedUser {
+//            userName = i.firstName!
+//        }
         
         
         // grabing the user's time informaition
