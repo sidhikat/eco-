@@ -27,7 +27,7 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
          self.fetchedTasks = try! container.viewContext.fetch(itemsFetchRequest) as! [TaskInformation]
 //        let deleteRequest = NSBatchDeleteRequest(fetchRequest: itemsFetchRequest)
 //        try! container.persistentStoreCoordinator.execute(deleteRequest, with: container.viewContext)
-    }
+   }
     var tasks = [
         Task(taskName: "Get almond milk", hasSubtasks: false),
         Task(taskName: "Psych HW", hasSubtasks: true),
