@@ -31,6 +31,8 @@
 		A2C5540722E7AB7F0023A29D /* DonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5540622E7AB6F0023A29D /* DonationViewController.swift */; };
 		A2C5540B22E7ABE40023A29D /* OrgCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5540A22E7ABE40023A29D /* OrgCategory.swift */; };
 		A2C5540F22E7B8F00023A29D /* SidhikaStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C5540E22E7B8F00023A29D /* SidhikaStoryboard.storyboard */; };
+		A2CE8FBC22F23AC9000B8D3E /* SubtasksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CE8FBB22F23AC9000B8D3E /* SubtasksTableViewCell.swift */; };
+		A2CE8FBE22F2476A000B8D3E /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CE8FBD22F2476A000B8D3E /* PopUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,7 @@
 		22C04CC122F0A08000EE6906 /* summaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = summaryTableViewCell.swift; sourceTree = "<group>"; };
 		5FD5B75922F0BE730007C1D4 /* WelcomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WelcomePage.storyboard; sourceTree = "<group>"; };
 		5FD5B75B22F0BECD0007C1D4 /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
+
 		726C3F7622F0F4F000597C3B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		72744CD722EF8FB600B227D9 /* addTaskScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addTaskScreen.swift; sourceTree = "<group>"; };
 		727B56B722E6B87B006B9627 /* loginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPageViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +75,8 @@
 		A2C5540622E7AB6F0023A29D /* DonationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationViewController.swift; sourceTree = "<group>"; };
 		A2C5540A22E7ABE40023A29D /* OrgCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgCategory.swift; sourceTree = "<group>"; };
 		A2C5540E22E7B8F00023A29D /* SidhikaStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SidhikaStoryboard.storyboard; sourceTree = "<group>"; };
+		A2CE8FBB22F23AC9000B8D3E /* SubtasksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtasksTableViewCell.swift; sourceTree = "<group>"; };
+		A2CE8FBD22F2476A000B8D3E /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PopUpViewController.swift; path = "eco-/PopUpViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,13 +125,15 @@
 				72744CD722EF8FB600B227D9 /* addTaskScreen.swift */,
 				727B577822E8CDB6006B9627 /* signUpScreen.swift */,
 				727B56B722E6B87B006B9627 /* loginPageViewController.swift */,
+				A2C5540E22E7B8F00023A29D /* SidhikaStoryboard.storyboard */,
 				A2C5538122E283180023A29D /* TaskListViewController.swift */,
+				A2C553A622E667420023A29D /* TaskTableViewCell.swift */,
+				A2CE8FBB22F23AC9000B8D3E /* SubtasksTableViewCell.swift */,
+				A2CE8FBD22F2476A000B8D3E /* PopUpViewController.swift */,
 				726C3F7622F0F4F000597C3B /* Main.storyboard */,
 				727B577A22E90689006B9627 /* hohenfeld.storyboard */,
 				A27E3DE622EF9873006C49F6 /* CongratsScreenViewController.swift */,
-				A2C5540E22E7B8F00023A29D /* SidhikaStoryboard.storyboard */,
 				A27E3DE822EF9AAA006C49F6 /* plantAnimation.json */,
-				A2C553A622E667420023A29D /* TaskTableViewCell.swift */,
 				A2C5538622E283190023A29D /* Assets.xcassets */,
 				A2C5538822E283190023A29D /* LaunchScreen.storyboard */,
 				A2C5538B22E283190023A29D /* Info.plist */,
@@ -136,6 +143,7 @@
 				22C04CC122F0A08000EE6906 /* summaryTableViewCell.swift */,
 				5FD5B75922F0BE730007C1D4 /* WelcomePage.storyboard */,
 				5FD5B75B22F0BECD0007C1D4 /* WelcomePageViewController.swift */,
+
 			);
 			path = "eco-";
 			sourceTree = "<group>";
@@ -269,6 +277,9 @@
 				A2C553AA22E66A760023A29D /* Task.swift in Sources */,
 				A27E3DE722EF9873006C49F6 /* CongratsScreenViewController.swift in Sources */,
 				5FD5B75C22F0BECD0007C1D4 /* WelcomePageViewController.swift in Sources */,
+
+				A2CE8FBE22F2476A000B8D3E /* PopUpViewController.swift in Sources */,
+
 				A2C5538222E283180023A29D /* TaskListViewController.swift in Sources */,
 				A2C5540B22E7ABE40023A29D /* OrgCategory.swift in Sources */,
 				A2C5538022E283180023A29D /* AppDelegate.swift in Sources */,
@@ -279,6 +290,7 @@
 				72744CD822EF8FB600B227D9 /* addTaskScreen.swift in Sources */,
 				22C04CC022F0A04200EE6906 /* TaskManager.swift in Sources */,
 				22C04C7E22EE74D600EE6906 /* newSummaryViewController.swift in Sources */,
+				A2CE8FBC22F23AC9000B8D3E /* SubtasksTableViewCell.swift in Sources */,
 				22C04CC222F0A08000EE6906 /* summaryTableViewCell.swift in Sources */,
 				A2C5538022E283180023A29D /* AppDelegate.swift in Sources */,
 				727B573422E7BFC1006B9627 /* userInformation.xcdatamodeld in Sources */,

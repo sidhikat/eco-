@@ -11,6 +11,8 @@ import UIKit
 class CongratsScreenViewController: UIViewController {
 
     @IBOutlet weak var congratsLabel: UILabel!
+    @IBOutlet weak var summaryButton: UIButton!
+    @IBOutlet weak var exitButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
