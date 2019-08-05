@@ -30,6 +30,7 @@ class DonationViewController: UIViewController {
     @IBOutlet weak var checkSea: UIImageView!
     
     @IBOutlet weak var nextButton: UIButton!
+    var container:NSPersistentContainer!
     
     
     // Organization Category that includes images of each category
@@ -79,6 +80,9 @@ class DonationViewController: UIViewController {
         
         // making sure the drop down description is hidden
         beeLabelShow.isHidden = true
+        
+        var appDelegate = UIApplication.shared.delegate as! AppDelegate
+        container = appDelegate.persistentContainer
     }
     
     // drop down for bees org show

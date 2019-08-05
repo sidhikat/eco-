@@ -17,11 +17,6 @@ struct OrgCategory {
     var image : String
 }
 
-struct organization {
-    var orgName: String
-    var orgMission: String
-}
-
 // model for specific organization
 struct Organization {
     var orgName : String
