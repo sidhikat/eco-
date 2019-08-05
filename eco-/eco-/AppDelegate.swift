@@ -14,6 +14,7 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var container:NSPersistentContainer!
     
     lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "userInformation")
@@ -31,7 +32,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+<<<<<<< HEAD
         if let rootVC = window?.rootViewController as? focusedSessionViewController {
+=======
+        if let rootVC = window?.rootViewController as? WelcomePageViewController {
+>>>>>>> development
             rootVC.container = persistentContainer
             
         }

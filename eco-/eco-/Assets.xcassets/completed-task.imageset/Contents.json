@@ -2,11 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-<<<<<<< HEAD
-      "filename" : "focus.png",
-=======
-      "filename" : "crosshair.png",
->>>>>>> development
+      "filename" : "completed-task.png",
       "scale" : "1x"
     },
     {

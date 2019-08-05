@@ -2,11 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-<<<<<<< HEAD
-      "filename" : "focus.png",
-=======
-      "filename" : "crosshair.png",
->>>>>>> development
+      "filename" : "Screen Shot 2019-07-25 at 1.17.19 PM.png",
       "scale" : "1x"
     },
     {

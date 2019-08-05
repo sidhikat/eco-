@@ -2,11 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-<<<<<<< HEAD
-      "filename" : "focus.png",
-=======
-      "filename" : "crosshair.png",
->>>>>>> development
+      "filename" : "bar-chart.png",
       "scale" : "1x"
     },
     {

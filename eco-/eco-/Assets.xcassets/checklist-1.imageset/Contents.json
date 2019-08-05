@@ -2,11 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-<<<<<<< HEAD
-      "filename" : "focus.png",
-=======
-      "filename" : "crosshair.png",
->>>>>>> development
+      "filename" : "checklist.pdf",
       "scale" : "1x"
     },
     {
