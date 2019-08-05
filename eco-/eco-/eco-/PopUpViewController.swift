@@ -34,14 +34,7 @@ class PopUpViewController: UIViewController, UITableViewDataSource, UITableViewD
         //create an array of TaskInformation Entity for all tasks added
         self.fetchedTasks = try! container.viewContext.fetch(itemsFetchRequest) as! [TaskInformation]
         
-//        for task in fetchedTasks{
-//            emptyDict = [task:[task.subTask1Name,
-//                               task.subTask2Name,
-//                               task.subTask3Name,
-//                               task.subTask4Name
-//                                ]
-//                ] as! [TaskInformation : [String]]
-//        }
+        durationLabel.text = "Duration:  \(fetchedTasks[taskRowId.row].durationHour):\(fetchedTasks[taskRowId.row].durationMin)  hrs"
         
     }
     
@@ -53,6 +46,7 @@ class PopUpViewController: UIViewController, UITableViewDataSource, UITableViewD
     func tableView(_ subtasksTableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = subtasksTableView.dequeueReusableCell(withIdentifier: "subtaskCell", for: indexPath) as! SubtasksTableViewCell
+        
         
         //sets cell's subtask labels based on the appropriate task from fetchedTasks array
         if(indexPath.row == 0){

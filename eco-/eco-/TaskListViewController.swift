@@ -11,6 +11,8 @@ import CoreData
 
 class TaskListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIPopoverPresentationControllerDelegate {
     
+    //TODO: link duration label to coredata
+    
     var container:NSPersistentContainer!
     var fetchedTasks : [TaskInformation] = []
     
@@ -28,12 +30,6 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
 //        let deleteRequest = NSBatchDeleteRequest(fetchRequest: itemsFetchRequest)
 //        try! container.persistentStoreCoordinator.execute(deleteRequest, with: container.viewContext)
    }
-    var tasks = [
-        Task(taskName: "Get almond milk", hasSubtasks: false),
-        Task(taskName: "Psych HW", hasSubtasks: true),
-        Task(taskName: "Finish Xcode project", hasSubtasks: true)
-        ]
- 
     
     //returns the number of rows/elements in the tasks array
       func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -62,7 +58,7 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
         cell.checkBoxButton.addTarget(self, action:#selector(btnClicked), for:.touchUpInside)
             
         let formatter = DateFormatter()
-        formatter.dateFormat = "MMM dd" //yyyy
+            formatter.dateFormat = "MMM dd hh:mm" //yyyy
         
             cell.dueDateLabel.text = "Due: " + formatter.string(from:fetchedTasks[indexPath.row].dueDate!)
         }
