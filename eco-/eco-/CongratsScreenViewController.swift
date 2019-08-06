@@ -16,6 +16,7 @@ class CongratsScreenViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         congratsLabel.font = UIFont(name: "Farah", size: 50)
+        
     }
     
     
