@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.99" systemVersion="18F132" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.99" systemVersion="18F203" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="TaskInformation" representedClassName="TaskInformation" syncable="YES" codeGenerationType="class">
+        <attribute name="dueDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="durationHour" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="durationMin" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="subTask1Name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subTask2Name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subTask3Name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subTask4Name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="taskName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="assignee" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserInformation" syncable="YES"/>
+    </entity>
     <entity name="UserInformation" representedClassName="UserInformation" syncable="YES" codeGenerationType="class">
         <attribute name="emailAddress" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
@@ -9,5 +21,6 @@
     </entity>
     <elements>
         <element name="UserInformation" positionX="-45" positionY="0" width="128" height="120"/>
+        <element name="TaskInformation" positionX="-18" positionY="63" width="128" height="180"/>
     </elements>
 </model>
