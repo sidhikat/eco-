@@ -31,15 +31,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-<<<<<<< HEAD
 
-        if let rootVC = window?.rootViewController as? TaskListViewController {
-
-=======
-        if let rootVC = window?.rootViewController as? newSummaryViewController {
->>>>>>> 2cfc7ea68c1a6d06100ce2dcb71ff4f06d46493e
+        if let rootVC = window?.rootViewController as? anotherSummaryViewController {
             rootVC.container = persistentContainer
-            
         }
         return true
     }

@@ -12,6 +12,7 @@
 		22C04CC022F0A04200EE6906 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C04CBF22F0A04200EE6906 /* TaskManager.swift */; };
 		22C04CC222F0A08000EE6906 /* summaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C04CC122F0A08000EE6906 /* summaryTableViewCell.swift */; };
 		22C04CC622F4A5A400EE6906 /* anotherSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C04CC522F4A5A400EE6906 /* anotherSummaryViewController.swift */; };
+		22C04CC822F8960900EE6906 /* label+horizontalLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C04CC722F8960900EE6906 /* label+horizontalLines.swift */; };
 		726C3F7722F0F4F000597C3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726C3F7622F0F4F000597C3B /* Main.storyboard */; };
 		72744CD822EF8FB600B227D9 /* addTaskScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72744CD722EF8FB600B227D9 /* addTaskScreen.swift */; };
 		727B56B822E6B87B006B9627 /* loginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727B56B722E6B87B006B9627 /* loginPageViewController.swift */; };
@@ -50,6 +51,7 @@
 		22C04CBF22F0A04200EE6906 /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
 		22C04CC122F0A08000EE6906 /* summaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = summaryTableViewCell.swift; sourceTree = "<group>"; };
 		22C04CC522F4A5A400EE6906 /* anotherSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anotherSummaryViewController.swift; sourceTree = "<group>"; };
+		22C04CC722F8960900EE6906 /* label+horizontalLines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "label+horizontalLines.swift"; sourceTree = "<group>"; };
 		726C3F7622F0F4F000597C3B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		72744CD722EF8FB600B227D9 /* addTaskScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addTaskScreen.swift; sourceTree = "<group>"; };
 		727B56B722E6B87B006B9627 /* loginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPageViewController.swift; sourceTree = "<group>"; };
@@ -124,7 +126,6 @@
 				727B56B722E6B87B006B9627 /* loginPageViewController.swift */,
 				A2C5540E22E7B8F00023A29D /* SidhikaStoryboard.storyboard */,
 				A2C5538122E283180023A29D /* TaskListViewController.swift */,
-				A2C553A622E667420023A29D /* TaskTableViewCell.swift */,
 				A2CE8FBB22F23AC9000B8D3E /* SubtasksTableViewCell.swift */,
 				A2CE8FBD22F2476A000B8D3E /* PopUpViewController.swift */,
 				726C3F7622F0F4F000597C3B /* Main.storyboard */,
@@ -140,6 +141,7 @@
 				22C04CC522F4A5A400EE6906 /* anotherSummaryViewController.swift */,
 				22C04CBF22F0A04200EE6906 /* TaskManager.swift */,
 				22C04CC122F0A08000EE6906 /* summaryTableViewCell.swift */,
+				22C04CC722F8960900EE6906 /* label+horizontalLines.swift */,
 			);
 			path = "eco-";
 			sourceTree = "<group>";
@@ -274,6 +276,7 @@
 				A2C5538222E283180023A29D /* TaskListViewController.swift in Sources */,
 				A2C5540B22E7ABE40023A29D /* OrgCategory.swift in Sources */,
 				A2C5538022E283180023A29D /* AppDelegate.swift in Sources */,
+				22C04CC822F8960900EE6906 /* label+horizontalLines.swift in Sources */,
 				A2C5540722E7AB7F0023A29D /* DonationViewController.swift in Sources */,
 				A2C553A722E667420023A29D /* TaskTableViewCell.swift in Sources */,
 				727B56B822E6B87B006B9627 /* loginPageViewController.swift in Sources */,
