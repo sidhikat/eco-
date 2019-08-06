@@ -15,5 +15,11 @@ struct OrgCategory {
     var category : String
     var description : String
     var image : String
-    
+}
+
+// model for specific organization
+struct Organization {
+    var orgName : String
+    var orgMission: String
+    //var orgCategory: OrgCategory
 }

@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,6 +10,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+<<<<<<< HEAD
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+=======
         <!--Donation View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -55,17 +62,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+>>>>>>> development
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="iuO-us-NDl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="4oa-Ac-G7k"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iuO-us-NDl" secondAttribute="bottom" constant="712" id="fLi-JA-Xg5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qmj-Sn-Fg0" secondAttribute="trailing" constant="45" id="gG2-Hi-ABI"/>
-                            <constraint firstItem="iuO-us-NDl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="85" id="hAU-36-IVH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iuO-us-NDl" secondAttribute="trailing" constant="157" id="n7o-Ai-uhk"/>
-                            <constraint firstItem="Qmj-Sn-Fg0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="nPC-3J-RE4"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+<<<<<<< HEAD
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
+=======
 
                     <connections>
                         <outlet property="BeeButton" destination="cwE-lQ-7eL" id="Cpt-GH-YIG"/>
@@ -125,6 +131,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7m5-Gp-LBW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="955" y="704"/>
+>>>>>>> development
         </scene>
         <!--View Controller-->
         <scene sceneID="iVb-Xw-XGd">

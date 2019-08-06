@@ -14,26 +14,23 @@
 		5F81250922F49CF500C0CB1C /* focusedSession.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F81250822F49CF500C0CB1C /* focusedSession.storyboard */; };
 		5F81250B22F49D9F00C0CB1C /* focusedSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F81250A22F49D9F00C0CB1C /* focusedSessionViewController.swift */; };
 		5FB2B97322F4E45F009D0478 /* hohenfeld.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FB2B97222F4E45F009D0478 /* hohenfeld.storyboard */; };
-		5FC0F77A22F8A5420040402D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FC0F77922F8A5420040402D /* Assets.xcassets */; };
-		5FC0F77D22F8A8030040402D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FC0F77C22F8A8030040402D /* Assets.xcassets */; };
+		5FC0F78122FA38840040402D /* DonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC0F78022FA38840040402D /* DonationViewController.swift */; };
+		5FC0F78322FA38C10040402D /* OrgCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC0F78222FA38C10040402D /* OrgCategory.swift */; };
+		5FC69FF622FA3EC90014608A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2C5538622E283190023A29D /* Assets.xcassets */; };
+		5FC69FF822FA43410014608A /* DonationPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FC69FF722FA43410014608A /* DonationPage.storyboard */; };
 		5FD5B75A22F0BE730007C1D4 /* WelcomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FD5B75922F0BE730007C1D4 /* WelcomePage.storyboard */; };
 		5FD5B75C22F0BECD0007C1D4 /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD5B75B22F0BECD0007C1D4 /* WelcomePageViewController.swift */; };
-		726C3F7722F0F4F000597C3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726C3F7622F0F4F000597C3B /* Main.storyboard */; };
 		72744CD822EF8FB600B227D9 /* addTaskScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72744CD722EF8FB600B227D9 /* addTaskScreen.swift */; };
 		727B56B822E6B87B006B9627 /* loginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727B56B722E6B87B006B9627 /* loginPageViewController.swift */; };
 		727B573422E7BFC1006B9627 /* userInformation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 727B573222E7BFC1006B9627 /* userInformation.xcdatamodeld */; };
 		727B577922E8CDB6006B9627 /* signUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727B577822E8CDB6006B9627 /* signUpScreen.swift */; };
-		727B577C22E90689006B9627 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		A27E3DE722EF9873006C49F6 /* CongratsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27E3DE622EF9873006C49F6 /* CongratsScreenViewController.swift */; };
-		A27E3DE922EF9AAA006C49F6 /* plantAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = A27E3DE822EF9AAA006C49F6 /* plantAnimation.json */; };
 		A2C5538022E283180023A29D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5537F22E283180023A29D /* AppDelegate.swift */; };
 		A2C5538222E283180023A29D /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5538122E283180023A29D /* TaskListViewController.swift */; };
-		A2C5538A22E283190023A29D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C5538822E283190023A29D /* LaunchScreen.storyboard */; };
+		A2C5538A22E283190023A29D /* (null) in Resources */ = {isa = PBXBuildFile; };
 		A2C5539522E283190023A29D /* eco_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5539422E283190023A29D /* eco_Tests.swift */; };
 		A2C553A722E667420023A29D /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C553A622E667420023A29D /* TaskTableViewCell.swift */; };
 		A2C553AA22E66A760023A29D /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C553A922E66A760023A29D /* Task.swift */; };
-		A2C5540722E7AB7F0023A29D /* DonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5540622E7AB6F0023A29D /* DonationViewController.swift */; };
-		A2C5540B22E7ABE40023A29D /* OrgCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5540A22E7ABE40023A29D /* OrgCategory.swift */; };
 		A2C5540F22E7B8F00023A29D /* SidhikaStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C5540E22E7B8F00023A29D /* SidhikaStoryboard.storyboard */; };
 		A2CE8FBC22F23AC9000B8D3E /* SubtasksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CE8FBB22F23AC9000B8D3E /* SubtasksTableViewCell.swift */; };
 		A2CE8FBE22F2476A000B8D3E /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CE8FBD22F2476A000B8D3E /* PopUpViewController.swift */; };
@@ -57,29 +54,25 @@
 		5F81250822F49CF500C0CB1C /* focusedSession.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = focusedSession.storyboard; sourceTree = "<group>"; };
 		5F81250A22F49D9F00C0CB1C /* focusedSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = focusedSessionViewController.swift; sourceTree = "<group>"; };
 		5FB2B97222F4E45F009D0478 /* hohenfeld.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = hohenfeld.storyboard; sourceTree = "<group>"; };
-		5FC0F77922F8A5420040402D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5FC0F77C22F8A8030040402D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5FC0F78022FA38840040402D /* DonationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationViewController.swift; sourceTree = "<group>"; };
+		5FC0F78222FA38C10040402D /* OrgCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OrgCategory.swift; path = "eco-/OrgCategory.swift"; sourceTree = SOURCE_ROOT; };
+		5FC0F78422FA390E0040402D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FC69FF722FA43410014608A /* DonationPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DonationPage.storyboard; sourceTree = "<group>"; };
 		5FD5B75922F0BE730007C1D4 /* WelcomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WelcomePage.storyboard; sourceTree = "<group>"; };
 		5FD5B75B22F0BECD0007C1D4 /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
-		726C3F7622F0F4F000597C3B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		72744CD722EF8FB600B227D9 /* addTaskScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addTaskScreen.swift; sourceTree = "<group>"; };
 		727B56B722E6B87B006B9627 /* loginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPageViewController.swift; sourceTree = "<group>"; };
 		727B573322E7BFC1006B9627 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		727B577822E8CDB6006B9627 /* signUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpScreen.swift; sourceTree = "<group>"; };
 		A27E3DE622EF9873006C49F6 /* CongratsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsScreenViewController.swift; sourceTree = "<group>"; };
-		A27E3DE822EF9AAA006C49F6 /* plantAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = plantAnimation.json; sourceTree = "<group>"; };
 		A2C5537C22E283180023A29D /* eco-.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eco-.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C5537F22E283180023A29D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2C5538122E283180023A29D /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
-		A2C5538922E283190023A29D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A2C5538B22E283190023A29D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2C5538622E283190023A29D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2C5539022E283190023A29D /* eco-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "eco-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C5539422E283190023A29D /* eco_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eco_Tests.swift; sourceTree = "<group>"; };
-		A2C5539622E283190023A29D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2C553A622E667420023A29D /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		A2C553A922E66A760023A29D /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
-		A2C5540622E7AB6F0023A29D /* DonationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationViewController.swift; sourceTree = "<group>"; };
-		A2C5540A22E7ABE40023A29D /* OrgCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrgCategory.swift; sourceTree = "<group>"; };
 		A2C5540E22E7B8F00023A29D /* SidhikaStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SidhikaStoryboard.storyboard; sourceTree = "<group>"; };
 		A2CE8FBB22F23AC9000B8D3E /* SubtasksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtasksTableViewCell.swift; sourceTree = "<group>"; };
 		A2CE8FBD22F2476A000B8D3E /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PopUpViewController.swift; path = "eco-/PopUpViewController.swift"; sourceTree = "<group>"; };
@@ -103,10 +96,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5FC0F77B22F8A77E0040402D /* Recovered References */ = {
+		5F4BC41222F897A300B4F100 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				5FC0F77922F8A5420040402D /* Assets.xcassets */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -118,7 +110,7 @@
 				A2C5537E22E283180023A29D /* eco- */,
 				A2C5539322E283190023A29D /* eco-Tests */,
 				A2C5537D22E283180023A29D /* Products */,
-				5FC0F77B22F8A77E0040402D /* Recovered References */,
+				5F4BC41222F897A300B4F100 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,26 +126,23 @@
 		A2C5537E22E283180023A29D /* eco- */ = {
 			isa = PBXGroup;
 			children = (
-				5FC0F77C22F8A8030040402D /* Assets.xcassets */,
+				5FC69FF722FA43410014608A /* DonationPage.storyboard */,
 				5FB2B97222F4E45F009D0478 /* hohenfeld.storyboard */,
+				5FC0F78022FA38840040402D /* DonationViewController.swift */,
 				A2C553A822E66A5D0023A29D /* Model */,
 				A2C5537F22E283180023A29D /* AppDelegate.swift */,
-				A2C5540622E7AB6F0023A29D /* DonationViewController.swift */,
 				72744CD722EF8FB600B227D9 /* addTaskScreen.swift */,
 				727B577822E8CDB6006B9627 /* signUpScreen.swift */,
 				727B56B722E6B87B006B9627 /* loginPageViewController.swift */,
-				A2C5540E22E7B8F00023A29D /* SidhikaStoryboard.storyboard */,
 				A2C5538122E283180023A29D /* TaskListViewController.swift */,
 				A2CE8FBB22F23AC9000B8D3E /* SubtasksTableViewCell.swift */,
 				A2CE8FBD22F2476A000B8D3E /* PopUpViewController.swift */,
-				726C3F7622F0F4F000597C3B /* Main.storyboard */,
-				A2C5538822E283190023A29D /* LaunchScreen.storyboard */,
-				A2C5538B22E283190023A29D /* Info.plist */,
-				A2C553A622E667420023A29D /* TaskTableViewCell.swift */,
 				5F81250822F49CF500C0CB1C /* focusedSession.storyboard */,
 				5F81250A22F49D9F00C0CB1C /* focusedSessionViewController.swift */,
 				A27E3DE622EF9873006C49F6 /* CongratsScreenViewController.swift */,
-				A27E3DE822EF9AAA006C49F6 /* plantAnimation.json */,
+				A2C5540E22E7B8F00023A29D /* SidhikaStoryboard.storyboard */,
+				A2C553A622E667420023A29D /* TaskTableViewCell.swift */,
+				A2C5538622E283190023A29D /* Assets.xcassets */,
 				22C04C7B22EE744000EE6906 /* newSummaryScreenStoryboard.storyboard */,
 				22C04C7D22EE74D600EE6906 /* newSummaryViewController.swift */,
 				22C04CBF22F0A04200EE6906 /* TaskManager.swift */,
@@ -168,7 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				A2C5539422E283190023A29D /* eco_Tests.swift */,
-				A2C5539622E283190023A29D /* Info.plist */,
+				5FC0F78422FA390E0040402D /* Info.plist */,
 			);
 			path = "eco-Tests";
 			sourceTree = "<group>";
@@ -176,8 +165,8 @@
 		A2C553A822E66A5D0023A29D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5FC0F78222FA38C10040402D /* OrgCategory.swift */,
 				A2C553A922E66A760023A29D /* Task.swift */,
-				A2C5540A22E7ABE40023A29D /* OrgCategory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -263,17 +252,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2C5538A22E283190023A29D /* LaunchScreen.storyboard in Resources */,
+				5FC69FF822FA43410014608A /* DonationPage.storyboard in Resources */,
+				A2C5538A22E283190023A29D /* (null) in Resources */,
 				5FD5B75A22F0BE730007C1D4 /* WelcomePage.storyboard in Resources */,
-				5FC0F77D22F8A8030040402D /* Assets.xcassets in Resources */,
-				727B577C22E90689006B9627 /* (null) in Resources */,
 				22C04C7C22EE744000EE6906 /* newSummaryScreenStoryboard.storyboard in Resources */,
-				5FC0F77A22F8A5420040402D /* Assets.xcassets in Resources */,
 				5FB2B97322F4E45F009D0478 /* hohenfeld.storyboard in Resources */,
 				5F81250922F49CF500C0CB1C /* focusedSession.storyboard in Resources */,
-				726C3F7722F0F4F000597C3B /* Main.storyboard in Resources */,
 				A2C5540F22E7B8F00023A29D /* SidhikaStoryboard.storyboard in Resources */,
-				A27E3DE922EF9AAA006C49F6 /* plantAnimation.json in Resources */,
+				5FC69FF622FA3EC90014608A /* Assets.xcassets in Resources */,
+				5FD5B75A22F0BE730007C1D4 /* WelcomePage.storyboard in Resources */,
+				22C04C7C22EE744000EE6906 /* newSummaryScreenStoryboard.storyboard in Resources */,
+				A2C5540F22E7B8F00023A29D /* SidhikaStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,18 +280,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2C5538022E283180023A29D /* AppDelegate.swift in Sources */,
 				A2C553AA22E66A760023A29D /* Task.swift in Sources */,
 				5F81250B22F49D9F00C0CB1C /* focusedSessionViewController.swift in Sources */,
+				5FC0F78322FA38C10040402D /* OrgCategory.swift in Sources */,
 				A27E3DE722EF9873006C49F6 /* CongratsScreenViewController.swift in Sources */,
+				5FC0F78122FA38840040402D /* DonationViewController.swift in Sources */,
 				5FD5B75C22F0BECD0007C1D4 /* WelcomePageViewController.swift in Sources */,
 				A2CE8FBE22F2476A000B8D3E /* PopUpViewController.swift in Sources */,
 				A2C5538222E283180023A29D /* TaskListViewController.swift in Sources */,
-				A2C5540B22E7ABE40023A29D /* OrgCategory.swift in Sources */,
 				A2C5538022E283180023A29D /* AppDelegate.swift in Sources */,
-				A2C5540722E7AB7F0023A29D /* DonationViewController.swift in Sources */,
 				A2C553A722E667420023A29D /* TaskTableViewCell.swift in Sources */,
 				727B56B822E6B87B006B9627 /* loginPageViewController.swift in Sources */,
-				A2C5538222E283180023A29D /* TaskListViewController.swift in Sources */,
 				72744CD822EF8FB600B227D9 /* addTaskScreen.swift in Sources */,
 				22C04CC022F0A04200EE6906 /* TaskManager.swift in Sources */,
 				22C04C7E22EE74D600EE6906 /* newSummaryViewController.swift in Sources */,
@@ -332,18 +321,26 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		A2C5538822E283190023A29D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A2C5538922E283190023A29D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
+		5FC69FC822FA3C490014608A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "eco-Tests";
+			};
+			name = Debug;
+		};
+		5FC69FC922FA3C490014608A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				PRODUCT_NAME = "eco-Tests";
+			};
+			name = Release;
+		};
 		A2C5539722E283190023A29D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -494,46 +491,6 @@
 			};
 			name = Release;
 		};
-		A2C5539D22E283190023A29D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "eco-Tests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.eco-Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eco-.app/eco-";
-			};
-			name = Debug;
-		};
-		A2C5539E22E283190023A29D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "eco-Tests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.eco-Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eco-.app/eco-";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -558,8 +515,8 @@
 		A2C5539C22E283190023A29D /* Build configuration list for PBXNativeTarget "eco-Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A2C5539D22E283190023A29D /* Debug */,
-				A2C5539E22E283190023A29D /* Release */,
+				5FC69FC822FA3C490014608A /* Debug */,
+				5FC69FC922FA3C490014608A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
