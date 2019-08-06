@@ -17,6 +17,8 @@
 		5FC0F77D22F8A8030040402D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FC0F77C22F8A8030040402D /* Assets.xcassets */; };
 		5FD5B75A22F0BE730007C1D4 /* WelcomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FD5B75922F0BE730007C1D4 /* WelcomePage.storyboard */; };
 		5FD5B75C22F0BECD0007C1D4 /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD5B75B22F0BECD0007C1D4 /* WelcomePageViewController.swift */; };
+		22C04CC622F4A5A400EE6906 /* anotherSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C04CC522F4A5A400EE6906 /* anotherSummaryViewController.swift */; };
+		22C04CC822F8960900EE6906 /* label+horizontalLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C04CC722F8960900EE6906 /* label+horizontalLines.swift */; };
 		726C3F7722F0F4F000597C3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726C3F7622F0F4F000597C3B /* Main.storyboard */; };
 		72744CD822EF8FB600B227D9 /* addTaskScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72744CD722EF8FB600B227D9 /* addTaskScreen.swift */; };
 		727B56B822E6B87B006B9627 /* loginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727B56B722E6B87B006B9627 /* loginPageViewController.swift */; };
@@ -59,6 +61,8 @@
 		5FC0F77C22F8A8030040402D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FD5B75922F0BE730007C1D4 /* WelcomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WelcomePage.storyboard; sourceTree = "<group>"; };
 		5FD5B75B22F0BECD0007C1D4 /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
+		22C04CC522F4A5A400EE6906 /* anotherSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anotherSummaryViewController.swift; sourceTree = "<group>"; };
+		22C04CC722F8960900EE6906 /* label+horizontalLines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "label+horizontalLines.swift"; sourceTree = "<group>"; };
 		726C3F7622F0F4F000597C3B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		72744CD722EF8FB600B227D9 /* addTaskScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addTaskScreen.swift; sourceTree = "<group>"; };
 		727B56B722E6B87B006B9627 /* loginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPageViewController.swift; sourceTree = "<group>"; };
@@ -154,12 +158,17 @@
 				5F81250A22F49D9F00C0CB1C /* focusedSessionViewController.swift */,
 				A27E3DE622EF9873006C49F6 /* CongratsScreenViewController.swift */,
 				A27E3DE822EF9AAA006C49F6 /* plantAnimation.json */,
+				A27E3DE822EF9AAA006C49F6 /* plantAnimation.json */,
+				A2C553A622E667420023A29D /* TaskTableViewCell.swift */,
+				A2C5538622E283190023A29D /* Assets.xcassets */,
 				22C04C7B22EE744000EE6906 /* newSummaryScreenStoryboard.storyboard */,
 				22C04C7D22EE74D600EE6906 /* newSummaryViewController.swift */,
+				22C04CC522F4A5A400EE6906 /* anotherSummaryViewController.swift */,
 				22C04CBF22F0A04200EE6906 /* TaskManager.swift */,
 				22C04CC122F0A08000EE6906 /* summaryTableViewCell.swift */,
 				5FD5B75922F0BE730007C1D4 /* WelcomePage.storyboard */,
 				5FD5B75B22F0BECD0007C1D4 /* WelcomePageViewController.swift */,
+				22C04CC722F8960900EE6906 /* label+horizontalLines.swift */,
 			);
 			path = "eco-";
 			sourceTree = "<group>";
@@ -299,9 +308,11 @@
 				A2C5538222E283180023A29D /* TaskListViewController.swift in Sources */,
 				A2C5540B22E7ABE40023A29D /* OrgCategory.swift in Sources */,
 				A2C5538022E283180023A29D /* AppDelegate.swift in Sources */,
+				22C04CC822F8960900EE6906 /* label+horizontalLines.swift in Sources */,
 				A2C5540722E7AB7F0023A29D /* DonationViewController.swift in Sources */,
 				A2C553A722E667420023A29D /* TaskTableViewCell.swift in Sources */,
 				727B56B822E6B87B006B9627 /* loginPageViewController.swift in Sources */,
+				22C04CC622F4A5A400EE6906 /* anotherSummaryViewController.swift in Sources */,
 				A2C5538222E283180023A29D /* TaskListViewController.swift in Sources */,
 				72744CD822EF8FB600B227D9 /* addTaskScreen.swift in Sources */,
 				22C04CC022F0A04200EE6906 /* TaskManager.swift in Sources */,
