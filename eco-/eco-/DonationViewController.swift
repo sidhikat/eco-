@@ -158,4 +158,10 @@ class DonationViewController: UIViewController {
     }
 
     
+    @IBAction func backButton(_ sender: Any) {
+        
+       //unwind
+        self.navigationController?.popViewController(animated:true)
+        self.dismiss(animated: true, completion: nil)
+    }
 }
