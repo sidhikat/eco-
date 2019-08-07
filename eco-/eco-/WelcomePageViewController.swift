@@ -19,7 +19,8 @@ class WelcomePageViewController: UIViewController {
     @IBOutlet weak var btnFocus: UIButton!
     @IBOutlet weak var btnSummary: UIButton!
     var container:NSPersistentContainer!
-    var userName: String = "Shannon"
+    var userName: String = "Shanon"
+    var fetchedUsers : [UserInformation] = []
 
     
     
@@ -37,15 +38,24 @@ class WelcomePageViewController: UIViewController {
         btnTodo.setTitle("To-do list", for: .normal)
         btnSummary.setTitle("Summary", for: .normal)
         btnFocus.setTitle("Focused session", for: .normal)
+        
+        //create a reference to the appDelegate to be able to get all of its variables
+        var appDelegate = UIApplication.shared.delegate as! AppDelegate
+        //create a container for CoreData
+        container = appDelegate.persistentContainer
+        let itemsFetchRequest = NSFetchRequest<NSFetchRequestResult> (entityName: "UserInformation")
+        //create an array of UserInformation Entity for all tasks added
+        self.fetchedUsers = try! container.viewContext.fetch(itemsFetchRequest) as! [UserInformation]
+        
     }
     
     func displayGreeting() {
         
 //        let itemsFetchRequest = NSFetchRequest<NSFetchRequestResult> (entityName: "UserInformation")
 //
-//        let fetchedUser = try! container.viewContext.fetch(itemsFetchRequest) as! [UserInformation]
+//        self.fetchedUsers = try! container.viewContext.fetch(itemsFetchRequest) as! [UserInformation]
 //
-//        for i in fetchedUser {
+//        for i in fetchedUsers {
 //            userName = i.firstName!
 //        }
         
