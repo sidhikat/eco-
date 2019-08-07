@@ -47,8 +47,8 @@ class loginPageViewController: UIViewController {
     @IBAction func loginButton(_ sender: Any) {
         
         let itemsFetchRequest = NSFetchRequest<NSFetchRequestResult> (entityName: "UserInformation")
-        //let deleteRequest = NSBatchDeleteRequest(fetchRequest: itemsFetchRequest)
-        //try! container.persistentStoreCoordinator.execute(deleteRequest , with: container.viewContext)
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: itemsFetchRequest)
+        try! container.persistentStoreCoordinator.execute(deleteRequest , with: container.viewContext)
         let fetchedUser = try! container.viewContext.fetch(itemsFetchRequest) as! [UserInformation]
         
         for i in fetchedUser {
