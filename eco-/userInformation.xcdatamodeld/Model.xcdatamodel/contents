@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<<<<<<< HEAD
 
-=======
->>>>>>> JoeyBranch
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.99" systemVersion="18F203" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="TaskInformation" representedClassName="TaskInformation" syncable="YES" codeGenerationType="class">
         <attribute name="dueDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
@@ -15,10 +12,7 @@
         <attribute name="taskName" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="assignee" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserInformation" syncable="YES"/>
     </entity>
-<<<<<<< HEAD
-=======
 
->>>>>>> JoeyBranch
     <entity name="UserInformation" representedClassName="UserInformation" syncable="YES" codeGenerationType="class">
         <attribute name="emailAddress" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
