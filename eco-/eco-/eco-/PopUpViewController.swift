@@ -72,10 +72,6 @@ class PopUpViewController: UIViewController, UITableViewDataSource, UITableViewD
             }
         }
         
-
-        
-        //set a unique tag for each button
-        //cell.checkBoxButton.tag = indexPath.row
         
         //listens to the button and goes to the function specified (checkBoxBtnclicked)
         cell.checkBoxButton.addTarget(self, action:#selector(checkBoxBtnClicked), for:.touchUpInside)

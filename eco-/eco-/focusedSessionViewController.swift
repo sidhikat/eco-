@@ -91,6 +91,8 @@ class focusedSessionViewController: UIViewController {
         // if the timeCount reaches 0
         if (timeCount == 0){
             // stop the timer
+            
+            performSegue(withIdentifier: "toCongratsScreen", sender: self)
             timer.invalidate()
         }
     }

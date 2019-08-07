@@ -1,4 +1,4 @@
-//hi 
+//
 //  ViewController.swift
 //  eco-
 //
@@ -27,6 +27,7 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
         let itemsFetchRequest = NSFetchRequest<NSFetchRequestResult> (entityName: "TaskInformation")
         //create an array of TaskInformation Entity for all tasks added
          self.fetchedTasks = try! container.viewContext.fetch(itemsFetchRequest) as! [TaskInformation]
+        //code to delete all tasks from CoreData
 //        let deleteRequest = NSBatchDeleteRequest(fetchRequest: itemsFetchRequest)
 //        try! container.persistentStoreCoordinator.execute(deleteRequest, with: container.viewContext)
    }

@@ -158,8 +158,8 @@ utton</string>
         <!--Congrats Screen View Controller-->
         <scene sceneID="pPC-x2-2KJ">
             <objects>
-                <viewController storyboardIdentifier="congrats" id="C9C-oY-CVO" customClass="CongratsScreenViewController" customModule="eco_" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Dkg-d7-Ebz">
+                <viewController restorationIdentifier="congratsScreen" storyboardIdentifier="congratsScreen" id="C9C-oY-CVO" customClass="CongratsScreenViewController" customModule="eco_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="congratsScreen" id="Dkg-d7-Ebz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -175,14 +175,14 @@ utton</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You were focused for" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqC-ji-mrk">
-                                <rect key="frame" x="80" y="469" width="265" height="30"/>
+                                <rect key="frame" x="80" y="469" width="300" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2 hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMy-AK-PfL">
-                                <rect key="frame" x="144" y="507" width="124" height="40"/>
+                                <rect key="frame" x="80" y="507" width="300" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="32"/>
                                 <color key="textColor" red="0.082025258939999998" green="0.49457577720000001" blue="0.20951834850000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -208,6 +208,9 @@ utton</string>
                                 <state key="normal" image="Go_to_summary_button">
                                     <attributedString key="attributedTitle"/>
                                 </state>
+                                <connections>
+                                    <segue destination="a9o-sI-BC6" kind="show" id="nVV-rm-CJT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dw-R4-DGe" userLabel="Exit">
                                 <rect key="frame" x="361" y="56" width="19" height="20"/>
@@ -225,11 +228,20 @@ utton</string>
                         <outlet property="congratsLabel" destination="ssK-8Q-dum" id="Z4n-i3-cPB"/>
                         <outlet property="exitButton" destination="3dw-R4-DGe" id="eXM-ge-zxY"/>
                         <outlet property="summaryButton" destination="cje-HH-JHw" id="WY3-OE-7fL"/>
+                        <outlet property="timeLabel" destination="JMy-AK-PfL" id="RVx-il-f3C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJF-dQ-D2q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2100" y="864"/>
+            <point key="canvasLocation" x="2100" y="863.83928571428567"/>
+        </scene>
+        <!--newSummaryScreenStoryboard-->
+        <scene sceneID="dkh-5G-rr4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="newSummaryScreenStoryboard" id="a9o-sI-BC6" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ARX-b4-hdx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2811" y="1218"/>
         </scene>
         <!--addTaskScreen-->
         <scene sceneID="fT2-xC-2Rx">

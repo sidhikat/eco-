@@ -269,6 +269,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCL-0G-dvj">
+                                <rect key="frame" x="20" y="44" width="63" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="back_button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -429,6 +434,7 @@
     <resources>
         <image name="Screen Shot 2019-08-06 at 3.33.16 PM" width="784" height="56"/>
         <image name="alarm-clock" width="512" height="512"/>
+        <image name="back_button" width="128" height="74"/>
         <image name="cash" width="512" height="512"/>
         <image name="completed-task" width="512" height="512"/>
         <image name="contacts-256" width="256" height="256"/>

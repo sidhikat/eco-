@@ -56,7 +56,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LoX-xD-UrR">
-                                <rect key="frame" x="86" y="104" width="257" height="44"/>
+                                <rect key="frame" x="86" y="104" width="257" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -72,11 +72,20 @@
                         <outlet property="motivationMessage" destination="voG-Wk-ZAQ" id="hyF-To-6XP"/>
                         <outlet property="taskLabel" destination="LoX-xD-UrR" id="x4X-Ml-hDV"/>
                         <outlet property="timerLabel" destination="TAM-RI-Rtl" id="MDc-CE-SQu"/>
+                        <segue destination="Dcp-81-MSR" kind="show" identifier="toCongratsScreen" id="0WB-HK-Efm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JGC-Hv-sIC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-68.115942028985515" y="158.70535714285714"/>
+        </scene>
+        <!--congratsScreen-->
+        <scene sceneID="P3v-gI-0e7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SidhikaStoryboard" referencedIdentifier="congratsScreen" id="Dcp-81-MSR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hfJ-nw-Mk9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="527" y="-77"/>
         </scene>
         <!--SidhikaStoryboard-->
         <scene sceneID="kJC-Oo-EDx">
