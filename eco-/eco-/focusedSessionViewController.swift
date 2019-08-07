@@ -18,6 +18,7 @@ class focusedSessionViewController: UIViewController {
     let timeEnd:TimeInterval = 0.0
     var timeCount:TimeInterval = 2700.00 // = 45 minutes
     var fetchedTaskInformation : [TaskInformation] = []
+    var task: String = ""
     
     var messages: [String] = [
         "you are on your way to greatness!🏆",
@@ -48,6 +49,7 @@ class focusedSessionViewController: UIViewController {
         
         for i in fetchedTaskInformation {
             timeCount = TimeInterval(i.durationMin)*60 + TimeInterval(i.durationHour)*3600
+            task = i.taskName!
         }
         
         // calling the counter function
@@ -62,7 +64,7 @@ class focusedSessionViewController: UIViewController {
         // calling the timeString func
         timerLabel.text = timeString(time: timeCount)
         
-        taskLabel.text = "Task(s) to be completed during your focus session:"
+        taskLabel.text = "Task(s) to be completed during your focus session: " + task
         
         
         
