@@ -17,6 +17,7 @@ class focusedSessionViewController: UIViewController {
     let timeInterval:TimeInterval = 0.5
     let timeEnd:TimeInterval = 0.0
     var timeCount:TimeInterval = 2700.00 // = 45 minutes
+    var fetchedTaskInformation : [TaskInformation] = []
     
     var messages: [String] = [
         "you are on your way to greatness!🏆",
@@ -30,11 +31,24 @@ class focusedSessionViewController: UIViewController {
     @IBOutlet weak var giveUpBtn: UIButton!
     @IBOutlet weak var taskLabel: UILabel!
 
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //create a reference to the appDelegate to be able to get all of its variables
+        var appDelegate = UIApplication.shared.delegate as! AppDelegate
+        //create a container for CoreData
+        container = appDelegate.persistentContainer
+        guard  container != nil else {
+            fatalError("container is nil")
+        }
+        let itemsFetchRequest = NSFetchRequest<NSFetchRequestResult> (entityName: "TaskInformation")
+        //create an array of UserInformation Entity for all tasks added
+        self.fetchedTaskInformation = try! container.viewContext.fetch(itemsFetchRequest) as! [TaskInformation]
+        
+        for i in fetchedTaskInformation {
+            timeCount = TimeInterval(i.durationMin)*60 + TimeInterval(i.durationHour)*3600
+        }
         
         // calling the counter function
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(focusedSessionViewController.counter), userInfo: nil, repeats: true)
@@ -49,6 +63,7 @@ class focusedSessionViewController: UIViewController {
         timerLabel.text = timeString(time: timeCount)
         
         taskLabel.text = "Task(s) to be completed during your focus session:"
+        
         
         
         // strike through

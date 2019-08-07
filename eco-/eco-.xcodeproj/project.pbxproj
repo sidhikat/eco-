@@ -16,14 +16,10 @@
 		5F81250922F49CF500C0CB1C /* focusedSession.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F81250822F49CF500C0CB1C /* focusedSession.storyboard */; };
 		5F81250B22F49D9F00C0CB1C /* focusedSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F81250A22F49D9F00C0CB1C /* focusedSessionViewController.swift */; };
 		5FB2B97322F4E45F009D0478 /* hohenfeld.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FB2B97222F4E45F009D0478 /* hohenfeld.storyboard */; };
-<<<<<<< HEAD
 		5FC0F78122FA38840040402D /* DonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC0F78022FA38840040402D /* DonationViewController.swift */; };
 		5FC0F78322FA38C10040402D /* OrgCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC0F78222FA38C10040402D /* OrgCategory.swift */; };
-		5FC69FF622FA3EC90014608A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2C5538622E283190023A29D /* Assets.xcassets */; };
 		5FC69FF822FA43410014608A /* DonationPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FC69FF722FA43410014608A /* DonationPage.storyboard */; };
-=======
 		5FC0F77D22F8A8030040402D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FC0F77C22F8A8030040402D /* Assets.xcassets */; };
->>>>>>> development
 		5FD5B75A22F0BE730007C1D4 /* WelcomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FD5B75922F0BE730007C1D4 /* WelcomePage.storyboard */; };
 		5FD5B75C22F0BECD0007C1D4 /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD5B75B22F0BECD0007C1D4 /* WelcomePageViewController.swift */; };
 		72744CD822EF8FB600B227D9 /* addTaskScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72744CD722EF8FB600B227D9 /* addTaskScreen.swift */; };
@@ -33,7 +29,6 @@
 		A27E3DE722EF9873006C49F6 /* CongratsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27E3DE622EF9873006C49F6 /* CongratsScreenViewController.swift */; };
 		A2C5538022E283180023A29D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5537F22E283180023A29D /* AppDelegate.swift */; };
 		A2C5538222E283180023A29D /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5538122E283180023A29D /* TaskListViewController.swift */; };
-		A2C5538A22E283190023A29D /* (null) in Resources */ = {isa = PBXBuildFile; };
 		A2C5539522E283190023A29D /* eco_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5539422E283190023A29D /* eco_Tests.swift */; };
 		A2C553A722E667420023A29D /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C553A622E667420023A29D /* TaskTableViewCell.swift */; };
 		A2C553AA22E66A760023A29D /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C553A922E66A760023A29D /* Task.swift */; };
@@ -62,14 +57,11 @@
 		5F81250822F49CF500C0CB1C /* focusedSession.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = focusedSession.storyboard; sourceTree = "<group>"; };
 		5F81250A22F49D9F00C0CB1C /* focusedSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = focusedSessionViewController.swift; sourceTree = "<group>"; };
 		5FB2B97222F4E45F009D0478 /* hohenfeld.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = hohenfeld.storyboard; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		5FC0F78022FA38840040402D /* DonationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonationViewController.swift; sourceTree = "<group>"; };
 		5FC0F78222FA38C10040402D /* OrgCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OrgCategory.swift; path = "eco-/OrgCategory.swift"; sourceTree = SOURCE_ROOT; };
 		5FC0F78422FA390E0040402D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FC69FF722FA43410014608A /* DonationPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DonationPage.storyboard; sourceTree = "<group>"; };
-=======
 		5FC0F77C22F8A8030040402D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
->>>>>>> development
 		5FD5B75922F0BE730007C1D4 /* WelcomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WelcomePage.storyboard; sourceTree = "<group>"; };
 		5FD5B75B22F0BECD0007C1D4 /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
 		72744CD722EF8FB600B227D9 /* addTaskScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addTaskScreen.swift; sourceTree = "<group>"; };
@@ -81,11 +73,9 @@
 		A2C5537F22E283180023A29D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2C5538122E283180023A29D /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
 		A2C5538622E283190023A29D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-<<<<<<< HEAD
-=======
+
 		A2C5538922E283190023A29D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2C5538B22E283190023A29D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
->>>>>>> development
 		A2C5539022E283190023A29D /* eco-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "eco-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C5539422E283190023A29D /* eco_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eco_Tests.swift; sourceTree = "<group>"; };
 		A2C553A622E667420023A29D /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
@@ -143,13 +133,10 @@
 		A2C5537E22E283180023A29D /* eco- */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				5FC69FF722FA43410014608A /* DonationPage.storyboard */,
 				5FB2B97222F4E45F009D0478 /* hohenfeld.storyboard */,
 				5FC0F78022FA38840040402D /* DonationViewController.swift */,
-=======
 				5FC0F77C22F8A8030040402D /* Assets.xcassets */,
->>>>>>> development
 				A2C553A822E66A5D0023A29D /* Model */,
 				A2C5537F22E283180023A29D /* AppDelegate.swift */,
 				72744CD722EF8FB600B227D9 /* addTaskScreen.swift */,
@@ -159,12 +146,7 @@
 				A2C5538122E283180023A29D /* TaskListViewController.swift */,
 				A2CE8FBB22F23AC9000B8D3E /* SubtasksTableViewCell.swift */,
 				A2CE8FBD22F2476A000B8D3E /* PopUpViewController.swift */,
-<<<<<<< HEAD
-				5F81250822F49CF500C0CB1C /* focusedSession.storyboard */,
-				5F81250A22F49D9F00C0CB1C /* focusedSessionViewController.swift */,
-				A27E3DE622EF9873006C49F6 /* CongratsScreenViewController.swift */,
 				A2C5540E22E7B8F00023A29D /* SidhikaStoryboard.storyboard */,
-=======
 				726C3F7622F0F4F000597C3B /* Main.storyboard */,
 				A2C5538822E283190023A29D /* LaunchScreen.storyboard */,
 				A2C5538B22E283190023A29D /* Info.plist */,
@@ -172,7 +154,6 @@
 				5F81250A22F49D9F00C0CB1C /* focusedSessionViewController.swift */,
 				A27E3DE622EF9873006C49F6 /* CongratsScreenViewController.swift */,
 				A27E3DE822EF9AAA006C49F6 /* plantAnimation.json */,
->>>>>>> development
 				A2C553A622E667420023A29D /* TaskTableViewCell.swift */,
 				A2C5538622E283190023A29D /* Assets.xcassets */,
 				22C04C7B22EE744000EE6906 /* newSummaryScreenStoryboard.storyboard */,
@@ -289,10 +270,7 @@
 				5FC69FF822FA43410014608A /* DonationPage.storyboard in Resources */,
 				A2C5538A22E283190023A29D /* (null) in Resources */,
 				5FD5B75A22F0BE730007C1D4 /* WelcomePage.storyboard in Resources */,
-<<<<<<< HEAD
-=======
 				5FC0F77D22F8A8030040402D /* Assets.xcassets in Resources */,
->>>>>>> development
 				22C04C7C22EE744000EE6906 /* newSummaryScreenStoryboard.storyboard in Resources */,
 				5FB2B97322F4E45F009D0478 /* hohenfeld.storyboard in Resources */,
 				5F81250922F49CF500C0CB1C /* focusedSession.storyboard in Resources */,
@@ -328,17 +306,13 @@
 				A2CE8FBE22F2476A000B8D3E /* PopUpViewController.swift in Sources */,
 				A2C5538222E283180023A29D /* TaskListViewController.swift in Sources */,
 				A2C5538022E283180023A29D /* AppDelegate.swift in Sources */,
-<<<<<<< HEAD
-				A2C553A722E667420023A29D /* TaskTableViewCell.swift in Sources */,
-				727B56B822E6B87B006B9627 /* loginPageViewController.swift in Sources */,
-=======
+
 				22C04CC822F8960900EE6906 /* label+horizontalLines.swift in Sources */,
 				A2C5540722E7AB7F0023A29D /* DonationViewController.swift in Sources */,
 				A2C553A722E667420023A29D /* TaskTableViewCell.swift in Sources */,
 				727B56B822E6B87B006B9627 /* loginPageViewController.swift in Sources */,
 				22C04CC622F4A5A400EE6906 /* anotherSummaryViewController.swift in Sources */,
 				A2C5538222E283180023A29D /* TaskListViewController.swift in Sources */,
->>>>>>> development
 				72744CD822EF8FB600B227D9 /* addTaskScreen.swift in Sources */,
 				22C04CC022F0A04200EE6906 /* TaskManager.swift in Sources */,
 				22C04C7E22EE74D600EE6906 /* newSummaryViewController.swift in Sources */,
