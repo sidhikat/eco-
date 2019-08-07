@@ -91,18 +91,18 @@ class focusedSessionViewController: UIViewController {
     @IBAction func giveUpPressed(_ sender: Any) {
         let warning = UIAlertController(title: "Warning", message: "Are you sure you want to give up?", preferredStyle: .alert)
         
-        let yesGiveUp = UIAlertAction(title: "Yes", style: UIAlertAction.Style.default, handler: nil)
+        let yesGiveUp = UIAlertAction(title: "Yes", style: UIAlertAction.Style.default, handler:
+        { _ in
+            //unwind to last controller when yes is clicked on alert
+            self.navigationController?.popViewController(animated:true)
+            self.dismiss(animated: true, completion: nil)
+        })
         let noGiveUp = UIAlertAction(title: "No", style: UIAlertAction.Style.default, handler: nil)
         
         warning.addAction(yesGiveUp)
         warning.addAction(noGiveUp)
         self.present(warning, animated: true, completion: nil)
         
-//        if (warning == yesGiveUp){
-//            return true
-//        }else{
-//            return false
-//        }
     }
     
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zk0-oZ-xzV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ME4-By-ezi">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Cqd-2g-P4c">
-                                <rect key="frame" x="70" y="146" width="291" height="300"/>
+                                <rect key="frame" x="70" y="190" width="291" height="256"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSZ-EP-LGL">
                                 <rect key="frame" x="87" y="479" width="240" height="108"/>
@@ -39,6 +39,9 @@
                                 <state key="normal" title="btn-todo">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="SLm-Tv-w6l" kind="show" id="Qtb-Pl-7cG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuB-Lu-4eb">
                                 <rect key="frame" x="53" y="715" width="308" height="43"/>
@@ -50,6 +53,9 @@
                                 <state key="normal" title="btn-focus">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="15s-vj-Jq2" kind="presentation" id="qpo-dh-7Dj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxh-9U-hO7">
                                 <rect key="frame" x="53" y="777" width="308" height="43"/>
@@ -61,6 +67,9 @@
                                 <state key="normal" title="btn-summary">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="v1N-Xs-ADz" kind="show" id="x9p-D9-lLj"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checklist" translatesAutoresizingMaskIntoConstraints="NO" id="4xt-OM-KmA">
                                 <rect key="frame" x="70" y="661" width="24" height="24"/>
@@ -114,6 +123,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9yj-X7-lCB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="yxd-t9-lcd"/>
                     <connections>
                         <outlet property="appLogo" destination="Cqd-2g-P4c" id="Ao2-SI-O24"/>
                         <outlet property="btnFocus" destination="VuB-Lu-4eb" id="zwF-er-p5i"/>
@@ -124,15 +134,49 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BPh-yk-x8a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1810.144927536232" y="-484.15178571428567"/>
+            <point key="canvasLocation" x="-900.00000000000011" y="-484.15178571428567"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--SidhikaStoryboard-->
         <scene sceneID="8e7-jx-BiT">
             <objects>
-                <viewControllerPlaceholder id="SLm-Tv-w6l" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="SidhikaStoryboard" id="SLm-Tv-w6l" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FQD-SO-h6E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1064" y="-463"/>
+            <point key="canvasLocation" x="-154.34782608695653" y="-463.39285714285711"/>
+        </scene>
+        <!--focusedSession-->
+        <scene sceneID="4Do-X5-KZo">
+            <objects>
+                <viewControllerPlaceholder storyboardName="focusedSession" id="15s-vj-Jq2" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DFI-XJ-tBY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-242.0289855072464" y="-405.13392857142856"/>
+        </scene>
+        <!--newSummaryScreenStoryboard-->
+        <scene sceneID="sGb-Hw-ppf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="newSummaryScreenStoryboard" id="v1N-Xs-ADz" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CaM-d5-5dd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-225.36231884057972" y="-267.1875"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="crk-eA-pqh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ME4-By-ezi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kjS-wW-oKx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Zk0-oZ-xzV" kind="relationship" relationship="rootViewController" id="LQh-fu-lKh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CFJ-bn-Yfz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1810.144927536232" y="-484.15178571428567"/>
         </scene>
     </scenes>
     <resources>

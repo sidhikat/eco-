@@ -76,7 +76,7 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
         
     }
     
-    //TODO: create strikethrough when clicked on button
+    //create strikethrough when clicked on button
     @IBAction func btnClicked(_ sender: UIButton) {
         //get sender's parent cells and cast it as a subtasktableviewcell
         let cell = sender.superview
