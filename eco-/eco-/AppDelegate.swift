@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var container:NSPersistentContainer!
+    var currentName : String = ""
     
     lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "userInformation")

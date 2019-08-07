@@ -19,7 +19,7 @@ class WelcomePageViewController: UIViewController {
     @IBOutlet weak var btnFocus: UIButton!
     @IBOutlet weak var btnSummary: UIButton!
     var container:NSPersistentContainer!
-    var userName: String = "Shanon"
+    var userName: String = ""
     var fetchedUsers : [UserInformation] = []
 
     
@@ -27,7 +27,7 @@ class WelcomePageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        displayGreeting()
+        
         
         // rounding the button edges
         btnTodo.layer.cornerRadius = 5
@@ -43,21 +43,17 @@ class WelcomePageViewController: UIViewController {
         var appDelegate = UIApplication.shared.delegate as! AppDelegate
         //create a container for CoreData
         container = appDelegate.persistentContainer
+        guard  container != nil else {
+            fatalError("container is nil")
+        }
         let itemsFetchRequest = NSFetchRequest<NSFetchRequestResult> (entityName: "UserInformation")
         //create an array of UserInformation Entity for all tasks added
         self.fetchedUsers = try! container.viewContext.fetch(itemsFetchRequest) as! [UserInformation]
-        
+        userName = appDelegate.currentName
+        displayGreeting()
     }
     
     func displayGreeting() {
-        
-//        let itemsFetchRequest = NSFetchRequest<NSFetchRequestResult> (entityName: "UserInformation")
-//
-//        self.fetchedUsers = try! container.viewContext.fetch(itemsFetchRequest) as! [UserInformation]
-//
-//        for i in fetchedUsers {
-//            userName = i.firstName!
-//        }
         
         
         // grabing the user's time informaition
