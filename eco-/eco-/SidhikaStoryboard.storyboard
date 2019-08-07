@@ -341,10 +341,10 @@ utton</string>
             </objects>
             <point key="canvasLocation" x="1394.2028985507247" y="1167.8571428571429"/>
         </scene>
-        <!--focusedSession-->
+        <!--DonationPage-->
         <scene sceneID="bh4-vO-l20">
             <objects>
-                <viewControllerPlaceholder storyboardName="focusedSession" id="eXN-rx-2LF" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="DonationPage" id="eXN-rx-2LF" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eZJ-ds-jm9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1663" y="1392"/>
@@ -361,6 +361,6 @@ utton</string>
         <image name="tasklines_image" width="786" height="888"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="WtR-8v-eeX"/>
+        <segue reference="Izp-RH-iFE"/>
     </inferredMetricsTieBreakers>
 </document>

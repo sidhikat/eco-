@@ -122,6 +122,9 @@
                                 <rect key="frame" x="341" y="70" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="mC3-92-GxC" kind="show" id="5zr-kY-2Kh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00c-Q8-HXI">
                                 <rect key="frame" x="42" y="70" width="34" height="30"/>
@@ -155,6 +158,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
+        </scene>
+        <!--focusedSession-->
+        <scene sceneID="tQQ-EC-Nwf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="focusedSession" id="mC3-92-GxC" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G43-Wx-KeE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="949" y="-131"/>
         </scene>
     </scenes>
     <resources>
