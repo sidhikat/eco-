@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rIL-6k-v7b">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vmY-bR-YB0">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -63,7 +64,7 @@
                                                             <string key="userLabel">goToFocusButton
 utton</string>
                                                             <connections>
-                                                                <segue destination="C9C-oY-CVO" kind="presentation" id="Vlg-SD-IEC"/>
+                                                                <segue destination="eXN-rx-2LF" kind="presentation" id="Izp-RH-iFE"/>
                                                             </connections>
                                                         </button>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Due:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FtG-E9-eSS">
@@ -106,7 +107,7 @@ utton</string>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button" image="focusButton"/>
                                         <connections>
-                                            <segue destination="C9C-oY-CVO" kind="presentation" id="uGh-zG-QXL"/>
+                                            <segue destination="eXN-rx-2LF" kind="presentation" id="WtR-8v-eeX"/>
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tasklines_image" translatesAutoresizingMaskIntoConstraints="NO" id="Ema-9d-G4e">
@@ -153,24 +154,6 @@ utton</string>
                 </view>
             </objects>
             <point key="canvasLocation" x="418.84057971014494" y="1056.0267857142858"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="wWX-sw-imQ">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rIL-6k-v7b" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="egi-vt-4SU">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="vmY-bR-YB0" kind="relationship" relationship="rootViewController" id="DUI-0V-UBW"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="quh-Vu-Ib6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-491.304347826087" y="1056.6964285714284"/>
         </scene>
         <!--Congrats Screen View Controller-->
         <scene sceneID="pPC-x2-2KJ">
@@ -346,6 +329,14 @@ utton</string>
             </objects>
             <point key="canvasLocation" x="1394.2028985507247" y="1167.8571428571429"/>
         </scene>
+        <!--focusedSession-->
+        <scene sceneID="bh4-vO-l20">
+            <objects>
+                <viewControllerPlaceholder storyboardName="focusedSession" id="eXN-rx-2LF" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eZJ-ds-jm9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1663" y="1392"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Go_to_summary_button" width="468" height="136"/>
@@ -358,7 +349,6 @@ utton</string>
         <image name="tasklines_image" width="786" height="888"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="uGh-zG-QXL"/>
-        <segue reference="DUI-0V-UBW"/>
+        <segue reference="WtR-8v-eeX"/>
     </inferredMetricsTieBreakers>
 </document>

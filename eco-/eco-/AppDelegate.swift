@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var container:NSPersistentContainer!
+    var currentName : String = ""
     
     lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "userInformation")
@@ -34,9 +35,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
 
 
-        if let rootVC = window?.rootViewController as? TaskListViewController {
+        if let rootVC = window?.rootViewController as? loginPageViewController  {
+
             rootVC.container = persistentContainer
-            
         }
         return true
     }
