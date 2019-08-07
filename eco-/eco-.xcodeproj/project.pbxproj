@@ -11,14 +11,14 @@
 		22C04C7E22EE74D600EE6906 /* newSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C04C7D22EE74D600EE6906 /* newSummaryViewController.swift */; };
 		22C04CC022F0A04200EE6906 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C04CBF22F0A04200EE6906 /* TaskManager.swift */; };
 		22C04CC222F0A08000EE6906 /* summaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C04CC122F0A08000EE6906 /* summaryTableViewCell.swift */; };
+		22C04CC622F4A5A400EE6906 /* anotherSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C04CC522F4A5A400EE6906 /* anotherSummaryViewController.swift */; };
+		22C04CC822F8960900EE6906 /* label+horizontalLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C04CC722F8960900EE6906 /* label+horizontalLines.swift */; };
 		5F81250922F49CF500C0CB1C /* focusedSession.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F81250822F49CF500C0CB1C /* focusedSession.storyboard */; };
 		5F81250B22F49D9F00C0CB1C /* focusedSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F81250A22F49D9F00C0CB1C /* focusedSessionViewController.swift */; };
 		5FB2B97322F4E45F009D0478 /* hohenfeld.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FB2B97222F4E45F009D0478 /* hohenfeld.storyboard */; };
 		5FC0F77D22F8A8030040402D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FC0F77C22F8A8030040402D /* Assets.xcassets */; };
 		5FD5B75A22F0BE730007C1D4 /* WelcomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FD5B75922F0BE730007C1D4 /* WelcomePage.storyboard */; };
 		5FD5B75C22F0BECD0007C1D4 /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD5B75B22F0BECD0007C1D4 /* WelcomePageViewController.swift */; };
-		22C04CC622F4A5A400EE6906 /* anotherSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C04CC522F4A5A400EE6906 /* anotherSummaryViewController.swift */; };
-		22C04CC822F8960900EE6906 /* label+horizontalLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C04CC722F8960900EE6906 /* label+horizontalLines.swift */; };
 		726C3F7722F0F4F000597C3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 726C3F7622F0F4F000597C3B /* Main.storyboard */; };
 		72744CD822EF8FB600B227D9 /* addTaskScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72744CD722EF8FB600B227D9 /* addTaskScreen.swift */; };
 		727B56B822E6B87B006B9627 /* loginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727B56B722E6B87B006B9627 /* loginPageViewController.swift */; };
@@ -28,7 +28,6 @@
 		A27E3DE922EF9AAA006C49F6 /* plantAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = A27E3DE822EF9AAA006C49F6 /* plantAnimation.json */; };
 		A2C5538022E283180023A29D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5537F22E283180023A29D /* AppDelegate.swift */; };
 		A2C5538222E283180023A29D /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5538122E283180023A29D /* TaskListViewController.swift */; };
-		A2C5538722E283190023A29D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2C5538622E283190023A29D /* Assets.xcassets */; };
 		A2C5538A22E283190023A29D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C5538822E283190023A29D /* LaunchScreen.storyboard */; };
 		A2C5539522E283190023A29D /* eco_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C5539422E283190023A29D /* eco_Tests.swift */; };
 		A2C553A722E667420023A29D /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C553A622E667420023A29D /* TaskTableViewCell.swift */; };
@@ -55,14 +54,14 @@
 		22C04C7D22EE74D600EE6906 /* newSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newSummaryViewController.swift; sourceTree = "<group>"; };
 		22C04CBF22F0A04200EE6906 /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
 		22C04CC122F0A08000EE6906 /* summaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = summaryTableViewCell.swift; sourceTree = "<group>"; };
+		22C04CC522F4A5A400EE6906 /* anotherSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anotherSummaryViewController.swift; sourceTree = "<group>"; };
+		22C04CC722F8960900EE6906 /* label+horizontalLines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "label+horizontalLines.swift"; sourceTree = "<group>"; };
 		5F81250822F49CF500C0CB1C /* focusedSession.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = focusedSession.storyboard; sourceTree = "<group>"; };
 		5F81250A22F49D9F00C0CB1C /* focusedSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = focusedSessionViewController.swift; sourceTree = "<group>"; };
 		5FB2B97222F4E45F009D0478 /* hohenfeld.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = hohenfeld.storyboard; sourceTree = "<group>"; };
 		5FC0F77C22F8A8030040402D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FD5B75922F0BE730007C1D4 /* WelcomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WelcomePage.storyboard; sourceTree = "<group>"; };
 		5FD5B75B22F0BECD0007C1D4 /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
-		22C04CC522F4A5A400EE6906 /* anotherSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anotherSummaryViewController.swift; sourceTree = "<group>"; };
-		22C04CC722F8960900EE6906 /* label+horizontalLines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "label+horizontalLines.swift"; sourceTree = "<group>"; };
 		726C3F7622F0F4F000597C3B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		72744CD722EF8FB600B227D9 /* addTaskScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addTaskScreen.swift; sourceTree = "<group>"; };
 		727B56B722E6B87B006B9627 /* loginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPageViewController.swift; sourceTree = "<group>"; };
@@ -109,7 +108,6 @@
 		5FC0F77B22F8A77E0040402D /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				5FC0F77922F8A5420040402D /* Assets.xcassets */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -138,11 +136,11 @@
 			isa = PBXGroup;
 			children = (
 				5FC0F77C22F8A8030040402D /* Assets.xcassets */,
-				5FB2B97222F4E45F009D0478 /* hohenfeld.storyboard */,
 				A2C553A822E66A5D0023A29D /* Model */,
 				A2C5537F22E283180023A29D /* AppDelegate.swift */,
 				A2C5540622E7AB6F0023A29D /* DonationViewController.swift */,
 				72744CD722EF8FB600B227D9 /* addTaskScreen.swift */,
+				5FB2B97222F4E45F009D0478 /* hohenfeld.storyboard */,
 				727B577822E8CDB6006B9627 /* signUpScreen.swift */,
 				727B56B722E6B87B006B9627 /* loginPageViewController.swift */,
 				A2C5540E22E7B8F00023A29D /* SidhikaStoryboard.storyboard */,
@@ -150,14 +148,11 @@
 				A2CE8FBB22F23AC9000B8D3E /* SubtasksTableViewCell.swift */,
 				A2CE8FBD22F2476A000B8D3E /* PopUpViewController.swift */,
 				726C3F7622F0F4F000597C3B /* Main.storyboard */,
-				727B577A22E90689006B9627 /* hohenfeld.storyboard */,
 				A2C5538822E283190023A29D /* LaunchScreen.storyboard */,
 				A2C5538B22E283190023A29D /* Info.plist */,
-				A2C553A622E667420023A29D /* TaskTableViewCell.swift */,
 				5F81250822F49CF500C0CB1C /* focusedSession.storyboard */,
 				5F81250A22F49D9F00C0CB1C /* focusedSessionViewController.swift */,
 				A27E3DE622EF9873006C49F6 /* CongratsScreenViewController.swift */,
-				A27E3DE822EF9AAA006C49F6 /* plantAnimation.json */,
 				A27E3DE822EF9AAA006C49F6 /* plantAnimation.json */,
 				A2C553A622E667420023A29D /* TaskTableViewCell.swift */,
 				A2C5538622E283190023A29D /* Assets.xcassets */,
@@ -275,9 +270,7 @@
 				A2C5538A22E283190023A29D /* LaunchScreen.storyboard in Resources */,
 				5FD5B75A22F0BE730007C1D4 /* WelcomePage.storyboard in Resources */,
 				5FC0F77D22F8A8030040402D /* Assets.xcassets in Resources */,
-				727B577C22E90689006B9627 /* (null) in Resources */,
 				22C04C7C22EE744000EE6906 /* newSummaryScreenStoryboard.storyboard in Resources */,
-				5FC0F77A22F8A5420040402D /* Assets.xcassets in Resources */,
 				5FB2B97322F4E45F009D0478 /* hohenfeld.storyboard in Resources */,
 				5F81250922F49CF500C0CB1C /* focusedSession.storyboard in Resources */,
 				726C3F7722F0F4F000597C3B /* Main.storyboard in Resources */,

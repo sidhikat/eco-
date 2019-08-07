@@ -68,11 +68,7 @@ class TaskListViewController: UIViewController, UITableViewDataSource, UITableVi
     //performs segue when cell is tapped
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-//        var alertView = UIAlertController(title: "Subtasks", message: "You clicked cell \n at index : \(indexPath.row)", preferredStyle: UIAlertController.Style.alert)
-//        alertView.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
-//        self.present(alertView, animated: true, completion: nil)
-//        self.view.addSubview(subtasksView)
-//        subtasksView.center = self.view.center
+
         let cell = tableView.cellForRow(at: indexPath)
         //tableView.deselectRow(at: indexPath, animated: true)
 

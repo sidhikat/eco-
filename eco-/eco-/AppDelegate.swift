@@ -34,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
 
 
-        if let rootVC = window?.rootViewController as? TaskListViewController {
+        if let rootVC = window?.rootViewController as? loginPageViewController  {
 
             rootVC.container = persistentContainer
         }

@@ -53,12 +53,8 @@ class loginPageViewController: UIViewController {
         
         for i in fetchedUser {
             if (usernameTextField.text == i.username) && (passwordTextField.text == i.password) {
-                let alert = UIAlertController(title: "Login succesfull", message: "", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
-                    NSLog("The \"OK\" alert occured.")
-                }))
-                self.present(alert, animated: true, completion: nil)
-                
+                //perform segue to welcome page when valid username and password is entered
+                performSegue(withIdentifier: "welcomePageSegue", sender: self)
             }
         }
         

@@ -19,7 +19,7 @@ class WelcomePageViewController: UIViewController {
     @IBOutlet weak var btnFocus: UIButton!
     @IBOutlet weak var btnSummary: UIButton!
     var container:NSPersistentContainer!
-    var userName: String = "Akoly"
+    var userName: String = "Shannon"
 
     
     
