@@ -22,6 +22,9 @@ class loginPageViewController: UIViewController {
     
     @IBOutlet weak var passwordTextField: UITextField!
     
+    
+    @IBOutlet weak var loginBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         var appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -33,6 +36,8 @@ class loginPageViewController: UIViewController {
             //let appDelegate = UIApplication.shared.delegate as! AppDelegate
             //let context = appDelegate.persistentContainer.viewContext
         }
+        loginBtn.layer.cornerRadius = 5
+        
         // Do any additional setup after loading the view.
 //Add action to the buttons on the screen
     }
