@@ -35,16 +35,13 @@ class addTaskScreen: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
     
     @IBOutlet weak var addTaskLabel: UILabel!
     
-    @IBOutlet weak var dueDateImageView: UIImageView!
-    
-    @IBOutlet weak var durationImageView: UIImageView!
-    
     @IBOutlet weak var dueDatePicker: UIDatePicker!
     
     @IBOutlet weak var taskDurationPicker: UIPickerView!
     
     @IBOutlet weak var taskLabel: UILabel!
     
+    @IBOutlet weak var addTaskBtn: UIButton!
     
     
     //TextField
@@ -59,6 +56,7 @@ class addTaskScreen: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
     
         override func viewDidLoad() {
         super.viewDidLoad()
+            addTaskBtn.layer.cornerRadius = 5
             var appDelegate = UIApplication.shared.delegate as! AppDelegate
             
             container = appDelegate.persistentContainer
