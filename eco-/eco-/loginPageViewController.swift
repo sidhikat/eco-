@@ -22,7 +22,6 @@ class loginPageViewController: UIViewController {
     
     @IBOutlet weak var passwordTextField: UITextField!
     
-    
     @IBOutlet weak var loginBtn: UIButton!
     
     override func viewDidLoad() {

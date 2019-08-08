@@ -44,9 +44,9 @@ class signUpScreen: UIViewController {
         guard container != nil else {
             fatalError("This view needs a persistent container.")
         // Do any additional setup after loading the view.
+        }
+        signUpButton.layer.cornerRadius = 5
     }
-        
-}
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // get a reference to the SECOND view controller
         if  let secondViewController = segue.destination as? addTaskScreen {
