@@ -6,16 +6,10 @@ An app that encourages users to multitask efficiently and limits distractions. T
 + Swift 4
 + XCode 10.2 
 
-Programmed and designed by: 
-
-Sidhika Tripathee (sidhikat)
-Akoly Vongdala (akolyvongdala)
-Joseph Duodu (Joey155)
-Guilherme Hohenfeld (hohenfeldGB)
 
 ### Team:
 
-Created in Summer 2019.
+Designed and programmed in Summer 2019.
 
 + Sidhika Tripathee ([sidhikat](https://github.com/sidhikat))
 + Akoly Vongdala ([akolyvongdala](https://github.com/akolyvongdala))
