@@ -59,8 +59,8 @@ class loginPageViewController: UIViewController {
         var appDelegate = UIApplication.shared.delegate as! AppDelegate
         
         let itemsFetchRequest = NSFetchRequest<NSFetchRequestResult> (entityName: "UserInformation")
-        //let deleteRequest = NSBatchDeleteRequest(fetchRequest: itemsFetchRequest)
-        //try! container.persistentStoreCoordinator.execute(deleteRequest , with: container.viewContext)
+//        let deleteRequest = NSBatchDeleteRequest(fetchRequest: itemsFetchRequest)
+//        try! container.persistentStoreCoordinator.execute(deleteRequest , with: container.viewContext)
         let fetchedUser = try! container.viewContext.fetch(itemsFetchRequest) as! [UserInformation]
         print(fetchedUser.count)
         for i in fetchedUser {

@@ -37,7 +37,7 @@ class WelcomePageViewController: UIViewController {
         // assigning the button name
         btnTodo.setTitle("To-do list", for: .normal)
         btnSummary.setTitle("Summary", for: .normal)
-        btnFocus.setTitle("Focused session", for: .normal)
+        btnFocus.setTitle("Focus session", for: .normal)
         
         //create a reference to the appDelegate to be able to get all of its variables
         var appDelegate = UIApplication.shared.delegate as! AppDelegate
