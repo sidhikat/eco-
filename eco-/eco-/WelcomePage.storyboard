@@ -18,9 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Cqd-2g-P4c">
-                                <rect key="frame" x="70" y="190" width="291" height="256"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSZ-EP-LGL">
                                 <rect key="frame" x="87" y="479" width="240" height="108"/>
                                 <constraints>
@@ -101,6 +98,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Cqd-2g-P4c">
+                                <rect key="frame" x="62" y="185" width="291" height="256"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -111,14 +111,14 @@
                             <constraint firstItem="9yj-X7-lCB" firstAttribute="bottom" secondItem="Nxh-9U-hO7" secondAttribute="bottom" constant="42" id="VxV-dJ-73A"/>
                             <constraint firstItem="ZAU-Go-WX8" firstAttribute="leading" secondItem="9yj-X7-lCB" secondAttribute="leading" constant="53" id="ZmN-7b-BD0"/>
                             <constraint firstItem="VuB-Lu-4eb" firstAttribute="leading" secondItem="Nxh-9U-hO7" secondAttribute="leading" id="a92-aX-UhY"/>
-                            <constraint firstItem="Cqd-2g-P4c" firstAttribute="trailing" secondItem="ZAU-Go-WX8" secondAttribute="trailing" id="bUD-Xg-RjT"/>
+                            <constraint firstItem="Cqd-2g-P4c" firstAttribute="trailing" secondItem="ZAU-Go-WX8" secondAttribute="trailing" constant="-8" id="bUD-Xg-RjT"/>
                             <constraint firstItem="VuB-Lu-4eb" firstAttribute="trailing" secondItem="Nxh-9U-hO7" secondAttribute="trailing" id="hJg-nN-g8V"/>
                             <constraint firstItem="aSZ-EP-LGL" firstAttribute="leading" secondItem="9yj-X7-lCB" secondAttribute="leading" constant="87" id="hdA-pI-9Ns"/>
-                            <constraint firstItem="Cqd-2g-P4c" firstAttribute="top" secondItem="9yj-X7-lCB" secondAttribute="top" constant="102" id="iB5-Ve-4jf"/>
-                            <constraint firstItem="Cqd-2g-P4c" firstAttribute="leading" secondItem="9yj-X7-lCB" secondAttribute="leading" constant="70" id="oDX-zd-A71"/>
+                            <constraint firstItem="Cqd-2g-P4c" firstAttribute="top" secondItem="9yj-X7-lCB" secondAttribute="top" constant="97" id="iB5-Ve-4jf"/>
+                            <constraint firstItem="Cqd-2g-P4c" firstAttribute="leading" secondItem="9yj-X7-lCB" secondAttribute="leading" constant="62" id="oDX-zd-A71"/>
                             <constraint firstItem="VuB-Lu-4eb" firstAttribute="top" secondItem="ZAU-Go-WX8" secondAttribute="bottom" constant="21" id="rJh-V1-hzX"/>
                             <constraint firstItem="ZAU-Go-WX8" firstAttribute="leading" secondItem="VuB-Lu-4eb" secondAttribute="leading" id="sU2-x1-nj8"/>
-                            <constraint firstItem="aSZ-EP-LGL" firstAttribute="top" secondItem="Cqd-2g-P4c" secondAttribute="bottom" constant="33" id="spF-Z0-1lV"/>
+                            <constraint firstItem="aSZ-EP-LGL" firstAttribute="top" secondItem="Cqd-2g-P4c" secondAttribute="bottom" constant="38" id="spF-Z0-1lV"/>
                             <constraint firstItem="ZAU-Go-WX8" firstAttribute="top" secondItem="aSZ-EP-LGL" secondAttribute="bottom" constant="64" id="vMM-oa-sYG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9yj-X7-lCB"/>

@@ -274,6 +274,7 @@
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Task Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bkL-KI-AMv">
                                 <rect key="frame" x="36" y="213" width="344" height="30"/>
+                                <color key="backgroundColor" red="0.87450379133224487" green="0.87450402975082397" blue="0.87450259923934937" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="344" id="2nz-Ys-bTn"/>
                                     <constraint firstAttribute="height" constant="30" id="Tgo-LH-MaE"/>
@@ -284,6 +285,7 @@
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Subtask1 Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H8y-Am-zay">
                                 <rect key="frame" x="36" y="252" width="254" height="30"/>
+                                <color key="backgroundColor" red="0.87450379133224487" green="0.87450402975082397" blue="0.87450259923934937" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Lad-hb-3uk"/>
                                     <constraint firstAttribute="width" constant="254" id="Nsq-Ig-Qvu"/>
@@ -294,6 +296,7 @@
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Subtask2 Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iuZ-Kj-vgu">
                                 <rect key="frame" x="36" y="292" width="254" height="30"/>
+                                <color key="backgroundColor" red="0.87450379133224487" green="0.87450402975082397" blue="0.87450259923934937" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="254" id="gDh-a1-9r9"/>
                                     <constraint firstAttribute="height" constant="30" id="ggs-i4-6Pu"/>
@@ -304,6 +307,7 @@
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Subtask3 Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1t9-tE-KDL">
                                 <rect key="frame" x="36" y="332" width="254" height="30"/>
+                                <color key="backgroundColor" red="0.87450379133224487" green="0.87450402975082397" blue="0.87450259923934937" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="5en-3l-Xbc"/>
                                     <constraint firstAttribute="width" constant="254" id="p7V-mB-02z"/>
@@ -344,6 +348,7 @@
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Subtask4 Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jsm-41-rQz">
                                 <rect key="frame" x="36" y="373" width="254" height="30"/>
+                                <color key="backgroundColor" red="0.87450379133224487" green="0.87450402975082397" blue="0.87450259923934937" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="254" id="bxt-dJ-z0L"/>
                                     <constraint firstAttribute="height" constant="30" id="pBQ-9t-rjA"/>
